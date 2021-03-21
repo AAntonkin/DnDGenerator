@@ -1,0 +1,72 @@
+
+Table: PrintStats
+[[@GetNormalStats] [@ResultingStats] >> replace /,/<br>/]
+
+Table: GetStat
+Set: _GetStat={$1}
+{$_GetStat}
+
+
+Table: Mod
+Set: _mdst={floor({{{$1}-10}/2})}
+Set: 1=
+{$_mdst}
+
+Table: Mod2Stat
+Set: _Mod2Stat_ten=[|10|11]
+{floor({{{$1}*2}+{$_Mod2Stat_ten}})}
+
+Table: getStatForNPC
+[@StatForPoorNPC]
+Table: getStatForPC
+[@GetNormalStats]
+
+Table: GetNormalStats
+Set: Str=[@GetNormalStat]
+Set: StrMod=[@Mod with {$Str}]
+Set: Dex=[@GetNormalStat]
+Set: DexMod=[@Mod with {$Dex}]
+Set: Con=[@GetNormalStat]
+Set: ConMod=[@Mod with {$Con}]
+Set: Int=[@GetNormalStat]
+Set: IntMod=[@Mod with {$Int}]
+Set: Wis=[@GetNormalStat]
+Set: WisMod=[@Mod with {$Wis}]
+Set: Cha=[@GetNormalStat]
+Set: ChaMod=[@Mod with {$Cha}]
+Set: Bty=[@GetNormalStat]
+Set: BtyMod=[@Mod with {$Bty}]
+
+Table: GetNormalStat
+Set: statBonus=[when]{$Prompt3}[do]{$Prompt3}[else]0[end]
+Set:a={{1d6}+{$statBonus}}
+Set:b={{1d6}+{$statBonus}}
+Set:c={{1d6}+{$statBonus}}
+Set:d={{1d6}+{$statBonus}}
+Set:Result={a+b+c+d}
+{{Result}-{min({a},{b},{c},{d})}}
+
+Table: StatForPoorNPC
+Set: statBonus=[when]{$Prompt3}[do]{$Prompt3}[else]0[end]
+Set: Str=[@GetStat with {4+1d8+{$statBonus}}]
+Set: StrMod=[@Mod with {$Str}]
+Set: Dex=[@GetStat with {4+1d8+{$statBonus}}]
+Set: DexMod=[@Mod with {$Dex}]
+Set: Con=[@GetStat with {4+{1d6}+{1d6}+{$statBonus}}]
+Set: ConMod=[@Mod with {$Con}]
+Set: Int=[@GetStat with {4+1d8+{$statBonus}}]
+Set: IntMod=[@Mod with {$Int}]
+Set: Wis=[@GetStat with {4+1d8+{$statBonus}}]
+Set: WisMod=[@Mod with {$Wis}]
+Set: Cha=[@GetStat with {4+1d8+{$statBonus}}]
+Set: ChaMod=[@Mod with {$Cha}]
+Set: Bty=[@GetStat with {4+1d8+{$statBonus}}]
+Set: BtyMod=[@Mod with {$Bty}]
+
+Table: ResultingStats
+Set: Bty=[when][@Mod with {$Bty}] = {$BtyMod}[do]{$Bty}[else][@Mod2Stat with {$BtyMod}][end]
+Str {$Str} ({$StrMod}), Dex {$Dex} ({$DexMod}), Con {$Con} ({$ConMod}), Int {$Int} ({$IntMod}), Wis {$Wis} ({$WisMod}), Cha {$Cha} ({$ChaMod}), Bty {$Bty} ({$BtyMod})
+
+
+Table: TABS
+&nbsp

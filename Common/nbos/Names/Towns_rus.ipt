@@ -1,0 +1,22 @@
+use: nbos\names\Human_rus.ipt
+
+Table: MasterTownName
+Set: vBaseWord=[@TownNameBaseWord]
+10:{$vBaseWord}
+{$vBaseWord} Город
+{$vBaseWord}град
+{$vBaseWord}тон
+{$vBaseWord}виль
+{$vBaseWord}бург
+{$vBaseWord}берг
+{$vBaseWord}порт
+{$vBaseWord}форт
+{$vBaseWord} Твердыня
+{$vBaseWord} Змок
+Форт {$vBaseWord}
+
+Table: TownNameBaseWord
+2:[@HumanNameFirst][@HumanNameMiddle]
+2:[@HumanNameFirst]{$HumanEndConstanant}
+[@HumanNameFirst][@HumanNameMiddle]{$HumanEndConstanant}
+

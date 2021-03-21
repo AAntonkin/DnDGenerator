@@ -1,0 +1,9 @@
+use: nbos\encounters\Orcs.ipt
+
+Header: Orc Hunting Party - approx 10 orcs and possibly a few Dire Wolves.
+Footer: <br>This material is Open Game Content, and is licensed for public use under the terms of the Open Game License v1.0a.
+
+MaxReps: 5
+
+Table: main
+[@OrcHuntingParty]

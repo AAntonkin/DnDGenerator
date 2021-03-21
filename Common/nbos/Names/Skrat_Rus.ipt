@@ -1,0 +1,38 @@
+Header: A self contained name generator for a race of rodent-men
+
+Table: MasterSkratName
+[@SkratNameStart][@SkratNameEnd]
+[@SkratNameStart][@SkratNameMiddle][@SkratNameEnd]
+[@SkratNameStart][@SkratNameEnd] [@SkratNameStart][@SkratNameEnd]
+
+
+Table: SkratNameStart
+скра
+скре
+ске
+ска
+гре
+гра
+гер
+гар
+гарл
+гва
+
+Table: SkratNameMiddle
+та
+ка
+кра
+гра
+гри
+кви
+ква
+
+Table: SkratNameEnd
+ат
+тле
+ттле
+т
+к
+га
+гак
+тлит

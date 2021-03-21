@@ -1,0 +1,144 @@
+
+Set: Material_MAX_Metal=15
+Set: Material_MAX_Wood=8
+Set: Material_MAX_Plant=5
+Set: Material_MAX_Animal=3
+
+Set: Material_MOD_Metal=100
+Set: Material_MOD_Wood=200
+Set: Material_MOD_Plant=300
+Set: Material_MOD_Animal=400
+
+Set: material_type=[@Get_Material_Type]
+Set: Material_MAX = {$Material_MAX_{$material_type}}
+Set: Material_MOD = {$Material_MOD_{$material_type}}
+Set: material_type_random={{1d{$Material_MAX}} + {$Material_MOD}}
+
+Table: Material
+Set: Material_param1={$1}
+Set: 1=
+[when]{$Material_param1}[do][#{$material_type_random} Material_{$Material_param1}][else][@Material_Any][end]
+Table: Get_Material_Type
+Metal
+Wood
+Plant
+Animal
+
+Table: Material_Any
+[#{$material_type_random} Material_{$material_type}]
+
+Table: Material_Metal
+Type: Lookup
+101:латунь
+102:бронза
+103:медь
+104:электрум
+105:золото
+106:железо
+107:свинец
+108:никель
+109:олово
+110:платина
+111:серебро
+112:сталь
+113:цинк
+114:адамат
+115:мифрил
+Table: Material_Wood
+Type: Lookup
+201:черное дерево (darkwood)
+202:сосна
+203:дуб
+204:ольха
+205:береза
+206:тополь
+207:тис
+208:бук
+Table: Material_Plant
+Type: Lookup
+301:хлопок
+302:лён
+303:конопля
+304:джут
+Table: Material_Animal
+Type: Lookup
+401:кожа
+402:шерсть
+403:шёлк
+Table: Material_какой?
+Type: Lookup
+101:латуный
+102:бронзовый
+103:медный
+104:электрумный
+105:золотой
+106:железный
+107:свинцовый
+108:никелевый
+109:оловянный
+110:платиновый
+111:серебрянный
+112:стальной
+113:цинковый
+114:адаматновый
+115:мифрильный
+//--------
+201:черное дерево (darkwood)
+202:сосновый
+203:дубовый
+204:ольховый
+205:березовый
+206:тополевый
+207:тисовый
+208:буковый
+//--------
+301:хлопоковый
+302:льняной
+303:конопляный
+304:джутовый
+305:тканевый
+//--------
+401:кожанный
+402:шерстяной
+403:шёлковый
+default: ERROR(Material_какой): material_type={$material_type} \n material_type_random={$material_type_random} \n Material_MAX={$Material_MAX} \n Material_MOD={$Material_MOD} \n
+
+Table: Material_как_?
+Set: Material_как_matrialPos={$1}
+Set: Material_как_materialEnding={$2}
+Set: 1=
+Set: 2=
+Set: Material_какой_full=[#{$Material_как_matrialPos} Material_какой?]
+Set: Material_какой_len={length("{$Material_какой_full}")}
+Set: Material_какой_last2={substr("{$Material_какой_full}", {{$Material_какой_len}-1})}
+Set: Material_output=[when not]{$Material_как_materialEnding}=ый[do][{$Material_какой_full} >> replace /{$Material_какой_last2}/{$Material_как_materialEnding}/][else]{$Material_какой_full}[end]
+{$Material_output}
+//[{$Material_какой_full} >> replace /{$Material_какой_last2}/{$Material_как_materialEnding}/]
+
+Table: Material_какая?
+Type: Lookup
+Set: Material_какой_full=[#{$material_type_random} Material_какой?]
+Set: Material_какой_len={length("{$Material_какой_full}")}
+Set: Material_какой_last2={substr("{$Material_какой_full}", {{$Material_какой_len}-1})}
+0-100000:[{$Material_какой_full} >> replace /{$Material_какой_last2}/ая/]
+
+Table: Material_какую?
+Type: Lookup
+Set: Material_какой_full=[#{$material_type_random} Material_какой?]
+Set: Material_какой_len={length("{$Material_какой_full}")}
+Set: Material_какой_last2={substr("{$Material_какой_full}", {{$Material_какой_len}-1})}
+0-100000:[{$Material_какой_full} >> replace /{$Material_какой_last2}/ую/]
+
+Table: Material_какые?
+Type: Lookup
+Set: Material_какой_full=[#{$material_type_random} Material_какой?]
+Set: Material_какой_len={length("{$Material_какой_full}")}
+Set: Material_какой_last2={substr("{$Material_какой_full}", {{$Material_какой_len}-1})}
+0-100000:[{$Material_какой_full} >> replace /{$Material_какой_last2}/ые/]
+
+Table: Material_какыx?
+Type: Lookup
+Set: Material_какой_full=[#{$material_type_random} Material_какой?]
+Set: Material_какой_len={length("{$Material_какой_full}")}
+Set: Material_какой_last2={substr("{$Material_какой_full}", {{$Material_какой_len}-1})}
+0-100000:Material_какых:#{$material_type_random} +\n+[{$Material_какой_full} >> replace /{$Material_какой_last2}/ых/]

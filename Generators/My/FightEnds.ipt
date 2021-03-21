@@ -1,0 +1,43 @@
+//
+
+Use: nbos\Studies_rus.ipt
+Use: nbos\FantasyRaces_rus.ipt
+//Use: nbos\Monsters_rus.ipt
+Use: ..\My\Names\Monsters_rus.ipt
+Use: nbos\Languages_rus.ipt
+Use: nbos\Professions_rus.ipt
+Use: nbos\names\Human_rus.ipt
+Use: nbos\names\Elf.ipt
+Use: nbos\names\Dwarf_rus.ipt
+Use: nbos\names\towns_rus.ipt
+Use: nbos\names\Orc_rus.ipt
+Use: nbos\Animals_rus.ipt
+Use: nbos\RusRules\Endings.ipt
+Use: nbos\Books\BookTechnical.ipt
+Use: ..\My\Encounters\Fight.ipt
+
+Prompt: Name {Режущий|Колющий|Дробящий} Безоружный
+
+
+Table: FigthEnd
+Завершающий {$prompt1} удар прямо в [@BodyPartCritical], [@Result{$prompt1}] [@ResultGeneral]
+Размахнувшись ты наносишь [@StrikeType] {$prompt1} удар в не прикрытую [@BodyPartCritical], [@Result{$prompt1}] [@ResultGeneral]
+Ты делаешь {$prompt1} удар прямо в [@BodyPartCritical], [@Result{$prompt1}] [@ResultGeneral]
+
+Table: ResultРежущий
+разсекая на части
+вонзившись глубоко в плоть
+вонзив оружие по самую рукоять
+
+Table: ResultКолющий
+вонзившись глубоко в плоть
+проткнув навзсквозь
+вонзив оружие по самую рукоять
+
+Table: ResultДробящий
+раздробив кости
+
+
+Table: ResultGeneral
+кровь брызжет изорта
+предсмертный всхрип и тишина

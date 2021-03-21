@@ -1,0 +1,78 @@
+Header: <b>Random Weather</b> </b><br><span style='font:8pt Verdana'>by Melrick</span>
+
+Table: Weather
+The sky is [@Sky]  There is [@Wind]  The temperature is [@Temperature] and will remain that way [@DaysWeeks].
+
+Table: Sky
+clear.
+partly cloudy with [@PrecipTwo]
+overcast with [@Precipitation]
+
+Table: Precipitation
+8:no rain for {1d24} hours before [@PrecipThree]
+3:drizzle that will last [@MinutesHours] before [|stopping|getting worse].
+2:light rain that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:torrential rain that will last [@MinutesHours] before [|stopping|easing off].
+1:a thunderstorm that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+2:a light fog that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:a heavy fog that will last [@MinutesHours] before [|stopping|easing off].
+1:a hailstorm that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:sleet that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+2:light snow that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:heavy snow that will last [@MinutesHours] before [|stopping|easing off].
+
+Table: PrecipTwo
+10:no rain for {1d24} hours before [@PrecipThree]
+2:drizzle that will last [@MinutesHours] before [|stopping|getting worse].
+1:light rain that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:a light fog that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+1:light snow that will last [@MinutesHours] before [|stopping|easing off|getting worse].
+
+Table: PrecipThree
+5:drizzle starts.
+4:light rain starts.
+1:torrential rain starts.
+1:a thunderstorm starts.
+2:a light fog starts.
+1:a heavy fog starts.
+1:a hailstorm starts.
+1:sleet starts.
+2:light snow starts.
+1:heavy snow starts.
+
+Table: Wind
+10:no wind for [@MinutesHours] before a [|gentle breeze|steady wind|strong wind|] begins to blow from the [@Compass].
+5:a gentle breeze from the [@Compass] that will last [@MinutesHours] before [|changing direction|easing off|gaining strength].
+5:a steady wind from the [@Compass] that will last [@MinutesHours] before [|changing direction|easing off|gaining strength].
+2:a strong wind gusting from the [@Compass] that will last [@MinutesHours] before [|changing direction|easing off|gaining strength].
+1:hurricane strength winds from the [@Compass] that will last [@MinutesHours] before [|changing direction|easing off|gaining strength].
+
+Table: Compass
+North
+North East
+East
+South East
+South
+South West
+West
+North West
+
+Table: Temperature
+1:freezing
+2:cold
+3:cool
+5:warm
+2:hot
+1:stifflingly hot
+
+Table: MinutesHours
+{5d12} minutes
+{1d12+12} hours
+
+Table: DaysWeeks
+2:for a few hours before [|getting cooler|getting warmer]
+3:for the rest of the day before [|getting cooler|getting warmer]
+3:for the next couple of days before [|getting cooler|getting warmer]
+1:for the next few days before [|getting cooler|getting warmer]
+1:for the next week before [|getting cooler|getting warmer]
+1:for the next few weeks before [|getting cooler|getting warmer]

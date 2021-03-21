@@ -1,0 +1,14 @@
+use: nbos/encounters/orcs.ipt
+
+Header: Orc Raiding Party - approx 50 orcs, broken down into a number of smaller hunting parties.  This is set to only create 1 raiding party, since this table can take a while to generate all those orcs!
+Footer: <br>This material is Open Game Content, and is licensed for public use under the terms of the Open Game License v1.0a.
+
+//-- prevent user from making 50 armies, which will take forever by setting maxreps
+MaxReps: 1
+
+Table: OrcRaidingParty
+[@OrcRaidingPartyLeader]\n<ul><li>[@{2d4+2} OrcHuntingParty >> implode </li><li>]</li></ul>
+
+Table: OrcRaidingPartyLeader
+1:<b>[@MasterOrcName]</b>\nHit Points: {4d8+10}\nArmor: [#{1d10+15} OrcArmor]\nBase Attack: +5 to hit, +4 damage\nWeapons: [#{1d10+15} OrcWeapons]\nSpecial Skills: [@OrcSkills]\nLanguages: [@OrcLanguages]\nWealth: [#{1d10+20} OrcWealth]
+

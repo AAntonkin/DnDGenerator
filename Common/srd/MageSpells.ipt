@@ -1,0 +1,360 @@
+#
+# This material is Open Game Content, and is licensed for public use under the terms of the Open Game License v1.0a.
+#
+
+Table: SpellsMageLevel0
+Arcane Mark
+Dancing Lights
+Daze
+Detect Magic
+Detect Poison
+Disrupt Undead
+Flare
+Ghost Sound
+Light
+Mage Hand
+Mending
+Open/Close
+Prestidigitation
+Ray of Frost
+Read Magic
+Resistance
+
+
+Table: SpellsMageLevel1
+Alarm
+Animate Rope
+Burning Hands
+Cause Fear
+Change Self
+Charm Person
+Chill Touch
+Color Spray
+Comprehend Languages
+Detect Secret
+Detect Undead
+Endure Elements
+Enlarge
+Erase
+Expeditious Retreat
+Feather Fall
+Floating Disk
+Grease
+Hold Portal
+Hypnotism
+Identify
+Jump
+Mage Armor
+Magic Missile
+Magic Weapon
+Magical Aura
+Message
+Mount
+Obscuring Mist
+Protection from Chaos
+Protection from Evil
+Protection from Good
+Protection from Law
+Ray of Enfeeblement
+Reduce
+Shield
+Shocking Grasp
+Silent Image
+Sleep
+Spider Climb
+Summon Monster I
+True Strike
+Undetectable Aura
+Unseen Servant
+Ventriloquism
+
+
+Table: SpellsMageLevel2
+Acid Arrow
+Alter Self
+Arcane Lock
+Blindness/Deafness
+Blur
+Bull's Strength
+Cat's Grace
+Continual Flame
+Darkvision
+Daylight
+Detect Thoughts
+Endurance
+Flaming Sphere
+Fog Cloud
+Ghoul Touch
+Glitterdust
+Hideous Laughter
+Hypnotic Pattern
+Invisibility
+Knock
+Levitate
+Locate Object
+Magic Mouth
+Minor Image
+Mirror Image
+Misdirection
+Obscure Object
+Protection from Arrows
+Pyrotechnics
+Resist Elements
+Rope Trick
+Scare
+See Invisibility
+Shatter
+Spectral Hand
+Summon Monster II
+Summon Swarm
+Trap
+Web
+Whispering Wind
+
+
+Table: SpellsMageLevel3
+Blink
+Clairaudience
+Clairvoyance
+Dispel Magic
+Displacement
+Explosive Runes
+Fireball
+Flame Arrow
+Fly
+Gaseous Form
+Gentle Repose
+Greater Magic Weapon
+Gust of Wind
+Halt Undead
+Haste
+Hold Person
+Illusory Script
+Invisibility Sphere
+Keen Edge
+Lightning Bolt
+Magic Circle against Chaos
+Magic Circle against Evil
+Magic Circle against Good
+Magic Circle against Law
+Major Image
+Nondetection
+Phantom Steed
+Protection from Elements
+Secret Page
+Sepia Snake Sigil
+Shrink Item
+Sleet Storm
+Slow
+Stinking Cloud
+Suggestion
+Summon Monster III
+Tongues
+Vampiric Touch
+Water Breathing
+Wind Wall
+
+
+Table: SpellsMageLevel4
+Arcane Eye
+Bestow Curse
+Black Tentacles
+Charm Monster
+Confusion
+Contagion
+Detect Scrying
+Dimension Door
+Dimensional Anchor
+Emotion
+Enervation
+Fear
+Fire Shield
+Fire Trap
+Hallucinatory Terrain
+Ice Storm
+Illusory Wall
+Improved Invisibility
+Lesser Geas
+Locate Creature
+Minor Creation
+Minor Globe of Invulnerability
+Mnemonic Enhancer
+Phantasmal Killer
+Polymorph Other
+Polymorph Self
+Rainbow Pattern
+Remove Curse
+Resilient Sphere
+Scrying
+Secure Shelter
+Shadow Conjuration
+Shou
+Solid Fog
+Stoneskin
+Summon Monster IV
+Wall of Fire
+Wall of Ice
+
+
+Table: SpellsMageLevel5
+Animal Growth
+Animate Dead
+Cloudkill
+Cone of Cold
+Contact Other Plane
+Dismissal
+Dominate Person
+Dream
+Fabricate
+Faithful Hound
+False Vision
+Feeblemind
+Greater Shadow Conjuration
+Hold Monster
+Interposing Hand
+Lesser Planar Binding
+Magic Jar
+Major Creation
+Mind Fog
+Mirage Arcana
+Nightmare
+Passwall
+Permanency
+Persistent Image
+Prying Eyes
+Secret Chest
+Seeming
+Sending
+Shadow Evocation
+Stone Shape
+Telekinesis
+Telepathic Bond
+Teleport
+Transmute Mud to Rock
+Transmute Rock to Mud
+Wall of Force
+Wall of Iron
+Wall of Stone
+
+
+Table: SpellsMageLevel6
+Acid Fog
+Analyze Dweomer
+Antimagic Field
+Chain Lightning
+Circle of Death
+Contingency
+Control Water
+Control Weather
+Disintegrate
+Eyebite
+Flesh to Stone
+Forceful Hand
+Freezing Sphere
+Geas/Quest
+Globe of Invulnerability
+Greater Dispelling
+Greater Shadow Evocation
+Guards and Wards
+Legend Lore
+Lucubration
+Mass Suggestion
+Mislead
+Move Earth
+Permanent Image
+Planar Binding
+Programmed Image
+Project Image
+Repulsion
+Shades
+Stone to Flesh
+Summon Monster VI
+Transformation
+True Seeing
+Veil
+
+
+Table: SpellsMageLevel7
+Banishment
+Control Undead
+Delayed Blast Fireball
+Ethereal Jaunt
+Finger of Death
+Forcecage
+Grasping Hand
+Greater Scrying
+Insanity
+Instant Summons
+Limited Wish
+Magnificent Mansion
+Mass Invisibility
+Phase Door
+Plane Shift
+Power Word, Stun
+Prismatic Spray
+Reverse Gravity
+Sequester
+Shadow Walk
+Simulacrum
+Spell Turning
+Statue
+Summon Monster VII
+Sword
+Teleport
+Vanish
+Vision
+
+
+
+Table: SpellsMageLevel8
+Antipathy
+Binding
+Clenched Fist
+Clone
+Demand
+Discern Location
+Etherealness
+Greater Planar Binding
+Horrid Wilting
+Incendiary Cloud
+Iron Body
+Irresistible Dance
+Mass Charm
+Maze
+Mind Blank
+Polymorph Any Object
+Power Word, Blind
+Prismatic Wall
+Protection from Spells
+Screen
+Summon Monster VIII
+Sunburst
+Symbol
+Sympathy
+Telekinetic Sphere
+Trap the Soul
+
+
+Table: SpellsMageLevel9
+Astral Projection
+Crushing Hand
+Disjunction
+Dominate Monster
+Energy Drain
+Foresight
+Gate
+Imprisonment
+Meteor Swarm
+Power Word, Kill
+Prismatic Sphere
+Refuge
+Shapechange
+Soul Bind
+Summon Monster IX
+Teleportation Circle
+Temporal Stasis
+Time Stop
+Wail of the Banshee
+Weird
+Wish
+

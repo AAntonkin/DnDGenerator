@@ -1,0 +1,12 @@
+
+use: nbos\NPCs\BackGround.ipt
+
+Header: Добро пожаловать!
+
+Table: BackGround
+[@BackGroundKventa]
+
+Table: TABS
+&nbsp
+Table: -
+-

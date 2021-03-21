@@ -1,0 +1,104 @@
+
+// Grammar rules
+
+Table: UpperFirst
+// Set: _UpperFirstAllText=[{$1}, {$2}, {$3}, {$4}, {$5}, {$6}, {$7}, {$8}, {$9} >> replace / ,/ /]
+Set: _UpperFirstAllText={$1}, {$2}, {$3}, {$4}, {$5}, {$6}, {$7}, {$8}, {$9}
+Set: 1=
+[@DoFirst with Upper, {$_UpperFirstAllText}]
+
+Table: LowerFirst
+Set: _LowerFirstAllText={$1}, {$2}, {$3}, {$4}, {$5}, {$6}, {$7}, {$8}, {$9}
+Set: 1=
+[@DoFirst with Lower, {$_LowerFirstAllText}]
+
+Table: DoFirst
+Set: DoFirst_Action={$1}
+Set: _FirstAllText=[{$2}, {$3}, {$4}, {$5}, {$6}, {$7}, {$8}, {$9} >> replace / ,/ /]
+Set: _FirstLetter=[{$_FirstAllText} >> Substr 1]
+Set: 1=
+Set: 2=
+Set: 3=
+Set: 4=
+Set: 5=
+Set: 6=
+Set: 7=
+Set: 8=
+Set: 9=
+Set: DoFirst_ResultText=[#{$_FirstLetter} {$DoFirst_Action}][{$_FirstAllText} >> Substr 2 0]
+Set: ll={({length( '{$DoFirst_ResultText}')-1})}
+{substr( '{$DoFirst_ResultText}',1,{$ll})}
+
+Table: Upper
+Type: Dictionary
+á:Á
+â:Â
+ã:Ã
+ä:Ä
+æ:Æ
+ç:Ç
+é:É
+ê:Ê
+ë:Ë
+ì:Ì
+í:Í
+ï:Ï
+ð:Ð
+ñ:Ñ
+ò:Ò
+ô:Ô
+õ:Õ
+ö:Ö
+÷:×
+ø:Ø
+ù:Ù
+à:À
+å:Å
+¸:¨
+è:È
+î:Î
+ó:Ó
+ý:Ý
+þ:Þ
+ÿ:ß
+û:Û
+ú:Ú
+ü:Ü
+default:{$_FirstLetter}
+
+Table: Lower
+Type: Dictionary
+Á:á
+Â:â
+Ã:ã
+Ä:ä
+Æ:æ
+Ç:ç
+É:é
+Ê:ê
+Ë:ë
+Ì:ì
+Í:í
+Ï:ï
+Ð:ð
+Ñ:ñ
+Ò:ò
+Ô:ô
+Õ:õ
+Ö:ö
+×:÷
+Ø:ø
+Ù:ù
+À:à
+Å:å
+¨:¸
+È:è
+Î:î
+Ó:ó
+Ý:ý
+Þ:þ
+ß:ÿ
+Û:û
+Ú:ú
+Ü:ü
+default:{$_FirstLetter}

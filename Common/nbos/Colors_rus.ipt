@@ -1,0 +1,100 @@
+// голубой 
+// золотой
+// синий 
+// слоновая кость
+// хаки
+
+// ыми
+
+Table: Colors
+Set: _color_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+аквамаринов{$_color_param1} // ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+багров{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+бардов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+бежев{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+бел{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+бирюзов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+желт{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+жемчуж{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+зелен{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+кораллов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+красн{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+лавандов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+лазурн{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+оливков{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+оранжев{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+персиков{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+пурпурн{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+розов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+сливов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+телесн{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+фиолетов{$_color_param1} //  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+золот[when]{$_color_param1}='ый'[do]ой[else]{$_color_param1}[end]
+голуб[when]{$_color_param1}='ый'[do]ой[else]{$_color_param1}[end]
+[@Color_EndingMod_{$_color_param1}]
+[@Colors_Dark with {$_color_param1}]
+
+Table: Colors_Dark
+Set: _color_dark_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+коричнев{$_color_dark_param1}	//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+медн{$_color_dark_param1} 		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+сер{$_color_dark_param1} 		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+серебрянн{$_color_param1} 		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+черн{$_color_dark_param1}		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+
+
+Table: Colors_Metall
+Set: _color_metal_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+медн{$_color_metal_param1} 		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+серебрянн{$_color_metal_param1} 		//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+золот[when]{$_color_metal_param1}='ый'[do]ой[else]{$_color_metal_param1}[end]
+железн{$_color_metal_param1} 	//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+платин{$_color_metal_param1} 	//  ый/ая/ые/ого/о/ыми/ым/ую/ое/ых
+
+Table: Descriptive_Colors
+type: dictionary
+deck:[||||||увядающий|насыщенный] <b>[@Color_Ton][!Colors]</b>
+default:[||||||увядающий|насыщенный] [@Color_Ton][@Colors]
+
+Table: Color_Ton
+Set: _color_Ton_param1=[when]{$1}[do]{$1}[else]o-[end]
+Set: 1=
+5:\z
+темн{_color_Ton_param1}
+светл{_color_Ton_param1}
+бледн{_color_Ton_param1}
+насыщенн{_color_Ton_param1}
+ярк[{_color_Ton_param1} >> replace /ы/и/]
+
+Table: Color_EndingMod_ый
+синий
+Table: Color_EndingMod_ая
+синяя
+Table: Color_EndingMod_ые
+синие
+Table: Color_EndingMod_ого
+синего
+Table: Color_EndingMod_о
+сине
+Table: Color_EndingMod_ыми
+синими
+Table: Color_EndingMod_ым
+синим
+Table: Color_EndingMod_ую
+синюю
+Table: Color_EndingMod_ое
+синее
+Table: Color_EndingMod_ых
+синих
+
+Table: Color_Shine // сияют .... 
+изумрудом
+золотом
+агатом
+медью
+серебром
+
+

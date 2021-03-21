@@ -1,0 +1,135 @@
+Table: Weapon_Simple_Melee_Light
+Кинжал
+Катар
+Шипованные перчатки
+Мэйс
+
+Table: Weapon_Simple_Melee_OneHanded
+Дубина
+Тяжёлый Мэйс
+Морнингстар
+Короткое копье
+
+Table: Weapon_Simple_Melee_TwoHanded
+Длиное копье
+Посох
+Копье
+
+Table: Weapon_Simple_Ranged
+Арбалет ([|тяжёлый|лёгкий])
+Дротики
+Джевелины
+Праща
+
+Table: Weapon_Martial_Melee_Light
+Метательный топор
+Легкий молот
+Одноручный топор (Handaxe)
+Кукри
+Легкая пика
+Короткий меч
+
+Table: Weapon_Martial_Melee_OneHanded
+Боевой топор
+Флэил
+Длинный меч
+Тяжёлая пика
+Рапира
+Скимитар
+Трезубец
+Боевой молот
+
+Table: Weapon_Martial_Melee_TwoHanded
+Фальшион
+Глефа (Glaive)
+Большой топор
+Большая дубина
+Тяжёлый Флэил
+Большой меч
+Гизарма
+Алебарда (Halberd)
+Верховое Копье (Lance)
+Рунка (Ranseur)
+Боевая Коса
+
+Table: Weapon_Martial_Ranged
+Длинный лук
+Длинный композитный лук
+Короткий лук
+Короткий композитный лук
+
+Table: Weapon_Exotic_Melee_Light
+Кама
+Нунчаки
+Саи
+Сйянгам (Siangham)
+
+Table: Weapon_Exotic_Melee_OneHanded
+Бастард
+Дварфийский боевой топор
+Кнут
+
+Table: Weapon_Exotic_Melee_TwoHanded
+Двойной оркийский топор
+Шипованная цепь
+Ужасный флэйл
+Крюковой молот гномов
+Двойной меч
+Дварфийский ургош
+
+Table: Weapon_Exotic_Ranged
+Ручной арбалет
+Заводной тяжёлый арбалет
+Заводной лёгкий арбалет
+Ловчья сеть
+Сьюрикены
+
+Table: Armor_Shields
+Баклер
+Железный легкий щит 
+Деревянный Легкий щит 
+Железный Тяжелый щит 
+Деревянный Тяжелый щит
+Башенный щит
+
+Table: Armor_Light
+Стеганая (Padded)
+Кожанная (Leather)
+Подбитая кожанная (Studded leather)
+Цепная рубаха (Chain shirt)
+Table: Armor_Medium armor
+Шкура (Hide)
+Чешуйчатая (Scale mail)
+Кольчуга (Chainmail)
+Нагрудник (Breastplate)
+Table: Armor_Heavy armor
+[|Пластинчатый доспех|Юшман](Splint mail,вертикальные пластины)
+[|Пластинчатый доспех|Бригантина|Бахтерец](Banded mail,горизонтальные пластины)
+Half-plate
+Full plate
+
+Table: Armor_Extras
+Шипы (на [|доспех|щит])
+Заркытая латная перчатка
+
+
+Table: Weapon_OnMyBack
+[@Weapon_Simple_Melee_TwoHanded]
+[@Weapon_Martial_Melee_TwoHanded]
+[@Weapon_Exotic_Melee_TwoHanded]
+[|Короткий|Длинный][|| 	композитный] лук
+[||Ручной|Заводной][| тяжёлый| 	лёгкий|] арбалет
+Дротики
+Джевелины
+Ловчья сеть
+Бастард
+Короткое копье
+[|Железный|Деревянный][| Легкий| Тяжелый][|| шипованый] Щит 
+
+Table: Weapon_OnMyBelt
+[@Weapon_Simple_Melee_OneHanded]
+[@Weapon_Martial_Melee_OneHanded]
+[@Weapon_Exotic_Melee_OneHanded]
+[@Weapon_Simple_Melee_Light]
+[@Weapon_Martial_Melee_Light]
+[@Weapon_Exotic_Melee_Light]

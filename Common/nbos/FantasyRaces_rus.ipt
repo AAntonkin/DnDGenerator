@@ -1,0 +1,283 @@
+
+Table: FantasyRacesGeneral
+Азер
+Ангелы
+Архонты
+Багбир
+Гигант
+Гвардинал
+Гитзерай
+Гитьянки
+Гнолл
+Гном
+Гоблин
+Голиаф
+Гриммлок
+Дварф
+Демоны
+Джин
+Допельгангер
+Дриада
+Дроу
+Дьяволы
+Дэрро
+Иллитид
+Кентавр
+Кикимора
+Кикиморы
+Кобольд
+Ксил
+Кэтфолк
+Копт
+Куа-тоа
+Ламия
+Лилленд
+Локатах
+Люпин
+Медуза
+Мефит
+Минотавр
+Нимфа
+Неизбежные
+Огр
+Огр-маг
+Орк
+Пикси
+Полуорк
+Полурослик
+Полуэльф
+Потомки миров
+Ракшаса
+Русалка
+Саламандра
+Сатир
+Сахуагин
+Слаад
+Тиббит
+Титан
+Тритон
+Троглодит
+Фазм
+Феи
+Формианин
+Хобгоблин
+Хуман
+Эладрины
+Эльф
+Эттин
+Юан-ти
+Ящеролюд
+
+Table: FantasyRacesFULL
+Guardinal: аворал(Guardinal: Avoral)
+Guardinal: леонал(Guardinal: Leonal)
+Азер(Azer)
+Ангелы: дэв, астральный(Angel: Deva, astral)
+Ангелы: планетар(Angel: Planetar)
+Ангелы: солнечный(Angel: Solar)
+Архонты: архонт-вестник(Archon: Trumpet Archon)
+Архонты: псоглавый архонт(Archon: Hound Archon)
+Багбир(Bugbear)
+Гигант: инеистый(Giant, frost)
+Гигант: каменный(Giant, stone)
+Гигант: каменный, старейшина(Giant, stone, elder)
+Гигант: облачный(Giant, cloud)
+Гигант: огненный(Giant, fire)
+Гигант: холмовой(Giant, hill)
+Гигант: штормовой(Giant, storm)
+Голиаф (Goliaph)
+Джин: джанни(Genie: Jann)
+Джин: джинн(Genie: Djinni)
+Джин: джинн, благородный(Genie: Djinni, noble)
+Джин: ифрит(Genie: Efreet)
+Гитзерай(Githzerai)
+Гитьянки(Githyanki)
+Гнолл(Gnoll)
+Гном: cвирфнеблин(Gnome: Svirfneblin)
+Гном: лесной(Gnome, forest)
+Гном: скальный(Gnome, rock)
+Гоблин(Goblin)
+Гриммлок(Grimlock)
+Дварф: глубинный(Dwarf, deep)
+Дварф: горный(Dwarf, mountains)
+Дварф: дуэргар(Dwarf: Duergar)
+Дварф: холмовой(Dwarf, hill)
+Демоны: балор(Demon: Balor)
+Демоны: врок(Demon: Vrock)
+Демоны: мэрилит(Demon: Marilith)
+Демоны: суккуб(Demon: Succubus)
+Допельгангер(Doppelganger)
+Дьяволы: бородатый дьявол (барбазу)(Devil: Bearded Devil (Barbazu))
+Дьяволы: исчадие ада(Devil: Pit Fiend)
+Дьяволы: рогатый дьявол (корнугон)(Devil: Horned Devil (Cornugon))
+Дьяволы: цепной дьявол (китон)(Devil: Chain Devil (Kyton))
+Дьяволы: эриния(Devil: Erinyes)
+Дэрро(Derro)
+Кентавр(Centaur)
+Кикимора: ночная(Hag, night)
+Кикиморы: аннис(Hag: Annis)
+Кикиморы: зелёная кикимора(Hag: Green Hag)
+Кикиморы: морская кикимора(Hag: Sea Hag)
+Кэтфолк (catfolk)
+Кобольд(Kobold)
+Ксил(Xill)
+Куа-тоа(Kuo-Toa)
+Ламия(Lamia)
+Лилленд(Lillend)
+Локатах(Locathah)
+Люпин(Lupine)
+Медуза(Medusa)
+Мефит: водный(Mephit, water)
+Мефит: воздушный(Mephit, air)
+Мефит: земляной(Mephit, earth)
+Мефит: лавовый(Mephit, magma)
+Мефит: ледяной(Mephit, ice)
+Мефит: огненный(Mephit, fire)
+Мефит: паровой(Mephit, steam)
+Мефит: пылевой(Mephit, dust)
+Мефит: склизкий(Mephit, ooze)
+Мефит: солевой(Mephit, salt)
+Минотавр(Minotaur)
+Неизбежные: зелехут(Inevitable: Zelekhut)
+Неизбежные: колиярут(Inevitable: Kolyarut)
+Неизбежные: марут(Inevitable: Marut)
+Нимфа(nymph)
+Огр(Ogre)
+Огр: мерро(Ogre: Merrow)
+Огр-маг(Ogre Mage)
+Орк(Orc)
+Полуорк(Half-orc)
+Полурослик:  глубинный(Halfling, deep)
+Полурослик:  легконогий(Halfling, lightfoot)
+Полурослики: Tallfellow (Halfling: Tallfellow)
+Полуэльф(Half-elf)
+Потомки миров: азимар(Planetouched: Aasimar)
+Потомки миров: тифлинг(Planetouched: Tiefling)
+Ракшаса(Rakshasa)
+Русалка(Merfolk)
+Саламандра: аристократ(Salamander, noble)
+Саламандра: огневик(Salamander: Flamebrother)
+Саламандра: средняя(Salamander, average)
+Сатир
+Сахуагин(Sahuagin)
+Свежеватель разума(Mind Flayer)
+Слаад: зелёный(Slaad, green)
+Слаад: красный(Slaad, red)
+Слаад: серый(Slaad, gray)
+Слаад: синий(Slaad, blue)
+Слаад: смертоносный(Slaad, death)
+Тиббит(tibbite)
+Титан(Titan)
+Тритон(Triton)
+Троглодит(Troglodyte)
+Фазм(Phasm)
+Феи: дриада(dryad)
+Феи: грига(Sprite: Grig)
+Феи: никси(Sprite: Nixie)
+Феи: пикси(Sprite: Pixie)
+Формианин: мирмарш(Formian: Myrmarch)
+Хобгоблин(Hobgoblin)
+Хуман: хуман(human)
+Хуман: копт(kopt)
+Эладрины: бралани(Eladrin: Bralani)
+Эладрины: гаэль(Eladrin: Ghaele)
+Эльф: водный(Elf, aquatic)
+Эльф: высший(Elf, high)
+Эльф: дикий(Elf, wild)
+Эльф: лесной(Elf, wood)
+Эльф: серый(Elf, gray)
+Эльф: дроу(Elf: Drow)
+Эттин(Ettin)
+Юан-ти: исчадие(Yuan-Ti, abomination)
+Юан-ти: полукровка(Yuan-Ti, halfbood)
+Юан-ти: чистокровный(Yuan-Ti, pureblood)
+Ящеролюд(Lizardfolk)
+
+Table: FantasyRaces
+Set: _frEnding=[when]{$1}[do]{$1}[else][end]
+Set: 1=
+Гигант{$_frEnding}
+Гоблин{$_frEnding}
+Голиаф{$_frEnding}
+Кобольт{$_frEnding}
+Кэтфолк{$_frEnding}
+Лизардфолк{$_frEnding}
+Люпин{$_frEnding}
+Огр{$_frEnding}
+Орк{$_frEnding}
+Тиббит{$_frEnding}
+Троглодит{$_frEnding}
+Хуман{$_frEnding}
+Копт{$_frEnding}
+[Сатир{$_frEnding}{$_frEnding} >> replace /ский/ийский/]
+[Полуэльф{$_frEnding} >> replace /ский/ийский/]
+[Эльф{$_frEnding} >> replace /ский/ийский/]
+[Дворф{$_frEnding} >> replace /ский/ийский/]
+Кендер{$_frEnding}
+Гном{$_frEnding}
+Полуорк{$_frEnding}
+[#{$_frEnding} Нимфа]
+[#{$_frEnding} Дроу]
+[#{$_frEnding} Пикси]
+[#{$_frEnding} Дриада]
+
+Table: Нимфа
+Type: Dictionary
+default:Нимфa
+ов:Нимф
+ский:Нимфский
+
+Table: Дроу
+Type: Dictionary
+default:Дроу
+ов:Дроу
+ский:Дроуский
+
+Table: Пикси
+Type: Dictionary
+default:Пикси
+ов:Пиксей
+ский:Пиксийский
+
+Table: Дриада
+Type: Dictionary
+default:Дриада
+ов:Дриад
+ский:Дриадский
+
+Table: FantasyRacesAdj
+Set: FantRaceNameOne=[@FantasyRaces]
+Set: Ending=[when]{$1}[do]{$1}[else]ский[end]
+[#{FantRaceNameOne} FantasyRaces_{$Ending} with {FantRaceNameOne}]
+
+Table: FantasyRaces_ск
+Type: Dictionary
+default:{$1}ск
+Эльф:{$1}ийск
+Дворф:{$1}ийск
+Полуэльф:{$1}ийск
+Гном:{$1}ск
+Никси:Никсийск
+Нимфа:Нимфийск
+
+
+Table: FantasyRaces_ский
+[#{$1} FantasyRaces_ск with {$1}]ий
+
+Table: FantasyRaces_ская
+[#{$1} FantasyRaces_ск with {$1}]ая
+
+Table: FantasyRaces_ские
+[#{$1} FantasyRaces_ск with {$1}]ие
+
+Table: FantasyRaces_ских
+[#{$1} FantasyRaces_ск with {$1}]их
+
+Table: FantasyRaces_ов
+Type: Dictionary
+default:{$1}ов
+Никси:Никсей
+Нимфа:Нимф
+Дриада:Дриад
+Дроу:Дроу
+

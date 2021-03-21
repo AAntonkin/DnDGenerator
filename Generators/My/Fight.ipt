@@ -1,0 +1,79 @@
+//
+
+Use: nbos\Studies_rus.ipt
+Use: nbos\FantasyRaces_rus.ipt
+//Use: nbos\Monsters_rus.ipt
+Use: ..\My\Names\Monsters_rus.ipt
+Use: nbos\Languages_rus.ipt
+Use: nbos\Professions_rus.ipt
+Use: nbos\names\Human_rus.ipt
+Use: nbos\names\Elf.ipt
+Use: nbos\names\Dwarf_rus.ipt
+Use: nbos\names\towns_rus.ipt
+Use: nbos\names\Orc_rus.ipt
+Use: nbos\Animals_rus.ipt
+Use: nbos\RusRules\Endings.ipt
+Use: nbos\Books\BookTechnical.ipt
+
+
+Table: Figth
+<b>HIT</b> - [@FightSucess]
+<b>MISS</b> - [@FightMiss]
+
+Table: FightSucess
+“вой уверенный удар пришелс€ точно в "[@BodyPart]", [@AttackResult]
+–азмахнувшись ты наносишь [@StrikeType] удар в не прикрытую "[@BodyPart]", [@AttackResult]
+“ы делаешь [@StrikeType] удар пр€мо в "[@BodyPart]"
+¬змах, удар... на [@BodyPart] прийдетс€ надожить швы
+Ќе удачно уклонившись, враг сам выходит под удар, на "[@BodyPart]" зи€ет больша€ рана
+¬сего лишь секундное промешательство врага и на "[@BodyPart]" зи€ет больша€ рана
+‘инт врагу не помог, твой удар достиг цели (в [@BodyPart])
+¬раг уворачиваетс€... но перекрутив оружие в руке ты наносишь удар руко€тью (в [@BodyPart])
+
+Table: FightMiss
+ќружие прошло в миллиметре пр€мо перед [@BodyPart] врага
+Ћожный выпад сбил теб€ с толку и ты промахнулс€
+‘инт врага удалс€ и ты промахнулс€
+«ащита врага оказалась без прорех и ты не смог нанести удар
+"Ѕффф" твой [@StrikeType] удар отразили встречным [@StrikeType] ударом
+¬сего лишь секундное промешательство и удар впустую
+¬раг уворачиваетс€, пропуска€ твой [@StrikeType] удар с [@LeftRight] от сбе€
+
+Table: StrikeType
+скольз€щи(й/м)
+точны(й/м)
+подсекающи(й/м)
+раз€щи(й/м)
+
+
+Table: BodyPart
+[@LeftRight] рук(у/ой)
+[@LeftRight] ног(у/ой)
+бедро(м)
+[@BodyPartCritical]
+
+Table: BodyPartCritical
+грудь(ю)
+живот(ом)
+голов(у/ой)
+
+Table: LeftRight
+лев(ую/ой)
+прав(ую/ой)
+
+Table: BodyPartSmall
+глаз
+ше€
+нос
+изгиб локот€
+бровь
+ухо
+
+
+
+Table: AttackResult
+введ€ врага в коротковременное замешательство
+но, враг не орбаща€ внимани€ продолжает атаковать
+отмахнувшись, он продолжает атаковать
+но, перегруперовавшись враг бросаетс€ в атаку
+3:\z

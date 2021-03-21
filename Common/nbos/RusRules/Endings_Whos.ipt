@@ -1,0 +1,40 @@
+// Grammar rules
+
+Table:ToWhos
+Set: TW_InWord={$1}
+Set: TW_WordLenFull={length('{$1}')}
+Set: TW_LastLetterOne=[@GetLettersFromEnd with {TW_InWord}, 1]
+Set: TW_LastLetterTwo=[@GetLetterFromEnd with {TW_InWord}, 2]
+Set: TW_WordWithOutTwoLeters={substr('{$TW_InWord}', 1, {$TW_WordLenFull}-2)}
+
+Set: TW_OutLetter1=[#{TW_LastLetterOne} Endings_Whos]
+Set: TW_OutLetter1r=[when]{$TW_OutLetter1} = {$TW_InWord} [do]{$TW_LastLetterOne}ов[else]{$TW_OutLetter1}[end]  //
+
+Set: TW_WordEnding=[{$TW_LastLetterTwo}{$TW_LastLetterOne}]
+Set: TW_DoSecondChange=[#{TW_WordEnding} subTW_DoSecondChange]
+Set: TW_OutLetter2=[when]{TW_DoSecondChange}[do][#{TW_LastLetterTwo} Endings_2Whos][else]{$TW_InWord}[end]
+Set: TW_OutLetter2r=[when]{$TW_OutLetter2} = {$TW_InWord} [do]{$TW_LastLetterTwo}[else]{$TW_OutLetter2}[end]
+
+{TW_WordWithOutTwoLeters}{TW_OutLetter2r}{TW_OutLetter1r} //---- ({$TW_WordEnding}, {$TW_DoSecondChange}, {$TW_OutLetter2}, {$TW_OutLetter2r})
+
+Table: subTW_DoSecondChange
+Type:Dictionary
+ой:1
+ка:1
+default:
+
+Table:Endings_Whos
+Type:Dictionary
+а:
+й:х
+ь:ей
+я:й
+и:ей
+л:лей
+default:{$1}
+
+Table:Endings_2Whos
+Type:Dictionary
+о:ы
+к:ок
+default:{$1}

@@ -1,0 +1,109 @@
+
+Set: Material_MAX_Metal=15
+Set: Material_MAX_Wood=8
+Set: Material_MAX_Plant=5
+Set: Material_MAX_Animal=3
+
+Set: Material_MOD_Metal=100
+Set: Material_MOD_Wood=200
+Set: Material_MOD_Plant=300
+Set: Material_MOD_Animal=400
+
+Set: material_type=[@Get_Material_Type]
+Set: Material_MAX = {$Material_MAX_{$material_type}}
+Set: Material_MOD = {$Material_MOD_{$material_type}}
+Set: material_type_random={{1d{$Material_MAX}} + {$Material_MOD}}
+
+Table: Material
+[@Material_Any with {$1}]
+
+Table: Material_This
+Type: Dictionary
+Set: _Material_This_param1={$1}
+Set: 1=
+Metal:[@Material_Metal with {$_Material_This_param1}]
+Wood:[@Material_Wood with {$_Material_This_param1}]
+Plant:[@Material_Plant with {$_Material_This_param1}]
+Animal:[@Material_Animal with {$_Material_This_param1}]
+default: "ERROR: in 'Material_This'"
+
+Table: Get_Material_Type
+Metal
+Wood
+Plant
+Animal
+
+Table: Material_Any
+Set: _Material_Any_param1={$1}
+Set: 1=
+[@Material_[@Get_Material_Type] with {$_Material_Any_param1}]
+
+Table: Material_What
+Type: Lookup
+Set: _Material_What_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Oy=[when]{$1}=='ый'[do]{$1}[else]oй[end]
+Set: 1=
+
+Table: Material_Metal
+Set: _Material_Metal_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Metal_Oy=[when]{$1}=='ый'[do]{$1}[else]oй[end]
+Set: 1=
+[@Material_Metal_V with {$_Material_Metal_param1}]
+[@Material_Metal_NonV with {$_Material_Metal_param1}]
+
+Table: Material_Metal_V
+Set: _Material_Metal_V_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Metal_V_Oy=[when]{$1}=='ый'[do]{$1}[else]oй[end]
+Set: 1=
+медн{$_Material_Metal_V_param1} //ый,ая,ую,ые,ых
+золот{$_Material_Metal_V_Oy} //ый,ая,ую,ые,ых
+платинов{$_Material_Metal_V_param1} //ый,ая,ую,ые,ых
+серебрянн{$_Material_Metal_V_param1} //ый,ая,ую,ые,ых
+адаматнов{$_Material_Metal_V_param1} //ый,ая,ую,ые,ых
+мифрильн{$_Material_Metal_V_param1} //ый,ая,ую,ые,ых
+
+Table: Material_Metal_NonV
+Set: _Material_Metal_V_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Metal_V_Oy=[when]{$1}=='ый'[do]{$1}[else]oй[end]
+Set: 1=
+латун{$_Material_Metal_param1} //ый,ая,ую,ые,ых 
+бронзов{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+электрумн{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+железн{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+свинцов{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+никелев{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+оловянн{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+стальн{$_Material_Metal_Oy} //ый,ая,ую,ые,ых
+цинков{$_Material_Metal_param1} //ый,ая,ую,ые,ых
+
+Table: Material_Wood
+Set: _Material_Wood_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+201:черно-деревян{$_Material_Wood_param1} (darkwood)
+202:соснов{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+203:дубов{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+204:ольхов{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+205:березов{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+206:тополев{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+207:тисов{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+208:буков{$_Material_Wood_param1} //ый,ая,ую,ые,ых
+
+Table: Material_Plant
+Set: _Material_Plant_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Plant_Oy=[when]{$1}=='ый'[do]ой[else]{$1}[end]
+Set: 1=
+хлопоков{$_Material_Plant_param1} //ый,ая,ую,ые,ых
+льнян{$_Material_Plant_Oy} //ый,ая,ую,ые,ых
+коноплян{$_Material_Plant_param1} //ый,ая,ую,ые,ых
+джутов{$_Material_Plant_param1} //ый,ая,ую,ые,ых
+тканев{$_Material_Plant_param1} //ый,ая,ую,ые,ых
+
+Table: Material_Animal
+Set: _Material_Animal_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: _Material_Animal_Oy=[when]{$1}=='ый'[do]ой[else]{$1}[end]
+Set: 1=
+кожанн{$_Material_Animal_param1}	//ый,ая,ую,ые,ых
+шерстян{$_Material_Animal_Oy}		//ый,ая,ую,ые,ых
+шёлков{$_Material_Animal_param1}	//ый,ая,ую,ые,ых
+мехов{$_Material_Animal_param1}		//ый,ая,ую,ые,ых
+

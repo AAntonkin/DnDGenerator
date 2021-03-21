@@ -1,0 +1,160 @@
+
+// Grammar rules
+
+Use: nbos\RusRules\Endings_Whos.ipt //Чей
+Use: nbos\RusRules\Endings_Whom.ipt //Кому
+
+Set: ой=ой
+Set: а=а
+Set: ого=ого
+Set: ый=ый
+Set: ая=ая
+Set: ые=ые
+Set: о=о
+Set: ыми=ыми
+Set: ым=ым
+Set: ую=ую
+
+Set: ImPad=Именительный
+Set: RoPad=Родительный
+Set: DaPad=Дательный
+Set: ViPad=Винительный
+Set: TvPad=Творительный
+Set: PrPad=Предложный
+
+
+Table: Endings
+Type: Lookup
+1:ый
+2:ая
+3:ые
+4:ие
+5:ий
+6:яя
+
+Table: GetLettersFromEnd
+Set: _glsfe_param1={$1}
+Set: _glsfe_param2={$2}
+Set: 1=
+Set: 2=
+Set: GLsFE_InWord={$_glsfe_param1}
+Set: GLsFE_WordLenFull={length('{$_glsfe_param1}')}
+Set: GLsFE_NumOfLetters={$_glsfe_param2}-1
+Set: GLsFE_LastLetters=[when]{$GLsFE_WordLenFull}[do]{substr('{GLsFE_InWord}', {$GLsFE_WordLenFull}-{$GLsFE_NumOfLetters}, {$GLsFE_WordLenFull})}[end]
+{$GLsFE_LastLetters}
+
+Table: GetLetterFromEnd
+Set: _glfe_param1={$1}
+Set: _glfe_param2={$2}
+Set: 1=
+Set: 2=
+Set: GLFE_InWord={$_glfe_param1}
+Set: GLFE_WordLenFull={length('{$_glfe_param1}')}
+Set: GLFE_NumOfLetter={$_glfe_param2}-1
+Set: GLFE_LastLetters=[when]{$GLFE_WordLenFull}[do]{substr('{$GLFE_InWord}', {$GLFE_WordLenFull}-{$GLFE_NumOfLetter}, {$GLFE_WordLenFull})}[end]
+Set: GLFE_LastLetter=[when]{$GLFE_WordLenFull}[do]{substr('{$GLFE_LastLetters}', 1, 1)}[end]
+{$GLFE_LastLetter}
+
+Table: GetWordGender
+Set: _gwg_param1={$1}
+Set: 1=
+Set: GWG_InWord={$_gwg_param1}
+Set: GWG_WordEnding=[@GetLettersFromEnd with {$_gwg_param1}, 1]
+[#{GWG_WordEnding} EndingToGender]
+
+Table: EndingToGender
+Type:Dictionary
+а:FEMALE
+я:FEMALE
+о:MIDDLE
+е:MIDDLE
+и:MIDDLE
+default:MALE
+
+
+Table: ThreeLastLettersGlassn
+Set: _tllg_param1={$1}
+Set: 1=
+Set: LenFull={length('{$_tllg_param1}')}
+// Set: LastLetter={LastLetter=substr('{$1}', {$LenFull}-1)}
+Set: LastTrheeLetters=[when]{$LenFull}[do]{substr('{$_tllg_param1}', {$LenFull}-2, {$LenFull})}[end]
+Set: Len={length('{$LastTrheeLetters}')}
+
+Set: FLastLetter={FLastLetter=substr('{$LastTrheeLetters}', {$Len}, {$Len})}
+Set: SLastLetter={SLastLetter=substr('{$LastTrheeLetters}', {$Len}-1, {$Len}-2)}
+Set: TLastLetter={TLastLetter=substr('{$LastTrheeLetters}', {$Len}-2, {$Len}-2)}
+
+Set: NumOfSogl={[#{$FLastLetter} Soglass]+[#{$SLastLetter} Soglass]+[#{$TLastLetter} Soglass]}
+Set: AllAreSogl={if({$NumOfSogl} = 3, TRUE, FALSE)}
+{$AllAreSogl}
+
+
+
+Table: MailEndingTrans
+Set: _met_param1={$1}
+Set: 1=
+Type:Dictionary
+ый:ий
+ые:ие
+default:{$_met_param1}
+
+
+Table: IsFemale
+Set: _isFm_param1={$1}
+Set: 1=
+Set: LenFull={length('{$_isFm_param1}')}
+Set: FLastLetter={FLastLetter=substr('{$_isFm_param1}', {$LenFull}, {$LenFull})}
+
+Set: LetterA=[when]{$FLastLetter}=а[do]а[end]
+Set: LetterY=[when]{$FLastLetter}=я[do]я[end]
+[when]{$LetterA}{$LetterY}[do]1[else]{FLastLetter}[end]
+
+
+Table: GetPadeg
+Type: Dictionary
+Им:Именительный
+Ро:Родительный
+Да:Дательный
+Ви:Винительный
+Тв:Творительный
+Пр:Предложный
+
+
+Table: Glass
+Type: Dictionary
+а:1
+е:1
+ё:1
+и:1
+о:1
+у:1
+э:1
+ы:1
+ю:1
+я:1
+default:
+
+Table: Soglass
+Type: Dictionary
+б:1
+в:1
+г:1
+д:1
+ж:1
+з:1
+й:1
+к:1
+л:1
+м:1
+н:1
+п:1
+р:1
+с:1
+т:1
+ф:1
+х:1
+ц:1
+ч:1
+ш:1
+щ:1
+default:

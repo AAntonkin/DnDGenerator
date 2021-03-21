@@ -1,0 +1,945 @@
+Header: <h3>Random Bar Encounters</h3><i>The primary NPC is shown in bold text. All references to "the NPC" are to this person.</i>
+
+Table:BarEncounter
+9:[@Encounter]
+[@Entertainers]
+[@Event]
+
+EndTable:
+
+Table:Entertainers
+5:A band begins performing popular songs in the bar. [@Show]
+5:A band begins performing folk songs in the bar. [@Show]
+5:A band begins performing religious songs in the bar. [@Show]
+5:A band begins performing raunchy party songs in the bar. [@Show]
+5:A singer begins a performance in the bar. [@Show]
+5:A dancer begins a performance in the bar. [@Show]
+3:A comedian begins performing in the bar. [@Show]
+3:A comedy troupe begins performing in the bar. [@Show]
+2:An improv group begins performing in the bar. [@Show]
+2:Dancers begin a performance in the bar. [@Show]
+2:Female strippers begin a performance in the bar. [@Show]
+2:A female stripper begins a performance in the bar. [@Show]
+2:A band begins performing avante-garde songs in the bar. [@Show]
+2:A band begins performing foreign songs in the bar. [@Show]
+A poet begins reciting in the bar. [@Show]
+An actor begins a soliloquy in the bar. [@Show]
+A magician begins performing in the bar. [@Show]
+A ventriloquist begins performing in the bar. [@Show]
+A mime begins performing in the bar. [@Show]
+A band begins performing classical music in the bar. [@Show]
+Acrobats begin a performance in the bar. [@Show]
+Jugglers begin a performance in the bar. [@Show]
+Male strippers begin a performance in the bar. [@Show]
+Female and male strippers begin a performance in the bar. [@Show]
+
+Table:Show
+It really really sucks. The crowd begins to throw food.
+It really sucks. The [@NPC] [@Pose] [@Location] the place begins to throw food.
+2:It sucks.
+3:It's just bad.
+2:It's not very good.
+2:It's not so bad you can't ignore it. Not so good you want to pay attention either.
+3:It's just okay.
+3:It's not bad.
+2:It's pretty good.
+2:It's quite good, actually.
+It's excellent. Great performance.
+
+Table:Event
+[@Eventtype] breaks out [@Location] the establishment. [@Cause]
+
+Table:Eventtype
+A fire
+A big fight
+A case of food poisoning
+An epidemic of food poisoning
+A nauseating stench
+A police raid
+A cloud of smoke
+A deafening noise
+A blinding flash
+A shouting match
+An angry mob
+A drunken bacchanal
+A drunken brawl
+An eruption of laughter
+A group sing-along
+A dance
+A party
+A group cheer
+A group toast
+A good-natured brawl
+
+Table:Cause
+5:The PC didn't see the cause.
+The PC sees it's caused by \a [@NPC] [@Number]. The rest of the crowd in the bar [@Knowledge] this.
+
+Table:Encounter
+The <b>[@NPC] [@Number] [@Pose] [@Location] the establishment [@Action] [@Complications]
+
+Table:NPC
+[@NPCSize] [@NPCLook] [@NPCMood] [@Gender]</b> <i>([@Armed])</i>
+
+Table:Pose
+50:sitting
+20:standing
+dancing
+singing
+singing and dancing
+
+Table:Location
+30:in
+20:nearby in
+at another table of
+in the corner of 
+in the far corner of
+in the near corner of
+in the back room of
+upstairs in
+in the back of
+in the front of
+near the back of
+near the front of
+off to the side in
+downstairs in
+next to the PC in
+as far as possible from the PC in
+in the door of
+at the bar of
+behind the bar of
+at the stairs of
+near the barkeep of
+near the owner of
+near the waitress of
+in the middle of
+near the center of
+
+Table:Number
+7:
+2:, accompanied by \a [@NPC],
+, with {1d4} accomplices,
+
+Table:NPCSize
+30:
+tiny
+3:short
+5:slender
+5:skinny
+5:plump
+5:fat
+3:tall
+3:broad
+beefy
+2:huge
+giant
+
+Table:NPCLook
+50:
+frail
+ugly
+tough-looking
+dangerous-looking
+evil-looking
+good-looking
+attractive
+sexy
+wiry
+strong
+weak
+bland
+bookish
+owlish
+pixie-ish
+cute
+repulsive
+greasy
+oily
+filthy
+smelly
+unwashed
+meticulous
+honest-faced
+scruffy
+clean
+striking
+handsome
+memorable
+lethal-looking
+hearty
+muscular
+healthy
+tanned
+pale
+dark
+fair
+foreign
+agile
+deft
+swift
+stealthy
+
+Table:NPCMood
+50:
+3:drunken
+angry
+threatening
+friendly
+mysterious
+pious
+studious
+mild
+thoughtful
+violent
+conciliatory
+cheerful
+thrilled
+happy
+affable
+devious
+shifty
+paranoid
+insane
+suspicious
+trusting
+unruly
+scowling
+smiling
+grinning
+leering
+drooling
+belching
+laughing
+depressed
+sad
+ecstatic
+manic
+obsessed
+fanatic
+wily
+cunning
+smirking
+frowning
+bright
+wary
+sharp-witted
+dull-witted
+sharp-tongued
+funny
+childish
+
+Table:Gender
+Roll:1d100
+01-70:man
+71-99:woman
+100:child
+
+Table:Action
+5:seems to be watching the PC [@Watchtype]. If approached, he/she [@Action]
+2:throws \a [@throw] and hits a [@NPC] [@Number].
+2:throws \a [@throw] and hits the PC.
+2:recognizes the PC because he/she [@Reason].
+boasts of having [@Goods]. [@Statknowledge] [@Goodsstatus].
+boasts of having access to [@Goods]. [@Statknowledge] [@Goodsstatus].
+passes out.
+wakes up.
+dies.
+dies from [@Death].
+offers the PC the services of a prostitute.
+asks loudly for money.
+asks [@Target] [@Targetplus] to give him money.
+seeks donations for [@Target] [@Targetplus].
+seeks donations for [@Charity].
+begins choking.
+begins vomiting.
+begins sneezing.
+begins coughing.
+begins laughing.
+begins crying.
+buys a round for everyone in the bar.
+starts a fight with \a [@NPC] [@Number] in the bar.
+insists the house should buy him/her a round.
+insists the PC should buy him/her a round.
+insists the house should buy the house a round.
+insists the PC should buy the house a round.
+becomes drunk and begins loudly insulting [@Target] [@Targetplus].
+becomes drunk and begins loudly praising [@Target] [@Targetplus].
+curses the PC.
+curses [@Target] [@Targetplus].
+curses [@Group].
+blesses the PC.
+blesses [@Target] [@Targetplus].
+blesses [@Group].
+cries out for someone to please help the PC.
+cries out for someone to please help [@Target] [@Targetplus].
+cries out for someone to please help [@Group].
+cries out for someone to please stop the PC.
+cries out for someone to please stop [@Target] [@Targetplus].
+cries out for someone to please stop [@Group].
+cries out for someone to please slay the PC.
+cries out for someone to please slay [@Target] [@Targetplus].
+cries out for someone to please slay [@Group].
+cries out for someone to please save the PC.
+cries out for someone to please save [@Target] [@Targetplus].
+cries out for someone to please save [@Group].
+cries out for someone to please punish the PC.
+cries out for someone to please punish [@Target] [@Targetplus].
+cries out for someone to please punish [@Group].
+cries out for someone to please drive out the PC.
+cries out for someone to please drive out [@Target] [@Targetplus].
+cries out for someone to please drive out [@Group].
+cries out for someone to please beat the hell out of the PC.
+cries out for someone to please beat the hell out of [@Target] [@Targetplus].
+cries out for someone to please beat the hell out of [@Group].
+insults the PC.
+complements the PC.
+belittles the PC.
+mocks the PC.
+laughs at the PC.
+begins loudly singing. [@Show]
+begins loudly reciting poetry. [@Show]
+begins loudly telling jokes. [@Show]
+begins telling stories of adventures. [@Show]
+begins telling tall tales. [@Show]
+begins telling obvious lies about his/her accomplishments.
+begins telling lies about the PC.
+begins telling obvious lies about [@Target] [@Targetplus].
+begins telling secrets about the PC.
+begins telling secrets about [@Target] [@Targetplus].
+begins gossiping about the PC.
+begins gossiping about [@Target] [@Targetplus].
+claims that he/she will one day kill [@Target] [@Targetplus].
+claims that he/she will one day be a hero to [@Target] [@Targetplus].
+claims that he/she will one day liberate [@Target] [@Targetplus] being held captive.
+claims that he/she will one day enslave [@Target] [@Targetplus].
+claims that he/she will one day help [@Target] [@Targetplus].
+claims that he/she once killed [@Target] [@Targetplus].
+claims that he/she once was a hero to [@Target] [@Targetplus].
+claims that he/she once was a servant to [@Target] [@Targetplus].
+claims that he/she once was a friend of [@Target] [@Targetplus].
+claims that he/she once was a foe of [@Target] [@Targetplus].
+claims that he/she is a hero to [@Target] [@Targetplus].
+claims that he/she is a servant to [@Target] [@Targetplus].
+claims that he/she is a friend of [@Target] [@Targetplus].
+claims that he/she is a foe of [@Target] [@Targetplus].
+claims that he/she once liberated [@Target] [@Targetplus] being held captive.
+claims that he/she once enslaved [@Target] [@Targetplus].
+claims that he/she once helped [@Target] [@Targetplus].
+begins singing. [@Show]
+begins humming.
+begins chanting.
+begins muttering.
+begins moaning.
+begins wailing.
+begins screaming.
+begins shouting.
+begins cheering.
+begins applauding.
+begins speaking in tongues.
+begins loudly holding forth about [@Target] [@Targetplus].
+makes a hex sign.
+makes a hex sign at the PC.
+makes a hex sign at the PC because he/she [@Reason].
+makes a rude gesture.
+makes a rude gesture at the PC.
+draws a weapon.
+challenges [@Target] [@Targetplus] to a fight.
+challenges [@Target] [@Targetplus] to a drinking contest.
+invites [@Target] [@Targetplus] to a game of [@Game].
+invites the PC to a game of [@Game].
+invites [@Target] [@Targetplus] to his/her room.
+invites the PC to his/her room.
+invites [@Target] [@Targetplus] to his/her room for a party.
+invites the PC to his/her room for a party.
+invites the PC to his/her room because he/she [@Reason].
+invites [@Target] [@Targetplus] to his/her home for a party.
+invites [@Target] [@Targetplus] to his/her home.
+invites the PC to his/her home.
+invites the PC to his/her home for a party.
+invites the PC to his/her room because he/she [@Reason].
+fidgets with something held out of sight.
+fidgets with something held out of sight. If revealed, it turns out to be [@Goods].
+fidgets with something held out of sight. If revealed, it turns out to be [@Goods]. [@Statknowledge] [@Goodsstatus].
+shows [@Goods] in plain sight.
+shows [@Goods] in plain sight. [@Statknowledge] [@Goodsstatus].
+flashes a lot of money in plain sight.
+begins loudly insulting [@Target] [@Targetplus].
+begins loudly praising [@Target] [@Targetplus].
+calls for a toast to [@Target] [@Targetplus].
+[@Reason]
+approaches the PC because he/she [@Reason]
+buys the PC a drink because he/she [@Reason]
+asks the PC to meet in the latrine because he/she [@Reason]
+asks the PC to meet in the back room because he/she [@Reason]
+asks the PC to meet in the back alley because he/she [@Reason]
+asks the PC to meet upstairs because he/she [@Reason]
+asks the PC to meet downstairs because he/she [@Reason]
+asks the PC to meet after the bar closes because he/she [@Reason]
+asks the PC to meet the next day because he/she [@Reason]
+asks the PC to meet in a well-lit public place because he/she [@Reason]
+leans over and whispers to the PC because he/she [@Reason]
+sends a note to the PC because he/she [@Reason]
+hurriedly leaves the bar.
+hurriedly leaves the bar because he/she [@Reason]
+holds up the bar.
+spits and hits \a [@NPC] [@Number].
+intentionally spits on the PC.
+spits and hits the PC by accident.
+spits on the PC because he/she [@Reason].
+staggers into \a [@NPC] [@Number].
+staggers into the PC by accident.
+knocks over the drink of \a [@NPC] [@Number].
+knocks over the drink of the PC by accident.
+knocks over the PC's drink because he/she [@Reason].
+
+Table:Charity
+orphans
+wayward women
+the sick
+the poor
+the disenfranchised
+the homeless
+a political movement
+a religious movement
+lepers
+religious fundamentalism
+religious reform
+political conservatism
+political reform
+political prisoners
+prohibition
+crime reduction
+battered women
+battered men
+injured soldiers
+children
+sick children
+domestic violence
+public works
+architectural restoration
+civic defense
+street urchins
+street crime
+public health
+unsanitary conditions
+curing sexually transmitted diseases
+war crimes
+political corruption
+unfair prison conditions
+mollycoddling criminals
+cruel and unusual punishment
+bland and ineffective punishment of criminals
+capital punishment
+
+Table:Reason
+10:has a job for the PC. [@Job]
+5:believes the PC has [@Contact] contacts.
+5:wants to offer the PC [@Contact] contacts.
+5:wants to sell the PC [@Goods]. [@Statknowledge] [@Goodsstatus].
+5:wants to buy [@Goods] from the PC.
+wants the PC to join a movement in service of [@Charity].
+wants the PC to join a movement to stop [@Charity].
+believes the PC wants to kill him/her.
+has something the PC wants.
+has something that belongs to the PC.
+once stole from someone important to the PC.
+once wronged someone important to the PC.
+once harmed someone important to the PC.
+once helped someone important to the PC.
+once met someone important to the PC.
+once saved someone important to the PC.
+once killed someone important to the PC.
+is searching for an enemy.
+is chasing an enemy.
+is avoiding an enemy.
+is running from an enemy.
+is robbing the bar.
+is wanted by the police.
+is searching for a criminal.
+just robbed someplace else.
+is looking for someplace to dump [@Goods] he/she doesn't want found on his/her person.
+is dying for a drink.
+is positively starving.
+is looking for a fight.
+is looking for a fight, and begins insulting [@Target] [@Targetplus].
+is looking for a fight, and begins insulting the PC.
+is looking to get laid.
+is lonely.
+is looking for a friend.
+is looking for a confidante.
+believes the PC committed a crime and wants [@Payback].
+believes the PC killed someone he/she knows, and he/she wants [@Payback].
+believes the PC robbed someone he/she knows, and he/she wants [@Payback].
+believes the PC wronged someone he/she knows, and he/she wants [@Payback].
+believes the PC insulted someone he/she knows, and he/she wants [@Payback].
+believes the PC saved someone he/she knows, and he/she wants [@Payback].
+believes the PC worked for someone he/she knows, and he/she wants [@Payback].
+believes the PC did something illegal for someone he/she knows, and he/she wants [@Payback].
+wants money.
+wants food.
+wants a drink.
+is dying from [@Death].
+wants to get to know the PC for personal reasons having nothing to do with the PC in particular.
+wants to help the PC for personal reasons having nothing to do with the PC in particular.
+wants to sleep with the PC for personal reasons having nothing to do with the PC in particular.
+wants to kill the PC for personal reasons having nothing to do with the PC in particular.
+
+Table:Contact
+government
+police
+judicial
+law-enforcement
+black market
+smuggling
+goods-fencing
+stolen-goods
+underworld
+
+Table:Complications
+114:
+<br><i>Possible complication</i>: The NPC has \a [@Iff], \a [@NPC] [@Pose] [@Location] the bar. The NPC [@FFKnowledge]. The PC [@FFKnowledge]. [@Complications]
+<br><i>Possible complication</i>: The PC has \a [@Iff], \a [@NPC] [@Pose] [@Location] the bar. The PC [@FFKnowledge]. The NPC [@FFKnowledge]. [@Complications]
+<br><i>Possible complication</i>: A secret [@Crime] ring is operating in the establishment. The owner [@Knowledge]. [@Complications]
+<br><i>Possible complication</i>: There is \a [@Crime] [|newbie|contact|specialist|ringleader] [|visiting|passing through|checking things out|based|operating|currently|considering a base|having a meeting] in the establishment. The owner [@Knowledge]. [@Complications]
+<br><i>Possible complication</i>: The NPC is [|liked|protected|being sought|wanted|loathed|considered a hero] by [|[@Target]|important people in [@Group]|[@Crime] operatives]. The PC [@Knowledge]. [@Complications]
+<br><i>Possible complication</i>: [@Ruse] [@Complications]
+
+Table:Ruse
+The NPC is engaged in a ruse to disguise the fact that he/she is trying to pick the PC's pocket.
+The NPC is engaged in a ruse to disguise the fact that he/she is an undercover officer trying to find out about the PC.
+The NPC is engaged in a ruse to disguise the fact that he/she is an undercover officer monitoring \a [@NPC] [@Pose] [@Location] the establishment.
+The NPC is engaged in a ruse to disguise the fact that he/she is a spy in the bar to gather information for [@Group].
+The NPC is engaged in a ruse to disguise the fact that he/she is a spy in the bar to gather information about [@Group].
+The NPC is engaged in a ruse to disguise the fact that he/she is a spy in the bar to gather information about the PC.
+The NPC is engaged in a ruse to disguise the fact that he/she is a undercover officer in the bar to gather information about [@Group].
+The NPC is engaged in a ruse to distract people while accomplices prepare to rob the bar.
+The NPC is engaged in a ruse to lay a trap for the PC.
+The NPC is engaged in a ruse to get the PC out of the bar, because the NPC [@Reason].
+
+Table:Crime
+prostitution
+theft
+stolen goods
+illegal pharmaceuticals
+assassination
+extortion
+blackmail
+spy
+smuggling
+black market
+
+Table:Iff
+friend
+foe
+
+Table:Knowledge
+knows
+does not know
+
+Table:FFKnowledge
+knows the individual is in the bar [@Sight]
+does not know the individual is in the bar
+
+Table:Sight
+and sees him/her
+but does not see him/her
+
+Table:Payback
+3:to get revenge
+a piece of the action
+to offer thanks
+to make sure the action is rewarded appropriately
+to ask why
+to offer forgiveness
+to involve the police
+to engage in blackmail
+to set a trap for later
+to ask questions about it
+to investigate
+
+Table:Goods
+[@Quality] jewelry
+[@Quality] magic items/high tech gear
+[@Quality] art
+[@Quality] gems
+[@Quality] books
+[@Quality] pharmaceuticals
+[@Quality] maps
+[@Quality] collectibles
+[@Quality] information concerning [@Info]
+
+Table:Info
+hidden riches
+[@Goods]
+governmental secrets
+criminal secrets
+military secrets
+business secrets
+technological/magical secrets
+secrets about [@Group]
+secrets about [@NPC] in the bar
+criminal doings
+get-rich quick opportunities
+multi-level marketing opportunities
+wanted criminals
+enemies of the PC
+friends of the PC
+stealable items
+people who need help
+people who have jobs
+
+Table:Quality
+cheap
+counterfeit
+foreign
+illegal
+average
+expensive
+valuable
+very rare
+highly valuable
+priceless
+ancient
+famous
+sentimentally significant
+
+Table:Statknowledge
+5:The NPC is aware
+Unbeknownst to the NPC,
+
+Table:Goodsstatus
+5:the goods are worth what they are claimed to be worth.
+the goods are worth far less than claimed
+the goods are worth far more than claimed
+the goods are stolen goods
+the goods have been reported lost
+the goods are fake
+the goods are cheaply made and likely to break
+the goods are well-known and easily identifiable
+
+Table:Target
+10:the PC
+10:\a [@NPC] [@Number] in the bar
+5:an enemy of the PC
+5:a friend of the PC
+5:a relative of the PC
+5:a random member of the party
+3:prostitutes
+a member of a certain race
+a member of a certain social class
+a member of a certain geographic area
+a member of a certain occupation
+a member of a certain religion
+a member of a certain family
+all members of a certain race
+all members of a certain social class
+all members of a certain geographic area
+all members of a certain occupation
+all members of a certain religion
+all members of a certain family
+a member of the PC's race
+a member of the PC's social class
+a member of the PC's geographic area
+a member of the PC's occupation
+a member of the PC's religion
+a member of the PC's gender
+a member of the PC's family
+all members of the PC's race
+all members of the PC's social class
+all members of the PC's geographic area
+all members of the PC's occupation
+all members of the PC's religion
+all members of the PC's gender
+all members of the PC's family
+a foe of a certain race
+a foe of a certain social class
+a foe of a certain geographic area
+a foe of a certain occupation
+a foe of a certain religion
+a foe of a certain family
+all foes of a certain race
+all foes of a certain social class
+all foes of a certain geographic area
+all foes of a certain occupation
+all foes of a certain religion
+all foes of a certain family
+a foe of the PC's race
+a foe of the PC's social class
+a foe of the PC's geographic area
+a foe of the PC's occupation
+a foe of the PC's religion
+a foe of the PC's gender
+a foe of the PC's family
+all foes of the PC's race
+all foes of the PC's social class
+all foes of the PC's geographic area
+all foes of the PC's occupation
+all foes of the PC's religion
+all foes of the PC's gender
+all foes of the PC's family
+one of the local gangs
+all the local gangs
+one of the local gang members
+one of the local gang leaders
+all of the local gang leaders
+one of the local law-enforcement
+all of the local law-enforcement
+one of the local clergy
+all of the local clergy
+one of the local civic leaders
+all of the local civic leaders
+a former lover
+a current lover
+a former spouse
+a current spouse
+a soldier
+the military
+a foreign soldier
+a foreign army
+a local business
+a foreign business
+liberals
+conservatives
+male prostitutes
+all men
+all women
+all humanity
+the environment
+criminals
+alcoholics
+fat people
+stupid people
+ugly people
+weak people
+dull people
+smokers
+non-smokers
+drinkers
+non-drinkers
+beautiful people
+ugly people
+smart people
+dumb people
+light-skinned people
+dark-skinned people
+blondes
+brunettes
+redheads
+brown-eyed people
+green-eyed people
+hazel-eyed people
+blue-eyed people
+happy people
+sad people
+someone the PC cares about
+someone the PC hates
+a group the PC cares about
+a group the PC hates
+all foreigners
+spies
+all locals
+the local government
+the local businesses
+a person the PC has never heard of
+a group the PC has never heard of
+the owner of the bar
+the barkeep
+a waitress
+the staff
+everyone in the bar
+"them" (without saying who they are)
+
+Table:Targetplus
+99:
+3:and the horse they rode in on
+and all who support same
+and all who serve same
+and all who defend same
+and all who believe in same
+and all who know same
+and all who have a connection to same
+and all who do not oppose same
+and [@Target]
+
+Table:Death
+3:poison
+3:a knife in the back
+3:bleeding wounds
+3:unknown causes
+3:natural causes
+3:infected wounds
+2:bludgeoning
+illness
+exposure
+
+Table:Watchtype
+suspiciously
+intently
+drunkenly
+curiously
+invitingly
+covertly
+furiously
+insanely
+wildly
+blatantly
+hungrily
+nervously
+dully
+carefully
+alertly
+sleepily
+dispassionately
+meaningfully
+pointlessly
+angrily
+disdainfully
+in a come-hither fashion
+
+Table:Job
+3: The NPC is looking for a manual laborer to work on some mundane task.
+2: The NPC wants the PC to [@Goodsjob] [@Goods]. [@Statknowledge] [@Goodsstatus].
+The NPC wants to hire the PC as \a [@Hire]. (The precise nature of the job will depend on the PC's skills).
+The NPC wants the PC to [@NPCJob] someone.
+The NPC wants the PC to [@NPCJob] \a [@NPC] [@Pose] [@Location] in the establishment.
+The NPC wants the PC to [@GroupJob] [@Group].
+The NPC was wronged by someone and wants the PC's help [@Payback].
+The NPC was helped by someone and wants the PC's help [@Payback].
+
+Table:Group
+the PC's party (obviously unaware who the PC is)
+a local gang
+a local union or guild
+a group of criminals
+a family
+a couple
+tenants
+a spy ring
+a group of religious fanatics
+a group of peaceful monks
+the current government
+the clergy
+a business
+
+Table:GroupJob
+bust up
+destroy
+befriend
+introduce the NPC to
+hide the NPC from
+protect the NPC from
+enrich
+protect
+wipe out
+drive out
+disappear
+
+Table:NPCJob
+intimidate
+influence
+rob
+kill
+rough up
+scare
+drive out
+befriend
+hide
+protect
+introduce the NPC to
+hide the NPC from
+protect the NPC from
+insult
+discourage
+encourage
+help
+disappear
+train
+
+Table:Goodsjob
+deliver
+acquire
+find out about
+protect
+steal
+destroy
+hide
+hold for safe-keeping
+sell
+buy
+get by any means
+
+Table:Hire
+champion
+guard
+mercenary
+detective
+thug
+love-slave
+factotum
+servant
+problem-solver
+trainer
+manager for other staff
+spy
+thief
+assassin
+entertainer
+
+Table:Throw
+water
+beer
+drink
+empty bottle
+full bottle
+chair
+empty beer mug
+full beer mug
+pair of dice
+mud clot
+kitchen utensil
+pot
+frying pan
+writing implement
+shot glass
+handful of food
+plate
+tantrum
+punch
+wad of paper
+plate
+butter knife
+fork
+spoon
+money
+combat knife
+deck of cards
+dart
+garbage
+
+Table:Game
+5:cards
+4:darts
+4:dice
+3:drinking game
+2:pool/foosball/local equivalent
+chess
+checkers
+arm wrestling
+wrestling
+charades
+boxing
+mumbledy-peg
+knife-throwing
+dwarf-tossing
+pissing highest on the wall
+juggling
+weightlifting
+
+Table:Armed
+90:not armed
+30:not visibly armed, but carrying a hidden melee weapon
+30:not visibly armed, but carrying a hidden missile weapon
+30:not visibly armed, but carrying a hidden melee and missile weapon
+10:obviously armed with a melee weapon
+10:obviously armed with a missile weapon
+5:obviously armed with both a melee and missile weapon

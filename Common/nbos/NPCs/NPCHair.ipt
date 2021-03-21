@@ -1,0 +1,138 @@
+
+use: nbos\Colors_rus.ipt
+
+Table: NPCHair
+Set: _NPCHair={$1}
+Set: 1=
+// [when]{$_NPCHair}[do][@NPCHair{$_NPCHair}][else][@NPCHairAny][end]
+[@NPCHair_ColorHuman]
+
+Table: NPCHair_ColorHuman
+Set: _NPCHair_randomValue=[|||, c [|[@NPCHair_Type with ми] [@NPCHair_Length with ми]] волосами]
+брюнет{ if( {$GenderValue} = 1, '', 'ка')}{_NPCHair_randomValue}
+блондин{ if( {$GenderValue} = 1, '', 'ка')}{_NPCHair_randomValue}
+шатен{ if( {$GenderValue} = 1, '', 'ка')}{_NPCHair_randomValue}
+рыж{ if( {$GenderValue} = 1, 'ий', 'ая')}{_NPCHair_randomValue}
+рус{ if( {$GenderValue} = 1, 'ый', 'ая')}{_NPCHair_randomValue}
+сед{ if( {$GenderValue} = 1, 'ой', 'ая')}{_NPCHair_randomValue}
+
+
+Table: NPCHairAny
+[@NPCHair-3]
+[@NPCHair-2]
+[@NPCHair-1]
+[@NPCHair0]
+[@NPCHair1]
+[@NPCHair2]
+[@NPCHair3]
+
+Table: NPCHair-3
+[@NPCHair_General], большая часть которых выеденна лишаями
+[@NPCHair_General], а между просоленными клочьями волос видно какое то движение
+[@NPCHair_General] и лишай на пару с ожогами оголяют большие части черепа
+[@NPCHair_General], но их очень мало, под ними видно рыхлую кожу изеденную [|болезнями(себорея/дерматит)|насекомыми]
+Table: NPCHair-2
+[@NPCHair_General], а большой лишай выел не малую часть волос
+[@NPCHair_General], под которыми просматривается часть чарепа, изеденного [|болезнями(себорея/дерматит)|насекомыми]
+[@NPCHair_General], куски [|грязи|болота|навоза], еды и веток торчат в разные стороны
+[@NPCHair_General], большая часть которых обожжена
+Table: NPCHair-1
+[@NPCHair_General], мелкие ветки и солома торчат в разные стороны
+[@NPCHair_General], часть которых слегка обожжена на кончиках
+[|грязные, ||][|растрепаные|засаленные] и не ухоженые волосы
+к мокрому лбу прилипли потные [@NPCHair_Color] волосы
+Table: NPCHair0
+седые волосы аккуратно подстрижены и спускаются до плеч
+[@NPCHair_Color] волосы собраны в пучок на затылке, несколько прядок выбившись колышатся в такт шагам
+[@NPCHair_Color] волосы зачесаны за правое ухо
+[@NPCHair_Color] волосы прорезают яркие молнии седины
+волосы светло-светло-[@NPCHair_Color_Part]е, легкие, почти белые при таком освещении
+[@NPCHair_Color] волосы начинают седеть около висков
+[#{1d3} NPCHair_Type with е] [#{1d3} NPCHair_Length with е] [@NPCHair_Color] волосы ниспадают на плечи, серебряные нити сверкают на висках
+[@NPCHair_Length with е] [@NPCHair_Color] вьющиеся волосы ниспадают до плеч
+простенький парик c [@NPCHair_Type with ими] волосами, прикрывающий голову
+Table: NPCHair1
+волосы [@NPCHair_Color] [@NPCHair_Length with е], торчащие в разные стороны как у одуванчика
+[#{1d2} NPCHair_Length with е] волосы красиво уложены
+[@NPCHair_Color] волосы струятся по спине
+[@NPCHair_Color] волосы двумя волнами падают на округлые белые плечи
+[@NPCHair_Color], [||прямые|вьющиеся] волосы [||аккуратно уложены в пучок]
+[@NPCHair_Color_Part]е волосы немного тусклые, но красоты своей еще не растеряли
+волосы цвета воронова крыла
+красивый парик [@NPCHair_Color with ого] цвета
+Table: NPCHair2
+[@NPCHair_Color] волосы столь нежного золотистого оттенка, что на ярком солнце покажутся седыми
+густые [@NPCHair_Color] с проседью волосы стянуты бронзовым обручем
+длинные [@NPCHair_Color] волосы до середины спины
+на голове [#{1d3} NPCHair_Length with е], горящие золотом, [#{1d3+1} NPCHair_Type with е] локоны
+[@NPCHair_Color] волосы подстрижены в аккуратную прическу с ровной-ровной челкой
+[#{1d8+1} NPCHair_Length with е] волосы педантично зачесаны назад
+[@NPCHair_Color], волнующиеся, украшенные серебрянной заколкой локоны блестящим каскадом падают на плечи
+парик c [@NPCHair_Type with ими] волосами [@NPCHair_Color with ого] цвета
+Table: NPCHair3
+[@NPCHair_Color] волосы стянуты в строгий, властный пучок
+тонкие золотые обручи охватыватывают [@NPCHair_Length with е] [@NPCHair_Color] волосы
+[#{1d3+1} NPCHair_Type with е] [#{1d3} NPCHair_Length with е] [@NPCHair_Color] волосы охватывают серебряный же обруч с крупным агатом, но необычайно глубокий и мягкий блеск этого обруча говорит о том, что на самом деле он сотворен из мифрила
+[#{1d3+1} NPCHair_Type with е] [#{1d3} NPCHair_Length with е] [@NPCHair_Color] волосы собраны в идеально уложенную причёску 
+[@NPCHair_Color], волнующиеся, украшенные золотой диадемкой локоны блестящим каскадом падают на плечи
+парик c прекрасными пышными волосами [@NPCHair_Color with ого] цвета
+Table: NPCHair_General
+[@NPCHair0]
+[@NPCHair_Color] остриженые волосы
+розовую лысую макушку едва покрывают [@NPCHair_Color] редеющие волосы 
+волосы острижены в круг
+волосы зачесаны назад
+волосы [|с|за]плетены в [|{1d7+5} косичек|{1d3+1} косички|косу]
+в [|||[@NPCHair_Type with х]|[@NPCHair_Length with х]] [|||[@NPCHair_Color with х]] волосах видно изрядную долю седых прядей
+
+Table: NPCHair_Color_Part
+2:серы
+3:русы
+3:рыжи
+красны
+зелены
+огненны
+бордовы
+каштановы
+cеребянны
+
+Table: NPCHair_Color_Part_о
+[@NPCHair_Color_Part >> replace /ы/о/]
+
+// {$_NPCHair_Color_param1}
+Table: NPCHair_Color
+Set: _NPCHair_Color_param1=[when]{$1}[do]{$1}[else]е[end]
+Set: 1=
+[@NPCHair_Color_main]{$_NPCHair_Color_param1}
+[@NPCHair_Color_Part]{$_NPCHair_Color_param1}
+[@Color_Ton][@NPCHair_Color_Part]{$_NPCHair_Color_param1}
+
+Table: NPCHair_Color_main
+//светло-русыми
+5:темны
+5:светлы
+2:черны
+пепельны
+[|пылающие ||||][|огненно-рыжи|огненно-красны]
+пепельно-серы
+медны
+cеребристы
+золотисты
+седы
+
+Table: NPCHair_Type
+Type: Lookup
+Set: _NPCHair_Type_param1=[when]{$1}[do]{$1}[else]е[end]
+Set: 1=
+default:\z
+1:редки{$_NPCHair_Type_param1}
+2:густы{$_NPCHair_Type_param1}
+3:пышны{$_NPCHair_Type_param1}
+
+Table: NPCHair_Length
+Type: Lookup 
+Set: _NPCHair_Length_param1=[when]{$1}[do]{$1}[else]е[end]
+Set: 1=
+default:\z
+1:коротки{$_NPCHair_Length_param1}
+2:длинны{$_NPCHair_Length_param1}

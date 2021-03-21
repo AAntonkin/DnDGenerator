@@ -1,0 +1,33 @@
+// use: srd\SRDTreasure.ipt
+// use: nbos\professions_rus.ipt
+// use: nbos\adventuringprofessions_rus.ipt
+// use: nbos\TownBuildings_rus.ipt
+// use: nbos\names\human_rus.ipt
+// use: nbos\names\elf_rus.ipt
+// use: nbos\names\dwarf_rus.ipt
+// use: nbos\names\towns_rus.ipt
+// use: nbos\names\orc_rus.ipt
+// use: nbos\Animals_rus.ipt
+// use: Generators\My\StatGenerator.ipt
+// use: nbos\Colors_rus.ipt
+// use: nbos\NPCs\NPCHair.ipt
+// use: nbos\NPCs\NPCEys.ipt
+// use: nbos\NPCs\NPCLips.ipt
+// use: nbos\NPCs\NPCReaction.ipt
+// use: nbos\NPCs\NPCCloses.ipt
+// use: nbos\RusRules\UpperLower.ipt
+// use: nbos\RusRules\Endings.ipt
+// use: nbos\Materials_rus.ipt
+// use: Generators\My\ArmaAndWeapons_rus.ipt
+use: Generators\My\NPCs Random.ipt
+
+Header: Разные персонажи которых можно встретить на улице.
+
+Prompt: Пол {Любой|Мужчина|Женщина} Любой
+Prompt: Уровень "красоты" {-3|-2|-1|0|1|2|3} 0
+Prompt: Баланс статов {-2|-1|0|1|2|3|4|5} 0
+Prompt: Статы для {NPC|PC} NPC
+
+
+Table: RandomNPCGet
+[@RandomNPCPrint]

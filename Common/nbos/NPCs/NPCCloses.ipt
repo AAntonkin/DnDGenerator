@@ -1,0 +1,177 @@
+
+Table: NPCCloses
+Set: _NPCCloses={$1}
+Set: 1=
+//[when]{$_NPCCloses}[do][@NPCCloses{$_NPCCloses}][else][@NPCCloses_General][end]
+Set: NPCCloses_HeSheEnding=
+Set: _NPCCloses1=[when]{$_NPCCloses}[do][@NPCCloses{$_NPCCloses}][else][@NPCCloses_General][end]
+{_NPCCloses1}
+
+Table: NPCCloses-3
+[@NPCCloses_General]
+грязные изношенные вещи, [|которые частично обнажают избитое тело|издающие едкий и тошнотворный запах]
+то, что когда то было повседневной одеждой, сейчас засаленно, испачканно в конный и не только навоз и источает жуткое зловонье
+небольшой кусок мешковины, прикрывает верхнюю часть тела, нижняя же одета в то, что когда то было штанами, воркуг роится стая мух
+[@NPCCloses-2]
+Table: NPCCloses-2
+[@NPCCloses_General]
+бедные, не ухоженные, одеяния источают запах затхлости, пота и мочи
+старые заношенные до дыр одежды, которые никогда не видали мыла в своей жизни
+на месте одежды тряпье
+[@NPCCloses-1]
+Table: NPCCloses-1
+[@NPCCloses_General]
+полу выделанные звериные шкуры укрывают плечи //бедно одетые в 
+{$EgoEeL} одежда являет собой удивительную смесь остатков когда-то добротного, длинного, доходящего до колен, кафтана и обрывков нового плаща, подозрительно знакомого бело-голубого цвета
+тело вместо добротной одежды покрывает какая-то грубая, грязная мешковина
+вид бедный и не опрятный, одежда частично покрыта соляными пятнами
+одет{$HeShe_а} в простые старые одежды, имеющие несколько дыр, в районе [|груди|локтей|плеч|спины]
+выглядит бедно, последний раз тело видело мыло, скорее всего летом, в реке
+Table: NPCCloses0
+[@Colors] рабочий фартук накинут поверх просторной рубахи 
+[@Colors] простенький кафтан с [|||узким|широким] [@Colors] поясом, на котором висит [|не большой|маленький|||] [|кошель|платок|сверток|нож]
+[@NPCCloses_General]
+в рабочей одежде
+одет{$HeShe_а} в простую одежду, покрытую в разных местах латками, судя по виду последний раз одежда стиралась пару недель назад
+Table: NPCCloses1
+довольно аккуратный [@Colors] кафтан и кожаные сапоги 
+[@NPCCloses_CloackType] плащ из звериной шкуры накинут на плечи
+добротная одежда, прошитая по швам [@Colors with ым] шнуром
+в шитой серебром одежде
+[@NPCCloses_General]
+Table: NPCCloses2
+в [@Color_Ton][@Colors with ой] добротной одежде, ладных сапогах и с кинжалом [|в [|серебряных |золотых |]ножнах|]{NPCCloses_HeSheEnding==ой} 
+[@Colors] хороший кафтан с [|||узким|широким] [@Colors with ым] поясом, на котором висит упругий кошель
+не обычная звериная шкура накинута на плечи
+в шитой [|золотом|серебром] одежде
+[@NPCCloses_General]
+[@NPCCloses1]
+парадный, дорогой [@Colors with о]-[@Colors] кафтан
+Table: NPCCloses3
+статн[#{$GenderValue} Endings] [@LowerFirst with {$Sex}] в добротном костюме
+не обычная и прекрасная звериная шкура украшает плечи
+одет{$HeShe_а} в простую [@Color_Ton with ую] одежду, единственное исключение составляет драгоценный пояс
+в шитой [|золотом|платиной] одежде
+[@NPCCloses_General]
+[@NPCCloses2]
+
+Table: NPCCloses_General
+[@NPCCloses_GeneralType with ая,] [@NPCCloses_Color with ая] одежда
+[@NPCCloses_CloackType] [@Color_Ton][@Colors with о]-[@Colors] [@NPCCloses_CloackType] плащ [@NPCCloses_ZakreplenCloseZakolki], ничем не отличающийся от плащей остальных прохожих
+[@Color_Ton][@Colors with ые] одежды украшает герб (семейный)
+[@NPCCloses_Material] [@Colors] плащ, не отличимый от [|обычных|стандартных|повседневных|обыденных|заурядных|привычных] походных плащей
+[@NPCCloses_Material with ая] куртка с нашитыми на них железными пластинами выдает в {$NemNeyL} бывалого воина
+[@NPCCloses_GeneralType with ая] одежда покрыта [!Colors with ыми] и [!Colors with ыми] узорами, такая одежда удобная для бешеной скачки
+одет{$HeShe_а} в [@NPCCloses_CloackType] [@NPCCloses_Material] плащ [@NPCCloses_CloackMaterialFrom], с накинутым на голову капюшоном, который он{$HeShe_а} не соизволил{$HeShe_а} откинуть на спину
+{$OnOna} одет в [@NPCCloses_CloackType] [@NPCCloses_Material] [@Colors] плащ, и мягкие кожаные сапоги, голенища которых доходят {$EmuEy} до середины икр
+одет{$HeShe_а} в [@NPCCloses_GeneralType with ую] [@NPCCloses_Material with ую] тунику и [@NPCCloses_Material with ые] [@NPCCloses_GeneralType with ые] штаны
+облечен{$HeShe_а} в [@NPCCloses_Color with ого] цвета [@NPCCloses_Material] [@NPCCloses_CloackType] плащ; к нему прикреплена золотая [@NPCCloses_CloseZakolki] с двойными трубками
+[|c плеч спадает|а плечи накинут] [@NPCCloses_GeneralType with ый] [@NPCCloses_Material with ый] плащ
+
+Table: NPCCloses_ZakreplenCloseZakolki
+\z
+удерживаемый [@NPCCloses_CloseZakolki with ой]
+закрепленный [@NPCCloses_CloseZakolki with ой]
+c красивой [@NPCCloses_CloseZakolki with ой]
+
+Table: NPCCloses_CloseZakolki
+Set: _NPCCloses_param1=[when]{$1}[do]{$1}[else]а[end]
+Set: 1=
+фибул{_NPCCloses_param1} //а/ой
+заколк{_NPCCloses_param1} //а/ой
+застежк{_NPCCloses_param1} //а/ой
+шнуровк{_NPCCloses_param1} //а/ой
+брошк{_NPCCloses_param1} //а/ой
+
+Table: NPCCloses_CloseUpper
+кафтан
+куртка
+кофта
+плащ
+туника
+халат
+//кафтан,туника,плащ,
+//жупан
+//свитка
+//тулуп
+//шинель
+//чуга
+//чапан
+
+Table: NPCCloses_кафтан
+дождевой
+ездовой
+столовый
+
+Table: NPCCloses_GeneralType
+Set: _NPCCloses_GeneralType_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+5:\z
+свободн{$_NPCCloses_GeneralType_param1}
+тесн{$_NPCCloses_GeneralType_param1}
+просторн{$_NPCCloses_GeneralType_param1}
+плотн{$_NPCCloses_GeneralType_param1}
+тепл{$_NPCCloses_GeneralType_param1}
+груб{$_NPCCloses_GeneralType_param1}
+толст{$_NPCCloses_GeneralType_param1}
+[облегающ{$_NPCCloses_GeneralType_param1} >> replace /ы/и/]
+[прост{$_NPCCloses_GeneralType_param1} >> replace /ый/ой/]
+[мягк{$_NPCCloses_GeneralType_param1} >> replace /ы/и/]
+
+ // теплые		 теплый		 теплых		 теплая 
+// простые		простой		простых		простая	
+
+Table: NPCCloses_GeneralМужчина
+[!NPCCloses_General]
+
+Table: NPCCloses_GeneralЖенщина
+// [!NPCCloses_General]
+// высокий воротник длинного [||[@Colors with ого]] парчового платья с пышными рукавами в [|||[@Colors with ую]] полоску{NPCCloses_HeSheEnding==ого}
+// [@Colors with ая] юбка в оборках{NPCCloses_HeSheEnding==а}
+// [@Colors with ые] сапоги и топ сверху
+// [@Colors] обтягивающий костюм, который твердо доказывает, что под ним скрывается отнюдь не детское тело
+// она одета в простое, но чистое платье
+// одета она в топ [@NPCCloses_CloackMaterialFrom] с открытой спиной и огромным декольте, мини-юбку и высокие сапоги на каблуке, а также [@NPCHair_Color] волосы до середины спины.
+в [@NPCCloses_GeneralType with ых] [@NPCCloses_Material with ых] полусапожках
+
+
+Table: NPCCloses_CloackType
+Set: _NPCCloses_CloackType_param1=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+5:\z
+[двойн{$_NPCCloses_CloackType_param1} >> replace /ы/о/]
+длиннопол{$_NPCCloses_CloackType_param1}
+[@NPCCloses_GeneralType with {$_NPCCloses_CloackType_param1}]
+
+Table: NPCCloses_Type
+
+Table: NPCCloses_CloackMaterialFrom
+из грубой серой ткани
+из звериной шкуры
+из многослойного шелка
+из кожи//аный
+
+Table: NPCCloses_Material
+Set: _NPCCloses_Material_param1=[when]{$1}[do]{$1}[else]ой[end]
+Set: 1=
+Set: material_type=[|Plant|Animal]
+[@Material_{$material_type} with {_NPCCloses_Material_param1}]
+
+Table: NPCCloses_Cleaness
+type: dictionary
+-3:[|гадк{$1}|безобразн{$1}|] //ий/ая
+-2:
+-1:
+1:
+2:
+3:
+default: \z
+
+Table: NPCCloses_Color
+Set: NPCEC_Ending=[when]{$1}[do]{$1}[else]ый[end]
+Set: 1=
+5:темн{$NPCEC_Ending}
+5:светл{$NPCEC_Ending}
+[@Color_Ton][@Colors with {$NPCEC_Ending}]
+пепельно-сер{$NPCEC_Ending}
+

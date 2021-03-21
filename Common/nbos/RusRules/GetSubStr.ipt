@@ -1,0 +1,39 @@
+
+// Grammar rules
+
+Table: GetSubStr
+Set: _gss_from={$1}
+Set: _gss_number={$2}
+Set: _gss_split=[when]{$3}[do]{$3}[else]\_[end]
+Set: 1=
+Set: 2=
+Set: 3=
+Set: gss_moded=[{$_gss_from} >> replace /{$_gss_split}/,/]
+[#{$_gss_number} getthis with {$gss_moded}]// \n gss_moded=|{$gss_moded}| \n _gss_from=|{$_gss_from}| \n _gss_number=|{$_gss_number}| \n _gss_split=|{$_gss_split}|\n _getthis=|{$_getthis}|
+
+Table: getthis
+Set: _getthis=_P_
+type: Dictionary
+1:[when]{$1}[do][@sub_getthis with {$1}][else]\z[end]
+2:[when]{$2}[do][@sub_getthis with {$2}][else]\z[end]
+3:[when]{$3}[do][@sub_getthis with {$3}][else]\z[end]
+4:[when]{$4}[do][@sub_getthis with {$4}][else]\z[end]
+5:[when]{$5}[do][@sub_getthis with {$5}][else]\z[end]
+6:[when]{$6}[do][@sub_getthis with {$6}][else]\z[end]
+7:[when]{$7}[do][@sub_getthis with {$7}][else]\z[end]
+8:[when]{$8}[do][@sub_getthis with {$8}][else]\z[end]
+9:[when]{$9}[do][@sub_getthis with {$9}][else]\z[end]
+default:"ERROR: getthis "
+
+Table: sub_getthis
+Set: _sub_getthis={$1}
+Set: 1=
+Set: 2=
+Set: 3=
+Set: 4=
+Set: 5=
+Set: 6=
+Set: 7=
+Set: 8=
+Set: 9=
+{$_sub_getthis}

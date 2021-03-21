@@ -1,0 +1,94 @@
+
+// Технические названия книг
+
+// Table: FantasyTownBuildings
+
+
+Use: nbos\RusRules\Endings.ipt
+
+
+Table: RunTest
+Set: Teest=[@BookTechType]
+Set: ThisEnding=[@GetLettersFromEnd with {Teest}, 1]
+Set: Gender=[#{ThisEnding} BookExplSmallGender]
+Set: GenderWEnding=[#{Gender} BookWholnessGenderEnding]
+{Teest}, {Gender} - [@Wholness with {$GenderWEnding}]
+
+Table: Wholness
+//20:/z
+Не Полн{$1}
+Полн{$1}
+Частичн{$1}
+Кратк{$1}
+
+Table: BookTechType
+//5:/z
+Сборник
+{1d6}й том 
+Полевое Руководство
+Справочник
+Энциклопедия
+Инструкция
+//Мои Исследования
+Мое Исследование
+История
+Тэзис
+Мой Очерк
+Очерк
+Исследование
+Запись
+
+Table: BookExplSmallEnding
+//5:/z
+Type: Dictionary
+Сборник:MALE
+Полевое Ру:MALE
+Справочник:MALE
+Энциклопед:FEMALE
+Инструкция:FEMALE
+Мои Исслед:MIDDLE
+Мое Исслед:MALE
+История:FEMALE
+Тэзисы:MIDDLE
+Мой Очерк:MALE
+Очерк:MALE
+Очерки:MIDDLE
+Исследован:MIDDLE
+Записи:MIDDLE
+default:MALE
+
+Table: BookExplSmallGender
+Type: Dictionary
+а:FEMALE
+ь:FEMALE
+я:FEMALE
+о:MIDDLE
+ы:MIDDLE
+и:MIDDLE
+е:MIDDLE
+м:MALE
+с:MALE
+к:MALE
+default:{$1}
+
+Table: BookWholnessGenderEnding
+Type: Dictionary
+FEMALE:я
+MIDDLE:е
+MALE:й
+default:{$1}
+
+
+Table: BookWholnessGenderEnding2
+Type: Dictionary
+FEMALE:а
+MIDDLE:и
+MALE:и
+default:{$1}
+
+Table: BookWholnessGenderEnding2
+Type: Dictionary
+FEMALE:и
+MIDDLE:е
+MALE:ы
+default:{$1}

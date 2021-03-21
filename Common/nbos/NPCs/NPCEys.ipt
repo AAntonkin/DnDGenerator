@@ -1,0 +1,72 @@
+use: nbos\Colors_rus.ipt
+
+Set: NPCEysColor=[@NPCEys_Color]
+
+Table: NPCEys
+Set: _NPCEys={$1}
+Set: _NPCEys1={1}
+Set: NPCEysColor_ого=[|темно-[@NPCEys_Color_Part_ого]|[@NPCEys_Color_Part_ого]]
+Set: 1=
+[when]{$_NPCEys}[do][@NPCEys{$_NPCEys}][else][@NPCEys_General][end]
+
+Table: NPCEys-3
+[@NPCEys-2]
+[@NPCEys_General]
+Table: NPCEys-2
+[@NPCEys-1]
+[@NPCEys_General]
+Table: NPCEys-1
+{NPCEysColor==NPCEysColor_ого}глаза [|выкаченные|выпученны|луповатые], {$NPCEysColor} цвета
+[@NPCEys_General]
+Table: NPCEys0
+[@NPCEys_General]
+Table: NPCEys1
+[@NPCEys_General]
+Table: NPCEys2
+[@NPCEys_General]
+{NPCEysColor==ярко-синие}глаза — {$NPCEysColor} — такого редкостного цвета, что трудно отвести от них взгляд
+{NPCEysColor==NPCEysColor_ого}глаза {$NPCEysColor} цвета, почти чёрные, а длиннющие ресницы выделяют глаза делая их ещё больше
+Table: NPCEys3
+[@NPCEys_General]
+[@NPCEys2]
+
+Table: NPCEys_General
+{$NPCEysColor} глаза
+глаза сияют [@color_Shine]
+{$NPCEysColor==NPCEys_Color_Part_ые}круглые {$NPCEysColor} глаза
+по-молодому пронзительные глаза
+совсем немолодые глаза
+глаза глубоко посажены
+глаза глубоко запали, под ними залегла синева
+глаза глубоко запали, под ними набрякли синюшные мешки
+
+Table: NPCEys_Color_Part
+сер
+cеребянн
+голуб
+зелен
+желт
+изумрудн
+медн
+агатов
+
+Table: NPCEys_Color_Part_ые
+[@NPCEys_Color_Part]ые
+синие
+карие
+Table: NPCEys_Color_Part_ого
+[@NPCEys_Color_Part]ого
+синего
+карего
+
+
+Table: NPCEys_Color
+//светло-русыми
+Set: NPCEC_Ending=[when]{$1}=ого[do]ого[else]ые[end]
+Set: 1=
+5:темн{$NPCEC_Ending}
+5:светл{$NPCEC_Ending}
+[@NPCEys_Color_Part_{$NPCEC_Ending}]
+[@Color_Ton][@NPCEys_Color_Part_{$NPCEC_Ending}]
+пепельно-сер{$NPCEC_Ending}
+

@@ -1,0 +1,314 @@
+//
+
+Use: nbos\Studies_rus.ipt
+Use: nbos\FantasyRaces_rus.ipt
+//Use: nbos\Monsters_rus.ipt
+Use: ..\Generators\Names\Monsters_rus.ipt
+Use: nbos\Languages_rus.ipt
+Use: nbos\Professions_rus.ipt
+Use: nbos\names\Human_rus.ipt
+Use: nbos\names\Elf.ipt
+Use: nbos\names\Dwarf_rus.ipt
+Use: nbos\names\towns_rus.ipt
+Use: nbos\names\Orc_rus.ipt
+Use: nbos\Animals_rus.ipt
+Use: nbos\RusRules\Endings.ipt
+Use: nbos\Books\BookTechnical.ipt
+
+
+Set: UY=1 //-1:ый
+Set: AY=2 //-2:ая
+Set: UE=3 //-3:ые
+Set: IE=4 //-4:ие
+Set: IY=5 //-5:ий
+Set: YY=6 //-6:яя
+
+Set: PE={1d3}
+Set: PostFix=[#{$PE} Endings] 
+
+
+Table: RandomBookName
+// спаржа = [when][@IsFemail with спаржа][do] is female [end]
+//энциклопедия = [when][@IsFemail with энциклопедия][do]  is female  [end]
+//справочник = [when][@IsFemail with справочник][do]  is female [end]
+//орк = [when][@IsFemail with орк][do]  is female [end]
+// [@RandomBookName]
+Set: ttt= [#22 BookType3]
+//Set: vvv=[#{$ttt} BookExplSmallEnding]
+Set: vvv=[#{$ttt} BookExplSmallEnding]
+{ttt} - {vvv} //- [@ToWhom with орк]// with ов] 
+// спаржа = [when] [@IsFemail with спаржа] [do] is female [end]
+
+
+Table: BookType3
+Type: Dictionary
+//Set: TypePostFix=[#{PostFix}pfM with {PostFix}]
+//Set: BTD=[@BookTypeD]
+22:[@BookType]
+//[@CorrectEnding with Учебн]
+//Агитационно-пропагандистск{TypePostFix}
+//Учебн{TypePostFix}
+
+//Научно-популярн{TypePostFix}
+//Научн{TypePostFix}
+//Производственно-техническ{TypePostFix}
+//Художественн{TypePostFix}
+//Программно-методическ{TypePostFix}
+//Справочн{TypePostFix}
+//Документальн{TypePostFix}
+//Инструктивн{TypePostFix}
+//:
+
+Table: BookTypeD
+Агитационно-пропагандистская
+Учебная
+Научно-популярная
+Научная
+Производственно-техническая
+Художественная
+Программно-методическая
+Справочная
+Документальная
+Инструктивная
+
+// Тип:
+// 1) агитационно-пропагандистская,
+// 2) учебная,
+// 3) научно-популярная,
+// 4) научная,
+// 5) производственно-техническая,
+// 6) художественная,
+// 7) программно-методическая,
+// 8) справочная,
+// 9) документальная,
+// 10) инструктивная.
+
+
+// |Полностью|Частично|Кратко]
+Table: RandomBookDetails
+Set: AuthorName=[@Author]
+Set: Illustrated=[||Иллюстрирован{$PostFix}]
+Set: Complete=[@BookComplete with {$PostFix}]
+// {Complete} {Illustrated}
+// [@FantasyRacesAdj] \
+
+[@RandomBookName] //[@BookComplete with {$PostFix}, true]
+
+//[@BookSubject]
+//[@JendrEnd with 1]
+// <u> [@RandomBookName >> Proper]</u>, автор {$AuthorName} [@AuthorAnd]<br>\n{1d200+20} страниц.  [@BookBinding] [@BookCondition] [@BookContents]
+
+Table: RandomBookName1 
+Set: Subject=[@BookSubject]
+Set: BSubjCompletence={if ([{$Subject} >> Length] > 0,'[@BookComplete with {$PostFix}, true >> Proper]', '')}
+
+// {$BT} {$Subject} ({$Complete} [|||{$Illustrated}])
+{$Subject} //[|||{$Illustrated}] [@BookType{$PE}] {$BSubjCompletence}
+
+
+Table: RandomBookName22
+{$Subject}, {$Complete} [|||{$Illustrated}]) [@BookType{$PE}]
+
+{$Subject}, {$Complete} {$Illustrated}ый [@BookType{$PE}]
+{$Complete} [|||Илюстрированная] [@BookType{$PE}] {$Subject}
+{$Complete} [|||Илюстрированный] [@BookType{$PE}] {$Subject}
+{$Complete} [|||Илюстрированные] [@BookType{$PE}] по {$Subject}
+[@NormalAnimals], как заботится о потомстве
+[@NormalAnimals] - дрессировка
+История под авторством [@Author]
+История выдуманых земель - [@MasterTownName]
+Мое [|путешествие|исследование|приключение] в [@MasterTownName]
+Моя [|дорога|экспедиция] в [@MasterTownName]
+{$Subject} города [@MasterTownName]
+[||{$AuthorName}] {$Complete} {$Illustrated} {$Subject}
+{$Complete} {$Illustrated} [|мужск|женск]ий [@BookType{$PE}] {$Subject}
+{$Complete} {$Illustrated} [|мужск|женск]ая [@BookType{$PE}] {$Subject}
+[@FantasyRacesAdj] {$Complete} {$Illustrated}ое руководство по {$subject}
+
+
+[@MasterTownName], {$Complete} {$Illustrated}ая история
+{$Complete} {$Illustrated} [|Работы|Рассказы|Истории|Генниальные|Лиричиские|Поэтические] издания [@MasterHumanName]
+{$Complete} {$Illustrated} [|Работы|Рассказы|Истории|Генниальные|Лиричиские|Поэтические] под авторством {$AuthorName}
+[@Author], {$Complete} {$Illustrated} биографии
+{$AuthorName}, {$Complete} {$Illustrated} автобиографии
+{$Complete} {$Illustrated} полевое руководство по [@Monsters]
+Введение в {$Subject}
+{$AuthorName}, по моим собственным наблюдениям
+{$Subject} наблюдательного [@FantasyRaces]а
+
+
+[@Professions] {$Complete} {$Illustrated} [|руководство|полевое руководство|учебное пособие|словарь]
+{$Complete} [@Professions]
+
+
+Table: Author
+5:[@MasterHumanName]
+2:[@MasterElfName]
+1:[@MasterDwarfName]
+1:[@MasterOrcName]
+
+
+Table: AuthorAnd
+10:\z
+,и другие
+и [@Author]
+, [@Author], так же [@Author]
+
+
+Table: BookComplete
+//Set: LBraket= {if ({$2},'(','')}
+Set: LBraket = [when]{$2} = true [do] [(] [end]
+Set: RBraket = [when]{$2} = true [do] [)] [end]
+{$LBraket}Не Полн{$1}{$RBraket}
+{$LBraket}Полн{$1}{$RBraket}
+{$LBraket}Частичн{$1}{$RBraket}
+{$LBraket}Кратк[#{$1} pfM]{$RBraket}
+
+
+Table: BookType
+Сборник
+{1d6}й том 
+Полевое Руководство
+Справочник
+Энциклопедия
+Инструкция
+Мои Исследования
+История
+Тэзисы
+Мои Очерки
+Очерки
+Исследования
+Записи
+
+
+
+Table: BookTypeF
+Энциклопедия
+Инструкция
+Мои Исследования
+История
+
+
+Table: BookType3
+Тэзисы
+Мои Очерки
+Очерки
+Исследования
+Записи
+
+
+
+Table: BookSubject
+//Set: BookNew=[||||современ{$PostFix}]
+Set: vWhat=[||||Религиозн{$PostFix}|Ритуальн{$PostFix}|Пояснительн{$PostFix}|Разьяснительн{$PostFix}]   
+Set: SmallAction=[@BookAction{$PE}] //{if ([{$Descr} >> Length] > 0, '[@BookAction{$PE}]', '')}
+Set: HowOld=[@HowOld with {$PostFix}]//{if ([{$PE} != 2], '[@HowOld with {$PostFix}]', '')}
+Set: SubName={if ( [{$PE} != 2], '', '[@BookType3]')}
+Set: Culture1={if ( {$PE} = 1, '[@FantasyRacesAdj]', '[@FantasyRaces]{$PostFix}')}
+
+//8:[@BookCulture] [@Studies] [@BookType3]
+//[@Languages]
+
+// {$PE} {$PostFix} - {$Culture}
+
+{$1} - {$PE} {$PostFix} - [@FantasyRacesAdj] - {$Culture1} //[||{$HowOld}] {$vWhat} {$Culture1} [|||{$SmallAction}] {$SubName}
+
+
+
+Table: BookCulture
+//10:\z
+Set: CultureRes = {if ( [{$PE} != 2], '[@FantasyRacesAdj]', '[@FantasyRaces]{$1}')}
+{$CultureRes}
+
+
+Table: BookAction1
+Танец
+Бой
+План
+Расчет
+Рассказ
+Язык
+
+
+Table: BookAction2
+Процедура
+Расчетка
+Живопись
+Скульптура
+Музыка
+Поэзия
+Проза
+
+
+Table: BookAction3
+Танцы
+Бои
+Планы
+Расчеты
+Рассказы
+Языки
+
+
+Table: HowOld
+Древн[#{$1}pfM]
+Современн{$1}
+Забыт{$1}
+Уникальн{$1}
+
+
+Table: BookReview
+Отличное чтиво для тех, кто заинтересован в {$Subject}
+Скучная книга, с малой пользой для тех, кто изучает {$Subject}
+Если вы заинтересованы в {$Subject}, то эта книга для вас!
+
+
+Table: BookBinding
+5:[|Хорошо|Плохо|Качественно|Безобразно] сделанная книга, с [@BookCover] обложкой.  Название книги [|хорошо видно на обложке|виднеется только на корешке|находитсся только внутри]. Страницы [@BookPaper]ые и [|не связаны | скреплены кожаной лентой | скреплены металлической защелкой | связаны металлической защелкой которая закрыта].
+Эта книга состоит из {2d6} страниц на [@BookPaper]ой основе.
+
+
+Table: BookCover
+ярко проиллюстрированой ([|изображене - |виднеется|просматривается|видно] [||[@BookCoverAction]] [|[@NormalAnimals]|[@FantasyRaces]|[@Monsters]]) [|кожанной|кожаной|деревяной|латуной|тканевой]
+[|кожанной|кожаной|деревяной|латуной|тканевой], без каких либо изображений,
+
+
+Table: BookCoverAction
+сидящ[#{$1}pfM]
+танцующ[#{$1}pfM]
+стоящ[#{$1}pfM]
+спящ[#{$1}pfM]
+бегущ[#{$1}pfM]
+кричащ[#{$1}pfM]
+
+
+Table: BookPaper
+5:бумажн{$1}
+папирусн{$1}
+5:пергаментн{$1}
+кальков{$1}
+тканев{$1}
+
+
+Table: BookCondition 
+Текст на страницах легко просматривается.
+Текст на страницах очень тяжело рассмотрать из-за выцвевших чернил.
+Текст написан ужансым почерком, но штрихи пера четкие (чернило не успело выцвести).
+Чернила выцвели, что делает чтение очень трудным, но возможным. 
+Текст очень сложно прочитать из-за плохого почерка.
+Узнать, что написано почти не возможно из-за выцвевших чернил и катастрофически ужасного почерка.
+
+
+Table: BookContents 
+Содерждание книги несет в себе хорошие изыскания и мысли, которые прекрасно задокументированы.
+Содержание покрывает только некоторые аспекты заголовка книги.                         
+Содержание книги хорошо отображает заголовок самой книги, но могло бы быть и лучше.
+Содержание книги отображает только базовые аспекты заголовока и все.
+Содержание книги с самого начала уводит читателя в запутанные разсуждения лишь изредка касаясь указаной в заголовке темы.
+Книга написана ужасно, ивзилистое содержание сильно запутывает лишь изредка касясь указаной в заголовке темы.
+
+
+Table: pfM
+Type:Dictionary
+ый:ий
+ые:ие
+default:{$1}

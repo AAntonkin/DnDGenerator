@@ -1,0 +1,123 @@
+//commonly seen fantasyymonsters
+Table: Monsters
+бехолдер
+болетах
+василиск
+виверна
+водяной
+гарпия
+гигант
+гидра
+гиппогриф
+гоблин
+горгона
+грифон
+гриффин
+демон
+допельгангер
+дракон
+дриада
+единорог
+имп
+ифрит
+кобольт
+коктрэйс
+людоящер
+мантикора
+медуза
+минотавр
+нимфа
+ногдар
+огр
+орк
+пегас
+пикси
+скам
+троль
+русалка
+химера
+хобгоблин
+гигант
+елементал
+
+Table: MonstersAdj
+Set: MonstersAdj1={$1}
+Set: Ending=[when]{MonstersAdj1}[do]{MonstersAdj1}[else]ов[end]
+
+Set: MonstersNameOne=[@Monsters]
+Set: ElementalType=[@Elements]
+
+Set: IsElement=[#{MonstersNameOne} IsElementMonster]
+Set: MonsterElementType=[when]{IsElement}[do][#{ElementalType} Monsters_{Ending} with {ElementalType}][end]
+
+{$MonsterElementType} [#{MonstersNameOne} Monsters_{Ending} with {MonstersNameOne}]
+
+Table: Monsters_ов
+Type:Dictionary
+виверна:виверн
+гарпия:гарпий
+гидра:гидр
+горгона:горгон
+дриада:дриад
+мантикора:мантикор
+медуза:медуз
+нимфа:нимф
+пикси:пиксей
+троль:тролей
+химера:химер
+воздушный:воздушных
+водяной:водяных
+огненный:огненных
+земляной:земляных
+холмовой:холовых
+каменный:каменных
+ледяной:ледяных
+default:{$1}ов
+EndTable:
+
+Table: Monsters_ы
+Type:Dictionary
+болетах:болетахи
+василиск:василиски
+виверна:виверны
+гарпия:гарпии
+гидра:гидры
+горгона:горгоны
+дриада:дриады
+единорог:единороги
+мантикора:мантикоры
+медуза:медузы
+нимфа:нимфы
+орк:орки
+пикси:пикси
+троль:троли
+химера:химеры
+воздушный:воздушные
+водяной:водяные
+огненный:огненные
+земляной:земляные
+холмовой:холмовые
+каменный:каменные
+ледяной:ледяные
+default:{$1}ы
+EndTable:
+
+
+Table: Elements
+воздушный
+водяной
+огненный
+земляной
+[@SubElements]
+
+Table: SubElements
+холмовой
+каменный
+ледяной
+
+
+Table: IsElementMonster
+Type:Dictionary
+гигант:1
+елементал:1
+default:

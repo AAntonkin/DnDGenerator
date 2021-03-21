@@ -1,0 +1,40 @@
+// Grammar rules
+
+Table:ToPlural
+Set: TP_InWord={$1}
+Set: TP_WordLenFull={length('{$1}')}
+Set: TP_LastLetterOne=[@GetLettersFromEnd with {TP_InWord}, 1]
+Set: TP_LastLetterTwo=[@GetLetterFromEnd with {TP_InWord}, 2]
+Set: TP_WordWithOutTwoLeters={substr('{$TP_InWord}', 1, {$TP_WordLenFull}-2)}
+
+Set: TP_OutLetter1=[#{TP_LastLetterOne} Endings_Whos]
+Set: TP_OutLetter1r=[when]{$TP_OutLetter1} = {$TP_InWord} [do]{$TP_LastLetterOne}ов[else]{$TP_OutLetter1}[end]  //
+
+Set: TP_WordEnding=[{$TP_LastLetterTwo}{$TP_LastLetterOne}]
+Set: TP_DoSecondChange=[#{TP_WordEnding} subTP_DoSecondChange]
+Set: TP_OutLetter2=[when]{TP_DoSecondChange}[do][#{TP_LastLetterTwo} Endings_2Whos][else]{$TP_InWord}[end]
+Set: TP_OutLetter2r=[when]{$TP_OutLetter2} = {$TP_InWord} [do]{$TP_LastLetterTwo}[else]{$TP_OutLetter2}[end]
+
+{TP_WordWithOutTwoLeters}{TP_OutLetter2r}{TP_OutLetter1r} //---- ({$TP_WordEnding}, {$TP_DoSecondChange}, {$TP_OutLetter2}, {$TP_OutLetter2r})
+
+Table: subTP_DoSecondChange
+Type:Dictionary
+ой:1
+ка:1
+default:
+
+Table:Endings_Plural
+Type:Dictionary
+а:
+й:х
+ь:ей
+я:й
+и:ей
+л:лей
+default:{$1}
+
+Table:Endings_2Plural
+Type:Dictionary
+о:ы
+к:ок
+default:{$1}

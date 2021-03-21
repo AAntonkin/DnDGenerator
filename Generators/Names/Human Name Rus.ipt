@@ -1,0 +1,6 @@
+// sdf
+use: nbos\names\Human_rus.ipt
+
+Table: Human Name
+[@MasterHumanName]
+

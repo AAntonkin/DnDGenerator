@@ -1,0 +1,45 @@
+// Grammar rules
+
+Table: ToWhom
+Set: TWm_InWord={$1}
+Set: TWm_WordLenFull={length('{$1}')}
+Set: TWm_LastLetterOne=[@GetLettersFromEnd with {TWm_InWord}, 1]
+Set: TWm_LastLetterTwo=[@GetLetterFromEnd with {TWm_InWord}, 2]
+Set: TWm_WordWithOutTwoLeters={substr('{$TWm_InWord}', 1, {$TWm_WordLenFull}-2)}
+
+Set: TWm_OutLetter1=[#{TWm_LastLetterOne} Endings_Whom]
+Set: TWm_OutLetter1r=[when]{$TWm_OutLetter1} = {$TWm_InWord} [do]{$TWm_LastLetterOne}[else]{$TWm_OutLetter1}[end]ский  //
+
+Set: TWm_WordEnding={$TWm_LastLetterTwo}{$TWm_LastLetterOne}
+Set: TWm_DoSecondChange=[#{TWm_WordEnding} subTWm_DoSecondChange]
+Set: TWm_OutLetter2=[when]{TWm_DoSecondChange}[do][#{TWm_LastLetterTwo} Endings_2Whom][else]{$TWm_InWord}[end]
+Set: TWm_OutLetter2r=[when]{$TWm_OutLetter2} = {$TWm_InWord} [do]{$TWm_LastLetterTwo}[else]{$TWm_OutLetter2}[end]
+
+{TWm_WordWithOutTwoLeters}{TWm_OutLetter2r}{TWm_OutLetter1r}
+
+
+Table: subTWm_DoSecondChange
+Type: Dictionary
+ьф:1
+фа:1
+рф:1
+ия:1
+default:
+
+Table: Endings_Whom
+Type: Dictionary
+а:
+я:
+й1:х
+ь1:ей
+я1:й
+и1:ей
+л1:лей
+default:{$1}
+
+Table: Endings_2Whom
+Type: Dictionary
+о1:ы
+ф:фий
+и:ий
+default:{$1}

@@ -1,0 +1,70 @@
+//Common Orc/Humanoid style names
+
+Define: OrcVowel =[|а|о|у]
+Define: OrcVowCap =[|А|Э|О|У]
+
+
+Table: MasterOrcName
+4:[@OrcNameStart][@OrcNameMiddle][@OrcNameEnd]
+[@OrcNameStart][@OrcNameMiddle][@OrcNameEnd] [@OrcNameStart][@OrcNameEnd]
+
+
+Table: OrcNameStart
+{$OrcVowCap}[@OrcNameMiddle]{$OrcVowel}
+Бр{$OrcVowel}
+Кр{$OrcVowel}
+Г{$OrcVowel}
+Г'
+Гр{$OrcVowel}
+К'
+М{$OrcVowel}
+С{$OrcVowel}
+Т{$OrcVowel}
+Сх{$OrcVowel}
+Ср{$OrcVowel}
+
+Table: OrcNameMiddle
+г{$OrcVowel}
+гг{$OrcVowel}
+д{$OrcVowel}
+м{$OrcVowel}
+
+Table: OrcNameEnd
+р
+рс
+сх
+5:к
+3:нг
+
+
+Table: OrcClan
+[@MasterOrcName][@OrcClanEnd]
+[@OrcClanStart][@OrcClanEnd]
+
+Table: OrcClanStart
+Кровь
+Орк
+Череп
+Камень
+Копье
+Ночь
+Пещера
+Волк
+Медведь
+Пес
+Летучая Мышь
+
+Table: OrcClanEnd
+крушитель
+костяной
+разоритель
+клык
+коготь
+душитель
+убийца
+пожиратель
+секира
+зуб
+
+
+

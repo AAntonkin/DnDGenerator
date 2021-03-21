@@ -1,0 +1,25 @@
+Define: LanguageModifier =[||Древний]
+Table: Languages
+{$LanguageModifier} Общий
+{$LanguageModifier} Эльфийский
+{$LanguageModifier} Гномий
+{$LanguageModifier} Кендреский
+{$LanguageModifier} Дварфийский
+{$LanguageModifier} Оркский
+{$LanguageModifier} Гоблинский
+{$LanguageModifier} Гигантский
+{$LanguageModifier} Гнолский
+{$LanguageModifier} Драконий
+{$LanguageModifier} Инфернал
+{$LanguageModifier} Селестиал
+{$LanguageModifier} Друидский
+{$LanguageModifier} Сильван
+{$LanguageModifier} Аббисал
+{$LanguageModifier} Подземный(андеркомон)
+{$LanguageModifier} Земляной
+{$LanguageModifier} Водяной
+{$LanguageModifier} Воздушный
+{$LanguageModifier} Огенный
+{$LanguageModifier} Гол'ка (Голиафский)
+{$LanguageModifier} Мертвый (Некрополь)
+{$LanguageModifier} Общий (Коптский)

@@ -1,0 +1,47 @@
+
+Table: SkillName
+Appraise,Yes,Int
+Balance,Yes,Dex
+Bluff,Yes,Cha
+Climb,Yes,Str
+Concentration,Yes,Con
+Craft,Yes,Int
+Decipher Script,No,Int
+Diplomacy,Yes,Cha
+Disable Device,No,Int
+Disguise,Yes,Cha
+Escape Artist,Yes,Dex
+Forgery,Yes,Int
+Gather Information,Yes,Cha
+Handle Animal,No,Cha
+Heal,Yes,Wis
+Hide,Yes,Dex
+Intimidate,Yes,Cha
+Jump,Yes,Str
+Knowledge (arcana),No,Int
+Knowledge (architecture and engineering),No,Int
+Knowledge (dungeoneering),No,Int
+Knowledge (geography),No,Int
+Knowledge (history),No,Int
+Knowledge (local),No,Int
+Knowledge (nature),No,Int
+Knowledge (nobility and royalty),No,Int
+Knowledge (religion),No,Int
+Knowledge (the planes),No,Int
+Listen,Yes,Wis
+Move Silently,Yes,Dex
+Open Lock,No,Dex
+Perform,Yes,Cha
+Profession,No,Wis
+Ride,Yes,Dex
+Search,Yes,Int
+Sense Motive,Yes,Wis
+Sleight of Hand,No,Dex
+Speak Language,No,None
+Spellcraft,No,Int
+Spot,Yes,Wis
+Survival,Yes,Wis
+Swim,Yes,Str
+Tumble,No,Dex
+Use Magic Device,No,Cha
+Use Rope,Yes,De

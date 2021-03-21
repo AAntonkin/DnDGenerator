@@ -1,0 +1,20 @@
+
+
+Table: Potions
+Potion of [@PotionOf]
+Oil of [@OilOf]
+
+Table: OilOf
+Etherealness: The exterior of any container of this cloudy gray oil is always damp with droplets of the oil that evaporate away before pooling.
+
+Table: PotionOf
+Climbing: This potion is separated into brown, silver, and gray layers resembling bands of stone.
+Diminution: This potion cycles between clear and dark red. One moment the whole liquid seems red, and then the redness is drawn to the center, replaced by clear liquid. When the last drop of red vanishes, all the liquid becomes red and the process begins again. Shaking the bottle doesn’t mix the liquids.
+Flying: This clear liquid has cloudy white impurities drifting in it and floats at the top of the bottle in defiance of gravity.
+Healing: This liquid is a bright red that glimmers with light as it is swirled.
+Heroism: This bright blue potion bubbles and steams as if boiling even when stoppered.
+Invisibility: A bottle with this potion in it looks empty but still feels as though it carries liquid.
+Longevity: This bottle of amber liquid also contains a scorpion’s tail, an adder’s fang, a dead spider, and the heart of some tiny creature that against all reason is still beating.
+Mind Reading: This opaque purple liquid has an ovoid cloud of pink that floats about at random within it.
+Speed: This yellow fluid is streaked with black. The liquid races around the interior of any vessel with enough room for it to run.
+Water Breathing: This cloudy green fluid has a tiny glowing jellyfish swimming through it and smells of the sea.

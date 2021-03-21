@@ -1,0 +1,185 @@
+# Elf names
+
+Table: MasterElfName
+[@ElvishWordName]
+2:[@ElvishWordName] [@ElvishWordName]
+[@ElvishWordName] [@CommonDescriptiveElfName]
+[@ElvishWordName] [@ElfNameStart][@ElfNameLast][@ElvishDescriptB]
+
+Table: ElvishWordName
+[@ElfNameStart][@ElfNameMiddle][@ElfNameLast]
+[@ElfNameStart][@ElfNameMiddle][@ElfNameMiddle][@ElfNameLast]
+
+Table: CommonDescriptiveElfName
+[@ElvishDescriptA][@ElvishDescriptB]
+
+Table: Elf Names Old
+[@ElfNameStart][@ElfNameMiddle][@ElfNameLast] [@ElfNameStart][@ElfNameMiddle][@ElfNameLast]
+[@ElfNameStart][@ElfNameMiddle][@ElfNameMiddle][@ElfNameLast] [@ElfNameStart][@ElfNameMiddle][@ElfNameLast]
+[@ElfNameStart][@ElfNameMiddle][@ElfNameLast] [@ElfNameStart][@ElfNameMiddle][@ElfNameMiddle][@ElfNameLast]
+[@ElfNameStart][@ElfNameMiddle][@ElfNameMiddle][@ElfNameLast] [@ElfNameStart][@ElfNameMiddle][@ElfNameMiddle][@ElfNameLast]
+
+Table: ElfNameStart
+Аель
+Аер
+Аль
+Ар
+Ель
+Крис
+Кил
+Лин
+Лир
+Мар
+Мел
+Мер
+Мор
+Мол
+Ниель
+Рил
+Рин
+Сил
+Син
+Тал
+Тель
+Тен
+Са
+Се
+Си
+Сра
+Сри
+Тир
+Тис
+Трил
+Трул
+Тил
+Тир
+Бер
+Наль
+Нил
+
+
+
+
+Table: ElfNameMiddle
+ад
+аен
+ал
+ан
+анд
+ар
+ас
+асн
+аср
+еир
+ель
+енд
+ер
+идр
+ил
+илбр
+илр
+ин
+инбр
+инд
+ир
+лен
+ор
+орбр
+ри
+рил
+бн
+ил
+ов
+
+
+
+Table: ElfNameLast
+аель
+аль
+4:ас
+ен
+еис
+и
+иад
+иаль
+иан
+4:иель
+иен
+иес
+ион
+лан
+лир
+лис
+иал
+нар
+ни
+нил
+риет
+рил
+ол
+иен
+
+
+Table: ElvishDescriptA
+Медведь
+Синий
+Полумесяц
+Кристалл
+Ворона
+Голубка
+Дракон
+Орел
+Сокол
+Отдалённый
+Поле
+Пламя
+Лиса
+Золотой
+Зеленый
+Мед
+Лед
+Нефрит
+Луна
+Гора
+Оникс
+Сова
+Ворон
+Загадка
+Река
+Тень
+Серебряный
+Снег
+Звезда
+Солнце
+Дерево
+Ведьмак
+Дикий
+Ветер
+Зима
+Мир
+
+
+Table: ElvishDescriptB
+лучник
+стрела
+лезвие
+лук
+танцор
+дрифтер
+флетчер
+цветок
+сердце
+лошадь
+охотник
+лист
+легкий
+любовник
+туман
+миф
+ночь
+присяга
+тень
+певец
+песня
+ходок
+ветер

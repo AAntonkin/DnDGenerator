@@ -1,0 +1,43 @@
+use: nbos\Colors_rus.ipt
+
+Table: NPCLips
+Set: _NPCLips={$1}
+Set: _NPCLips1={1}
+Set: 1=
+[when]{$_NPCLips}[do][@NPCLips{$_NPCLips}][else][@NPCLips_General][end]
+
+Table: NPCLips-3
+[@NPCLips_General]
+[@NPCLips-2]
+Table: NPCLips-2
+[@NPCLips_General]
+[@NPCLips-1]
+Table: NPCLips-1
+[@NPCLips_General]
+разбита губа
+Table: NPCLips0
+[@NPCLips_General]
+Table: NPCLips1
+[@NPCLips_General]
+Table: NPCLips2
+[@NPCLips_General]
+губы накрашены, [@NPCLips_Color] цвета
+Table: NPCLips3
+[@NPCLips_General]
+[@NPCLips2]
+
+Table: NPCLips_General
+на месте рта тонкая прорезь губ
+[|тонкие|пухлые] губы
+губы [|выкаченные|выпученны|обычной формы], [@NPCLips_Color with ого] цвета
+[|тонкие|пухлые] [@NPCLips_Color] губы
+губы [@NPCLips_Color with ого] цвета
+
+Table: NPCLips_Color
+Set: NPCEC_Ending=[when]{$1}=ого[do]ого[else]ые[end]
+5:темн{$NPCEC_Ending}
+5:светл{$NPCEC_Ending}
+[@Colors with {$NPCEC_Ending}]
+[@Color_Ton][@Colors with {$NPCEC_Ending}]
+пепельно-сер{$NPCEC_Ending}
+

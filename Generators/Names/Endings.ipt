@@ -1,0 +1,23 @@
+// Grammar rules
+
+Table: IsFemaleWord
+Set: IsFWParam={$1}
+Set: NumOfLetters=1
+Set: IFW_LastLetter=[GetLastLetter with {NumOfLetter}, {IsFWParam}]
+
+Table: GetLastLetter
+Set: GLL_ParamLen=len({$1})
+
+
+Table: FantasyRacesAdj
+orcish
+goblin
+ogrish
+giant
+kobold
+doppleganger
+10:human
+5:elvish
+5:dwarven
+5:halfling
+4:gnomish
