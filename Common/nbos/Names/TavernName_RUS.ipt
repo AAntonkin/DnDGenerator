@@ -38,6 +38,7 @@ Table: TavernType_Female
 Table: TavernType_Male
 Трактир
 Постоялый двор
+Бар
 Table: FirstName
 Set: _FirstName_p1=[when]{$1}[do]{$1}[else]{$rndEnding}[end]
 Set: 1=
@@ -100,7 +101,6 @@ Set: 1=
 Грозн{$_FirstIy_p1}					//ый, ая, ого, ые, ой
 Грустн{$_FirstIy_p1}				//ый, ая, ого, ые, ой
 Грязн{$_FirstIy_p1}					//ый, ая, ого, ые, ой
-Грязн{$_FirstIy_p1}					//ый, ая, ого, ые, ой
 Деревянн{$_FirstIy_p1}				//ый, ая, ого, ые, ой		
 Дружелюбн{$_FirstIy_p1}				//ый, ая, ого, ые, ой
 Жадн{$_FirstIy_p1}					//ый, ая, ого, ые, ой
@@ -120,6 +120,7 @@ Set: 1=
 Ленив{$_FirstIy_p1}					//ый, ая, ого, ые, ой	
 Лукав{$_FirstIy_p1}					//ый, ая, ого, ые, ой		
 Лыс{$_FirstIy_p1}					//ый, ая, ого, ые, ой
+Мал{$_FirstIy_p1}					//ый, ая, ого, ые, ой
 Мёртв{$_FirstIy_p1}					//ый, ая, ого, ые, ой
 Мрачн{$_FirstIy_p1}					//ый, ая, ого, ые, ой
 Набожн{$_FirstIy_p1}				//ый, ая, ого, ые, ой
@@ -209,6 +210,8 @@ Set: 1=
 Table: First_type4
 Set: _FirstOY_p1=[@GetEnding with wtype4,{$1}]
 Set: 1=
+Больш{$_FirstOY_p1}					//ой, ая, ого, ые, ой
+Гнил{$_FirstOY_p1}					//ой, ая, ого, ые, ой
 Молод{$_FirstOY_p1}					//ой, ая, ого, ые, ой
 Пуст{$_FirstOY_p1}					//ой, ая, ого, ые, ой
 Озорн{$_FirstOY_p1}					//ой, ая, ого, ые, ой
