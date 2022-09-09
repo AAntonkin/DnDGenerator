@@ -1,212 +1,382 @@
 
 Table: Goblins
+<b>[@GoblinNames] [@GoblinSecondName]</b><br>&
+<b>Выглядит:</b> [@GoblinLook]<br>&
+<b>Работа в племени:</b> [@GoblinsJob]<br>&
+<b>Мечтает о:</b> [@GoblinsWant]<br>&
+<b>При себе имеет:</b> [@GoblinsPossession]<br>&
+<b>Награбленное:</b> [@GoblinsPlunder]<br>&
+<b>При атаке кричит:</b> [@GoblinsScreams]
 
+
+Table: GoblinNames
+Гык			
+Мотч	
+Иззли	
+Пизз	
+Рубли	
+Мадг	
+Вриф	
+Мут	
+Клык
+Буб	
+Мимис 	
+Нибп	
+Слиб
+Рупли	
+Оле Пуб
+Аббо
+Мирк	
+Луттс	
+Варм	
+Лорк	
+
+
+Table: GoblinLook
+Старым
+Чистым
+Грязным
+Изысканным
+Безумным
+Хитрым
+Пьяным
+Дерганым
+Злым
+Дружелюбным
+Болезненным
+Толстым
+Подозрительным
+Смущенным
+Как борец
+Мускулисто
+Раненым
+Молодым
+Нервным
+Спокойным
+Сонным
+Пьяным
+Больным
+
+
+Table: GoblinSecondName
+Болтун
+Пятолиз
+Словоперд
+Костоврот
+Конеборщик
+Грязеед
+Кружкорыг
+Пьяненог
+Медлетрах
+Дырколаз
+Овцелиз	
+Кашлехрип
+Стукокус
+Однозуб
+Мылоед
+Быстробег
+Палколом
+Слизнелаз
+Медногрыз
+Убивых
+
+
+Table: GoblinsJob
+Безработный
+Вяльщик мяса паразитов
+Охотник на крыс
+Разносчик
+Взломщик
+Сторожило
+Чистильщик обуви
+Охранник
+Аферист
+Нищий
+Пьяница
+Кольщик (закалывает)
+Ловец детей
+Специалист по зубам
+Борец
+Дворник
+Ноже точильщик
+Броневик (ремонт брони)
+Веревочный мастер
+Продавец дуделок (труб)
+
+
+Table: GoblinsWant
+Деньги
+Любовь
+Еду
+Вино
+Воды
+Друзей
+Жертву
+Семью
+Одежду
+Развлечения
+Приключения
+Свободу
+Новые сапоги
+Шлем
+Знания
+Фрукты
+Приют
+Дятла
+Работать
+Остаться в племени
+
+Table: GoblinsPossession
+Нож
+Молоток
+Сеть
+Фрукты
+Малыш Гоблин
+Письмо
+Сапоги
+Шкатулка
+Игральная кость
+Мясная палочка
+Бутылка самогона
+Большой нож
+Деревянный ящик
+Точильный камень
+Дубина
+Метла
+Банка с пчелами
+Банка с медом
+Рюкзак
+Знамя племени
+	
+Table: GoblinsPlunder
+Медное яблоко
+Карта сокровищ
+Странная кукла
+Череп гоблина
+Арахис
+Мешочек с солью
+Странный ключ
+Ящик с замком
+Статуэтка из латуни (Королева воронов)
+Медальон
+Хрустальное блюдо
+Шарик из воска
+Коллекция клыков
+Глиняный амулет
+Статуэтка совы
+[|голубой|синий|желтый|красный|зеленый|белый|черный] кристалл
+Банка с [|зубами|ногтями|волосами|камушками|червями|костями|пеплом]
 
 Table: GoblinsScreams
-
-
+Гоблин е-е-е-есть!
+Гоблин бить!
+Аргххагага!
+Я Вас жева-а-а-ать!
+Я Вас рубить!
+Грязь жевать, огромных бить!
+Мясо-пауки!
 
 Table: GoblinsTemper
-- РЈ РјРµРЅСЏ РµСЃС‚СЊ РІРµР»РёРєРёРµ РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё!
-- РџСЂРѕСЂРѕС‡РµСЃС‚РІР° Р±РµР·СѓРјРЅС‹! РџСЂРѕСЂРѕС‡РµСЃС‚РІР° РѕР±СЂРµС‡РµРЅС‹!
-РџРѕСЃС‚РѕСЏРЅРЅРѕ, С‡С‚Рѕ С‚Рѕ С‡РёС‚Р°РµС‚
-РћС‡РµРЅСЊ Р»СЊСЃС‚РёРІС‹Р№
-РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Р№ РІС‹РїРёРІРѕС…Р°
-Р’СЃРµ, РІСЃС‘ РІРѕРєСЂСѓРі РґРµР»Р°СЋС‚ РЅРµРїСЂР°РІРёР»СЊРЅРѕ
-Р§РёСЃС‚РѕРїР»РѕС‚РЅС‹Р№ СЃРЅРѕР±, РЅРµ СЃРѕСЂРёС‚Рµ!
-РќРµРІСЂРѕС‚РёС‡РµСЃРєРёР№ (СѓСЃС‚Р°Р»РѕСЃС‚СЊ, СЃР»Р°Р±РѕСЃС‚СЊ, СЂР°Р·РґСЂР°Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ, РїРµСЂРµРїР°РґС‹ РЅР°СЃС‚СЂРѕРµРЅРёСЏ, СЃРЅРёР¶РµРЅРЅР°СЏ СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ, РЅР°СЂСѓС€РµРЅРёСЏ Р°РїРїРµС‚РёС‚Р° Рё СЃРЅР°)
-РРЅС‚РµРЅСЃРёРІРЅС‹Рµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РІРѕРѕР±СЂР°Р¶Р°РµРјС‹Рј РґСЂСѓРіРѕРј
-Р—Р°РјРµРґР»СЏРµС‚ РѕРґРЅРѕ РєР»СЋС‡РµРІРѕРµ СЃР»РѕРІРѕ РІ РєР°Р¶РґРѕРј РїСЂРµРґР»РѕР¶РµРЅРёРё
-Р“СЂРѕРјРєРѕ РґС‹С€РёС‚.
-Р“РѕРІРѕСЂРёС‚ РІСЃРµ, С‡С‚Рѕ РїРѕСЏРІР»СЏРµС‚СЃСЏ РІ РіРѕР»РѕРІРµ
-Р‘РѕР»СЊС€РёРµ РёРЅС„РµРєС†РёРѕРЅРЅС‹Рµ Р±РѕСЂРѕРґР°РІРєРё
-РЎРёР»СЊРЅС‹Р№ Р°РєС†РµРЅС‚
-Р“РѕРІРѕСЂРёС‚ РѕС‚СЂС‹РІРєР°РјРё
-РњРµРіР°Р»РѕРјР°РЅРёСЏ (РјР°РЅРёСЏ РІРµР»РёС‡РёСЏ)
-Р“СЂР°РЅРґРёРѕР·РЅС‹Рµ РїР»Р°РЅС‹ РЅР° Р±СѓРґСѓС‰РµРµ
-РЎРµРЅС‚РёРјРµРЅС‚Р°Р»РµРЅ РґРѕ СЃРјРµС€РЅРѕРіРѕ
-РЈРґСѓС€Р°СЋС‰Р°СЏ РЅРѕСЃС‚Р°Р»СЊРіРёСЏ Рѕ Р±С‹Р»РѕРј
-РџРѕСЂС‹РІС‹ РЅР°Рґ РЅРµР±РѕР»СЊС€РёРјРё СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅРёСЏРјРё
-Р’СЃРµРіРґР° РіРѕРІРѕСЂРёС‚ С€РµРїРѕС‚РѕРј
-Р’СЃРµРіРґР° РєСЂРёС‡РёС‚
-РџРµСЂРµРіРѕРІРѕСЂС‹ РІ РѕСЃРЅРѕРІРЅРѕРј РІРµРґСѓС‚СЃСЏ СЃ РїРѕР±РёС‚С‹Рј РїСЂРѕС‚РёРІРЅРёРєРѕРј
-Р›СЋР±РёС‚ РёРіСЂР°С‚СЊ РІ РїСЂСЏС‚РєРё
-РџРѕСЃС‚РѕСЏРЅРЅРѕ РёСЃРїРѕР»СЊР·СѓРµС‚ РєР°РєРёРµ С‚Рѕ РєРѕРґС‹ Рё С€РёС„СЂС‹
-РєР»РµРїС‚РѕРјР°РЅ
-Р‘РµР·РіСЂР°РЅРёС‡РЅС‹Р№ РѕРїС‚РёРјРёР·Рј
-Р‘РµР·РіСЂР°РЅРёС‡РЅС‹Р№ РїРµСЃСЃРёРјРёР·Рј
-РљРѕСЂРµРЅР°СЃС‚С‹Р№ СЃС‚Р°СЂС‹Р№ С‚СѓРјР°РЅ
-Р—Р°Р±Р°РІРЅС‹Р№ С„Р°РЅР°С‚РёРє
-Р“СЂР°РјРјР°С‚РёС‡РµСЃРєР°СЏ РіРѕРЅС‡Р°СЏ, РЅРѕ РїР»РѕС…РѕР№ РІ РіСЂР°РјРјР°С‚РёРєРµ
-РќРёС‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ Р±С‹РІР°РµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С…РѕСЂРѕС€РёРј
-РћС‚РІРµС‚: Р”Р° Рё ... С‡С‚Рѕ-С‚Рѕ РЅРµ СЃРІСЏР·Р°РЅРЅРѕРµ
-С‚РµСЂСЂРёС‚РѕСЂРёР°Р»СЊРЅРѕР№
-РџРѕСЃС‚РѕСЏРЅРЅРѕ Р¶Р°Р»СѓРµС‚СЃСЏ РЅР° Р»РёРґРµСЂРѕРІ С„СЂР°РєС†РёР№
-РњСѓР·С‹РєР°Р»СЊРЅС‹Р№ СЃРЅРѕР± Рѕ РјСѓР·С‹РєР°РЅС‚Р°С…
-РћРїР°СЃРЅС‹Р№ РЅР°СЂРєРѕРјР°РЅ
-РџРѕСЃС‚РѕСЏРЅРЅРѕРµ РїРѕРґСЃС‡РµС‚ РІРµС‰РµР№
-Р’СЃРµ РїСЂРѕС‚РёРІ СЌС‚РѕРіРѕ
-РџРѕСЃС‚РѕСЏРЅРЅРѕ СЃРѕСЃРµС‚ РїР°Р»СЊС†С‹
-РџРѕРґР¶РёРіР°С‚РµР»СЊ
-Р‘СЂРѕСЃР°РµС‚ РІРµС‰Рё
-РЎРїСЏС‰Р°СЏ РµРґР°
-РџРѕСЃС‚РѕСЏРЅРЅРѕ СЂРµРІРЅРёРІС‹Р№
-РћСЃС‚СЂС‹Р№ СЃС‚СЂР°С… СѓРїСѓСЃС‚РёС‚СЊ
-РљР°Р¶РґС‹Р№ РґРѕР»Р¶РµРЅ РІСЃРµРіРґР° С…РѕСЂРѕС€Рѕ РїСЂРѕРІРѕРґРёС‚СЊ РІСЂРµРјСЏ
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ СЂС‹Р±Р°
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ С‡РµСЂРµРїР°С…Р°
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ РєРѕС€РєР°
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ Р»РёС‡
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ РїСЂРёРЅС†
-РЎС‡РёС‚Р°РµС‚, С‡С‚Рѕ СЌС‚Рѕ Р·Р»РѕР№ Р±РѕСЃСЃ Р·Р° РІСЃРµРј СЌС‚РёРј
-РџСЂР°РІРёР»Рѕ-РїСЂРёРІРµСЂР¶РµРЅРµС†
-РЎРєСЂСЏРіР°
-РќРµРІРµСЂРѕСЏС‚РЅРѕ С‚С‰РµСЃР»Р°РІРЅС‹Р№
+- У меня есть великие магические способности!
+- Пророчества безумны! Пророчества обречены!
+Постоянно, что то читает
+Очень льстивый
+Профессиональный выпивоха
+Все, всё вокруг делают неправильно
+Чистоплотный сноб, не сорите!
+Невротический (усталость, слабость, раздражительность, перепады настроения, сниженная работоспособность, нарушения аппетита и сна)
+Интенсивные отношения с воображаемым другом
+Замедляет одно ключевое слово в каждом предложении
+Громко дышит.
+Говорит все, что появляется в голове
+Большие инфекционные бородавки
+Сильный акцент
+Говорит отрывками
+Мегаломания (мания величия)
+Грандиозные планы на будущее
+Сентиментален до смешного
+Удушающая ностальгия о былом
+Порывы над небольшими разочарованиями
+Всегда говорит шепотом
+Всегда кричит
+Переговоры в основном ведутся с побитым противником
+Любит играть в прятки
+Постоянно использует какие то коды и шифры
+клептоман
+Безграничный оптимизм
+Безграничный пессимизм
+Коренастый старый туман
+Забавный фанатик
+Грамматическая гончая, но плохой в грамматике
+Ничто никогда не бывает достаточно хорошим
+Ответ: Да и ... что-то не связанное
+территориальной
+Постоянно жалуется на лидеров фракций
+Музыкальный сноб о музыкантах
+Опасный наркоман
+Постоянное подсчет вещей
+Все против этого
+Постоянно сосет пальцы
+Поджигатель
+Бросает вещи
+Спящая еда
+Постоянно ревнивый
+Острый страх упустить
+Каждый должен всегда хорошо проводить время
+Считает, что это рыба
+Считает, что это черепаха
+Считает, что это кошка
+Считает, что это лич
+Считает, что это принц
+Считает, что это злой босс за всем этим
+Правило-приверженец
+Скряга
+Невероятно тщеславный
 Overshares
-Р“РѕР»РѕРґРЅС‹Р№, РµСЃС‚ РІСЃРµ
-Р­РїРёРєСѓСЂРµР№, РµСЃС‚ РІСЃРµ
-РџРѕС‡С‚Рё РїРѕСЃС‚РѕСЏРЅРЅРѕ СЂРІРµС‚СЃСЏ
-Р‘РµСЃРєРѕРЅРµС‡РЅС‹Рµ С€СѓС‚РєРё
-Р‘РµСЃРєРѕРЅРµС‡РЅС‹Рµ РєР°Р»Р°РјР±СѓСЂС‹
-Р’СЃРµ РІРµСЃРµР»Рѕ
-Р’СЃРµ Р±СЂСѓС‚С‚Рѕ
-РџРѕСЃС‚РѕСЏРЅРЅС‹Р№
-Р—РЅР°С‚РѕРє Booger
-РћР±РІРёРЅСЏРµС‚ РІСЃРµС… РїСѓРєР°СЋС‰РёС…
-Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р»СЋР±РёС‚ СЃС‹СЂ
-Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р»СЋР±РёС‚ СЂС‹Р±Сѓ
-Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РѕС€РёР±Р°СЋС‚СЃСЏ
-СЂС‹СЃР°Рє
-Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ СѓСЂРѕРґР»РёРІС‹Рµ
-Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РїР»РѕС…Рѕ РѕРґРµС‚С‹
-РџС‹С‚Р°РµС‚СЃСЏ РІРјРµСЃС‚РёС‚СЊ РІСЃРµ РІ СЂРѕС‚
-РЎРёР»СЊРЅРѕРµ С‡СѓРІСЃС‚РІРѕ РЅР°РґРІРёРіР°СЋС‰РµР№СЃСЏ РіРёР±РµР»Рё
-Р”СѓРјР°РµС‚, С‡С‚Рѕ РѕРіСЂРѕРјРЅРѕРµ Р±РѕРіР°С‚СЃС‚РІРѕ РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° СѓРіР»РѕРј
-РџРѕСЃС‚РѕСЏРЅРЅРѕРµ СЃРѕР·РґР°РЅРёРµ СЃС…РµРј СЃ Р±РѕРіР°С‚С‹Рј СЃРѕРґРµСЂР¶Р°РЅРёРµРј
-РќРµРІРѕР·РјРѕР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅСѓСЋ РѕР±СЂР°С‚РЅСѓСЋ СЃРІСЏР·СЊ
-РЅРёРіРёР»РёСЃС‚
-С„СѓРЅРґР°РјРµРЅС‚Р°Р»РёСЃС‚
-РЎР°РјС‹Р№ СѓРјРЅС‹Р№ С‡РµР»РѕРІРµРє РІ РєРѕРјРЅР°С‚Рµ
-РќРµРІРёРґРёРјС‹Р№ СЃРІРѕРµРјСѓ СѓР¶Р°СЃРЅРѕРјСѓ Р·Р°РїР°С…Сѓ
-Р›РёР·Р°С‚СЊ РІСЃРµ
-Р“РѕР»РѕРІР° РІР·СЂС‹РІР°РµС‚СЃСЏ, РєРѕРіРґР° РІРѕР·Р±СѓР¶РґР°РµС‚СЃСЏ
-РџРѕСЃС‚РѕСЏРЅРЅРѕ Р¶Р°Р»СѓРµС‚СЃСЏ РЅР° СЃС‚Р°СЂРµРЅРёРµ
-Р’СЃРµ Р±С‹Р»Рѕ Р»СѓС‡С€Рµ РґРѕ ______
-Р–Р°Р»СѓРµС‚СЃСЏ, С‡С‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РјРµРЅСЏРµС‚СЃСЏ
+Голодный, ест все
+Эпикурей, ест все
+Почти постоянно рвется
+Бесконечные шутки
+Бесконечные каламбуры
+Все весело
+Все брутто
+Постоянный
+Знаток Booger
+Обвиняет всех пукающих
+Действительно любит сыр
+Действительно любит рыбу
+Все остальные ошибаются
+рысак
+Все остальные уродливые
+Все остальные плохо одеты
+Пытается вместить все в рот
+Сильное чувство надвигающейся гибели
+Думает, что огромное богатство находится за углом
+Постоянное создание схем с богатым содержанием
+Невозможно обработать отрицательную обратную связь
+нигилист
+фундаменталист
+Самый умный человек в комнате
+Невидимый своему ужасному запаху
+Лизать все
+Голова взрывается, когда возбуждается
+Постоянно жалуется на старение
+Все было лучше до ______
+Жалуется, что ничего не меняется
 Sneaks
-РЈР¶Р°СЃ РЅРµРІРёРґРёРјС‹С… РІСЂР°РіРѕРІ
-РџРѕСЃС‚РѕСЏРЅРЅРѕ СѓРґРёРІР»РµРЅ
-РћР±С‰Р°РµС‚СЃСЏ, РІСЃС‚СЂСЏС…РёРІР°СЏ РіРѕР»РѕРІРѕР№
-РњРѕРєСЂС‹Рµ Р·Р°РјС‹СЃР»С‹ РґР»СЏ РІСЃРµС…
+Ужас невидимых врагов
+Постоянно удивлен
+Общается, встряхивая головой
+Мокрые замыслы для всех
 Nitpicker
-РћС‡РµРЅСЊ РіРѕР»РѕРґРµРЅ РґР»СЏ РєРѕС€РµРє
-РћС‡РµРЅСЊ РіРѕР»РѕРґРµРЅ РґР»СЏ С‰РµРЅРєРѕРІ
-РџРµСЂРµСЂС‹РІС‹ РІ РїРµСЃРЅСЋ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РіСЂРѕРјРєРѕ
-Р’РёРґРёС‚ С‚РѕР»СЊРєРѕ РЅРµРґРѕСЃС‚Р°С‚РѕРє РІ РєР°Р¶РґРѕРј РїР»Р°РЅРµ
-РўС‹ РµРіРѕ РЅРѕРІС‹Р№ Р»СѓС‡С€РёР№ РґСЂСѓРі
-РќРёРєР°РєРёС… С„РёР·РёС‡РµСЃРєРёС… РіСЂР°РЅРёС†
-Р’СЃРµ - СЃРµРєСЃ-РєР°Р»Р°РјР±СѓСЂ
+Очень голоден для кошек
+Очень голоден для щенков
+Перерывы в песню, действительно громко
+Видит только недостаток в каждом плане
+Ты его новый лучший друг
+Никаких физических границ
+Все - секс-каламбур
 
 
 Table: 100MemorableGoblins
-UurвЂ™lok вЂ“ This pesky little goblin got his arm tore off by a Hobgoblin Commander after he was caught stealing from him. He loves sneaking around and stealing shiny things.
-Fugh вЂ“ This goblin is a bitвЂ¦ slower than the rest in his tribe, but heвЂ™s big, strong, and easy to order around. The only problem is he eats more than 3 other goblins do in a day, and heвЂ™s still growing.
-Grishnar, the Rusted Knight вЂ“ Clad head to toe in rusted, scrounged together armor stolen from unlucky adventurers. HeвЂ™s allowed these trophies as his insistence on вЂchivalryвЂ™ means heвЂ™ll never try to take over the tribe, and he thinks heвЂ™s invincible so heвЂ™ll fight anybody you tell him to.
-Crimson Hat вЂ“ Clad in a blood red cap or unknown origin, and heavy iron boots, this Gob is often confused with a hob. He insists he claimed his hat from a Red Cap he did a favor for.
-Huro-Huro вЂ“ Clad in only a leather loincloth, this jungle dwelling goblin who has learned the secrets of druids. His form is slimly and almostвЂ¦scaly.
-3-Gob вЂ“ 3 gobs in a trench cloak, insists since heвЂ™s so вЂtallвЂ™ he should be in charge. Very unconvincing.
+Uur’lok – This pesky little goblin got his arm tore off by a Hobgoblin Commander after he was caught stealing from him. He loves sneaking around and stealing shiny things.
+Fugh – This goblin is a bit… slower than the rest in his tribe, but he’s big, strong, and easy to order around. The only problem is he eats more than 3 other goblins do in a day, and he’s still growing.
+Grishnar, the Rusted Knight – Clad head to toe in rusted, scrounged together armor stolen from unlucky adventurers. He’s allowed these trophies as his insistence on ‘chivalry’ means he’ll never try to take over the tribe, and he thinks he’s invincible so he’ll fight anybody you tell him to.
+Crimson Hat – Clad in a blood red cap or unknown origin, and heavy iron boots, this Gob is often confused with a hob. He insists he claimed his hat from a Red Cap he did a favor for.
+Huro-Huro – Clad in only a leather loincloth, this jungle dwelling goblin who has learned the secrets of druids. His form is slimly and almost…scaly.
+3-Gob – 3 gobs in a trench cloak, insists since he’s so ‘tall’ he should be in charge. Very unconvincing.
 Gully Blackwaters: Patriarch of the Blackwater clan, he has been running the swamps for his entire life. He has built his clan up on raiding, magic, and good old intimidation.
-Tik вЂ“ wears a necklace made of his own teeth. Says he wants to keep them as вЂњsparesвЂќ in case important ones fall out.
-Iz Iz вЂ“ Claims to be a great and powerful sorcerer who can bend reality to her will, but the stars are just not aligned today. Will take credit for any unexplained event.
-Moka вЂ“ A cook who has one recipe. He loves it. Others hate it. Anyone who complains doesnвЂ™t eat for the next couple days. They have no idea what they are talking about.
-Kalo вЂ“ Claims his parents were wolves. Not that he was raised by wolves, that his parents WERE wolves. Fights with no equipment, snarling and biting. Sleeps in the wolves pen, curled up in the fetal position.
-Zarl вЂ“ A practicing mage accidentally resurrected this goblin instead of his companion by mistake. Believes they are a god.
-Trizick вЂ“ a ex-bandit turned circus owner/worker when a series of nefarious plots didnвЂ™t quite work out (due to his own cowardice).
-Yameeka вЂ“ a female goblin who thinks sheвЂ™s a gnome/halfling who has been cursed. Begs the party to help her break the curse and directs them to the wizard she believes did it (can be real or completely imagined.)
-Pakpak вЂ“ a goblin that can only say pack and carries a pack on his backpack. Will pack your snacks into your backpack if your name isnвЂ™t Jack.
-Mushroo вЂ“ A shy female goblin who somehow got her hands on an old, rusty harp missing a few strings. SheвЂ™s a surprising natural at using it, coaxing clear notes as if it were a high quality instrument and able to play any song heard just from memory. Can be sent down the path to taking levels in bard
+Tik – wears a necklace made of his own teeth. Says he wants to keep them as “spares” in case important ones fall out.
+Iz Iz – Claims to be a great and powerful sorcerer who can bend reality to her will, but the stars are just not aligned today. Will take credit for any unexplained event.
+Moka – A cook who has one recipe. He loves it. Others hate it. Anyone who complains doesn’t eat for the next couple days. They have no idea what they are talking about.
+Kalo – Claims his parents were wolves. Not that he was raised by wolves, that his parents WERE wolves. Fights with no equipment, snarling and biting. Sleeps in the wolves pen, curled up in the fetal position.
+Zarl – A practicing mage accidentally resurrected this goblin instead of his companion by mistake. Believes they are a god.
+Trizick – a ex-bandit turned circus owner/worker when a series of nefarious plots didn’t quite work out (due to his own cowardice).
+Yameeka – a female goblin who thinks she’s a gnome/halfling who has been cursed. Begs the party to help her break the curse and directs them to the wizard she believes did it (can be real or completely imagined.)
+Pakpak – a goblin that can only say pack and carries a pack on his backpack. Will pack your snacks into your backpack if your name isn’t Jack.
+Mushroo – A shy female goblin who somehow got her hands on an old, rusty harp missing a few strings. She’s a surprising natural at using it, coaxing clear notes as if it were a high quality instrument and able to play any song heard just from memory. Can be sent down the path to taking levels in bard
 Dun bo- A goblin with ears each as big as his head. Is very self conscious about it. Has a massive bonus the listen checks. Usually to hear the whispered jokes about his big ears.
-Makarr вЂ“ a small goblin wielding a massive banner who cannot be persuaded to part with. Adopted by a barrack of orc soldiers who treat him as their mascot, he is always at the forefront of their raids, waving his banner amid the chaos. Is surprisingly lucky when it comes to surviving the battlefield.
-King вЂ“ Bedecked in a cloak and crown stolen from a stage show, he walked into the nearest goblin tribe and asserted himself as the new ruler because quote, вЂcanвЂ™t you see this shiny crown?вЂ™ Regularly sends squads into nearby towns to get him вЂBooze and wrenchesвЂ™, pissing off the local bartenders and engineers.
-Choppa вЂ“ carries a device like a tiny guillotine. Sneaks into camps at night, looking for sleeping adventurers with exposed fingers to chop off and collect.
-Tipy-Tap вЂ“ One of the toughest goblins youвЂ™ve ever met. Picked on by other goblins as a child for his name, often joking about his вЂњtiny tipy-tap feetвЂќ lead him to doing nothing but leg days. Now heвЂ™s got legs like tree trunks. Can squash another goblins head without even trying. Unfortunately his arms never got much workout so he barely has the strength to swing a sword.
-Nit вЂ“ a shadow monk with a heavy Brooklyn accent. He works as highly-trained muscle for a major crime organization which freed him from slavery. He very much enjoys his job.
-Guillermo Espinoza, Marquis du Blancmont вЂ“ This goblin is almost certainly insane, and seems to have read The Three Musketeers a few times too many. Tall boots with floppy tops. Brightly colored tabard. Rapier. Nice hat though, it has feathers.
-Uggah Wai вЂ“ The labored breathing and snot running off his chin makes you pretty sure this gob either has a head cold or the worst case of hay fever in history.
-Gabe вЂ“ Claims to be a human victim of true polymorph. HeвЂ™s making the best of it, because at least now he can get laid. So the women are goblins. So what.
-Tiff and Wubb вЂ“ These siblings are the goblin equivalent of tweens. They arenвЂ™t armed. They are lost and cold and hungry.
-Mah-Lohn вЂ“ He just wants to make a living selling beer and cider to anyone with coin. Anyone who enters his tavern inexplicably gains knowledge of the other patronsвЂ™ names.
-Nom and Clav вЂ“ These two gobs are veritable fonts of dubious knowledge. Usually found drinking together at Ploddits, Mah-LohnвЂ™s bar.
-Gubbz вЂ“ A suicidally brave (and probably insane) goblin with an unearthly amount of luck. He gets easily distracted and dodges most attacks by picking up funny looking rocks, breaking into a spontaneous dance, tripping over his own feet and stumbling out of harms way, etc. He thinks that this вЂprotectionвЂ™ comes from his ancestors and thus often fights naked.
-Old вЂPink-RobesвЂ™ Rutt вЂ“ An elderly goblin wearing a pink, hooded robe that looks way too big for him. He wields a wand of smiles that he uses as a walking stick. For some reason it can also cast fireball in conjunction with the original spell, so that his victims smile before they get blown to pieces. He does not speak common and simply smiles widely but confused whenever heвЂ™s talked to in any other language than Goblin.
-Pinkskin вЂ“ At about three feet tall, with a measly little head, and curly brown hair, Pinkskin is unfortunately the ugliest goblin ever born, with a face only a mother can love. His flat little claws barely even extend past his fingertips and break so easily.
-Kosmos вЂ“ A Goblin вЂscientistвЂ™ whose destiny is watched over by the Gods. May one day change the world, if only she could learn to read first.
-Shake Spear вЂ“ She writes and performs plays. Unfortunately, theater isnвЂ™t a highly respected art form where she is from. She wants to expand and perform in other parts of the world, but she fears peopleвЂ™s violent racism toward goblins.
-Glob вЂ“ skintone more brownish with green spots, small even for the size of a goblin, always ridiculed and bullied, has no confidence but is in fact smarter than most goblins. Also plays the flute surprisingly well.
-Spike вЂ“ (surprise surprise) a little larger and a lot fiercer than other goblins, a foul grin with a sadistic grimace. Sports a white/black mohawk. Spike is the leader of the pack, cunning and evil.
-Vash вЂ“ A goblin alchemist who has not only managed to tame a giant vulture to fly around on, heвЂ™s also figured out how to build and use guns. Fond of infusing his ammunition with all kinds of volatile compounds just to see what happens.
-Gleb вЂ“ A long time ago a goblin tribe was wiped out afterr they tried to play cards with a deck of many things. Adventurers came in and cleaned up the mess, however Gleb lived, he lived because he became a warlock to Enlil, a retired god who needed something done in Unther via XP and magic items that he got from the cards. (FR Setting ) He now travels the countryside on his trusty war pig (Pig not boar) Porkins.
-Jot вЂ“ The oldest of a set of brothers. Jot is incredibly crafty, being well spoken for a goblin.
-Joot вЂ“ The second oldest. Is a wonderful cook for goblin standards. He can a lot of unappetizing thingsвЂ¦ palatable.
-Jooot вЂ“ The baby of the trio. Despite being the youngest, heвЂ™s actually the tallest as well. He doesnвЂ™t do much, but he enjoys painting (with things that arenвЂ™t paint).
-Gizmit вЂ“ the goblin wizard effigy master who built himself a wyvern effigy, then shrank himself down with a reduce person, which he made permanent. He now spends most of his time in a control center inside the wyvernвЂ™s head.
-Gututut вЂ“ Big, Strong, and Hairy Goblin, thinks he may be adopted.
-Zuntik вЂ“ Goblin Cleric who worships himself.
-Bang Booyahg: A goblin trickster cleric whose essence Garl Glittergold mistook for a gnomeвЂ™s and accidentally gave powers. Ever since the incident Bang has become a fervent disciple in hopes to prove himself worthy of his deity.
-Fizgit вЂ“ A female goblin who travels the world writing about her journeys. Her stories are romantic fantasies, where she is the most beautiful desirable goblin in the land and has whirlwind affairs with almost every male character she meets. Anyone who critiques her, draws her ire and are major villains in her story. Those who support her are written as madly in love with her.
-Three Crusts- As a young scout, the goblin became lost and wound up high in the mountains. Freezing and starving, he was found by a woodsman and carried to the woodsmanвЂ™s small home. The man and his wife served him and another traveler up food pulled from a wooden box in the kitchen and gave them a place to sleep. In the night, the goblin arose and grabbed the box, delighted to have found such a prize. To cover his escape, he lit the home on fire and ran into the night. Once he had passed out of reach of any pursuit, he opened up the box. Inside he found three crusts of bread. The woodsman and his wife had shared all but their very last food with him, and in return he had robbed them and burned their home. The goblin flung the box down, and then was sent reeling to the ground by a powerful blow. He looked up into the eyes of the other traveler, dressed in silver armor and holding a mace. The traveler, a cleric of a goddess of justice, had managed to put out the fire before it had done any real damage, and then had come after the goblin. Rather than kill him, he declared that the goblin would serve him for three years, one for every crust of bread in the box. Over the next three years, Three Crusts served as the clericвЂ™s servant, then his squire and friend. Three Crusts took holy orders himself shortly after the three years ended, and is now a paladin.
-Gulzyat the Undying вЂ“ This little cursed fellow is a horrible nuisance. He wears nothing but a ratty pelt from a Dire Badger with the upper half of the badger head worn like a helm and the ratty pelt acting as a cloak and an old rusty piece of full plate elbow joint as a codpiece. The badger is appropriate because once you kill Gulzyat he seems to tenaciously come back to life at the worst of times appearing out of no where to exact a bit of revenge for his death. He is just a normal goblin for the most part so Gulzyat is not so much a physical threat himself but more about the ill timing of his reappearance. Trying to sneak around the sleeping hill giant? Not so fast here comes that odd little goblin you thought you killed to make a racket and wake him up. Trying to lie your way past the city guard? Guess what, the little bastard speaks enough common to pop up and let them know what you are really about. Trying to impress a noble, hard to do when a goblin appears chanting your name and peeing on his plate of roast duck. Remove curse only works for one encounter where Gulzyat would have appeared and then he turns up again like a bad penny. A wish can rid you of Gulzyat sending him to pester someone else but the only other way is to trick some other poor sap into killing the little nob and getting someone else to take on Gulzyats ire that is currently directed at you.
-Lokey Mogul- Serial killer, chef, and television personality! Hosts a cooking show (viewed on scrying mirrors that some rich people own) called вЂGobblinвЂ™ With A GoblinвЂ™ in which he details the process of kidnapping, cooking, and properly serving people. Sometimes has вЂguest starsвЂ™ (either kidnapped people or bandits) that rate his dishes. Is a powerful Illusionist that uses Hallucinatory Terrain to make his victims think they have ran into a dead end and to avoid other people seeing his kidnappings. His kitchens are usually back alleys, abandoned buildings, and other peopleвЂ™s attics.
-Ukmot, Archfiend Warlock вЂ“ Considered the weakest of his tribe, he was beaten and exiled. In his rage he vowed his service to Glasya in exchange for power and to advance his goals for submitting goblinkind under his rule and sending his enemies to his patron for eternal suffering.
-Boom Boom, the Pyroman(iac)cer вЂ“ A slender goblin with a nasty lisp, the right half of the face is covered in burnmarks, remnant of one of his most successful experiments, as he would claim. He has a bag with him and you can be sure, one item in there is a firestarter and the rest, some sort of explosive devices. His catchphrase: вЂI can make ith boom boom?вЂ™
-Zamot вЂ“ an elderly goblin who believes his walking stick has been possessed by a wild(a wolf) god by the name of RalвЂ™tak. He constantly talks to his walking stick as a result and every night he wanders out of his encampment to find a pack of wolves to howl at the moon with.
-ZigвЂ™Won the Quick вЂ“ Twin goblins known for their pranks by seeming to appear in two places at once. Not to be confused with his brother ZigвЂ™Tu.
-OrggвЂ™mal the Mountain Prince вЂ“ An unusually large goblin king that became famous for discovering, posthumously, that rocks are heavy.
-ShibвЂ™hal the Sand Rat вЂ“ Famous adventurer that was one of the first goblins to make friends with another humanoid species and retired wealthy. Many mainland humans mistakenly use the word вЂshibвЂ™halвЂ™ as friend in Goblinspeak, no goblin has yet to be in a rush to correct them.
-The Goblin raider, MГёd вЂ“ He is known in these parts. He finds clothes uncomfortable, instead wearing only a loin cloth and coating himself in dirt, twigs, leaves and anything else he can find. Unlike other goblins, mГёd doesnвЂ™t really care for shiny things. Instead, he covets dark things. To this end, he carries a pouch of charcoal to darken the shiny gold coins he acquires.
-Gorgeous Garrow the Galiant вЂ“ This little Goblin bard wears a pirate costume complete with a captainвЂ™s hat and a fake beard. He plays a violin and sings tall tales of his courageous swashbuckling adventures (heвЂ™s actually terrified of deep water and has never been on a boat).
+Makarr – a small goblin wielding a massive banner who cannot be persuaded to part with. Adopted by a barrack of orc soldiers who treat him as their mascot, he is always at the forefront of their raids, waving his banner amid the chaos. Is surprisingly lucky when it comes to surviving the battlefield.
+King – Bedecked in a cloak and crown stolen from a stage show, he walked into the nearest goblin tribe and asserted himself as the new ruler because quote, ‘can’t you see this shiny crown?’ Regularly sends squads into nearby towns to get him ‘Booze and wrenches’, pissing off the local bartenders and engineers.
+Choppa – carries a device like a tiny guillotine. Sneaks into camps at night, looking for sleeping adventurers with exposed fingers to chop off and collect.
+Tipy-Tap – One of the toughest goblins you’ve ever met. Picked on by other goblins as a child for his name, often joking about his “tiny tipy-tap feet” lead him to doing nothing but leg days. Now he’s got legs like tree trunks. Can squash another goblins head without even trying. Unfortunately his arms never got much workout so he barely has the strength to swing a sword.
+Nit – a shadow monk with a heavy Brooklyn accent. He works as highly-trained muscle for a major crime organization which freed him from slavery. He very much enjoys his job.
+Guillermo Espinoza, Marquis du Blancmont – This goblin is almost certainly insane, and seems to have read The Three Musketeers a few times too many. Tall boots with floppy tops. Brightly colored tabard. Rapier. Nice hat though, it has feathers.
+Uggah Wai – The labored breathing and snot running off his chin makes you pretty sure this gob either has a head cold or the worst case of hay fever in history.
+Gabe – Claims to be a human victim of true polymorph. He’s making the best of it, because at least now he can get laid. So the women are goblins. So what.
+Tiff and Wubb – These siblings are the goblin equivalent of tweens. They aren’t armed. They are lost and cold and hungry.
+Mah-Lohn – He just wants to make a living selling beer and cider to anyone with coin. Anyone who enters his tavern inexplicably gains knowledge of the other patrons’ names.
+Nom and Clav – These two gobs are veritable fonts of dubious knowledge. Usually found drinking together at Ploddits, Mah-Lohn’s bar.
+Gubbz – A suicidally brave (and probably insane) goblin with an unearthly amount of luck. He gets easily distracted and dodges most attacks by picking up funny looking rocks, breaking into a spontaneous dance, tripping over his own feet and stumbling out of harms way, etc. He thinks that this ‘protection’ comes from his ancestors and thus often fights naked.
+Old ‘Pink-Robes’ Rutt – An elderly goblin wearing a pink, hooded robe that looks way too big for him. He wields a wand of smiles that he uses as a walking stick. For some reason it can also cast fireball in conjunction with the original spell, so that his victims smile before they get blown to pieces. He does not speak common and simply smiles widely but confused whenever he’s talked to in any other language than Goblin.
+Pinkskin – At about three feet tall, with a measly little head, and curly brown hair, Pinkskin is unfortunately the ugliest goblin ever born, with a face only a mother can love. His flat little claws barely even extend past his fingertips and break so easily.
+Kosmos – A Goblin ‘scientist’ whose destiny is watched over by the Gods. May one day change the world, if only she could learn to read first.
+Shake Spear – She writes and performs plays. Unfortunately, theater isn’t a highly respected art form where she is from. She wants to expand and perform in other parts of the world, but she fears people’s violent racism toward goblins.
+Glob – skintone more brownish with green spots, small even for the size of a goblin, always ridiculed and bullied, has no confidence but is in fact smarter than most goblins. Also plays the flute surprisingly well.
+Spike – (surprise surprise) a little larger and a lot fiercer than other goblins, a foul grin with a sadistic grimace. Sports a white/black mohawk. Spike is the leader of the pack, cunning and evil.
+Vash – A goblin alchemist who has not only managed to tame a giant vulture to fly around on, he’s also figured out how to build and use guns. Fond of infusing his ammunition with all kinds of volatile compounds just to see what happens.
+Gleb – A long time ago a goblin tribe was wiped out afterr they tried to play cards with a deck of many things. Adventurers came in and cleaned up the mess, however Gleb lived, he lived because he became a warlock to Enlil, a retired god who needed something done in Unther via XP and magic items that he got from the cards. (FR Setting ) He now travels the countryside on his trusty war pig (Pig not boar) Porkins.
+Jot – The oldest of a set of brothers. Jot is incredibly crafty, being well spoken for a goblin.
+Joot – The second oldest. Is a wonderful cook for goblin standards. He can a lot of unappetizing things… palatable.
+Jooot – The baby of the trio. Despite being the youngest, he’s actually the tallest as well. He doesn’t do much, but he enjoys painting (with things that aren’t paint).
+Gizmit – the goblin wizard effigy master who built himself a wyvern effigy, then shrank himself down with a reduce person, which he made permanent. He now spends most of his time in a control center inside the wyvern’s head.
+Gututut – Big, Strong, and Hairy Goblin, thinks he may be adopted.
+Zuntik – Goblin Cleric who worships himself.
+Bang Booyahg: A goblin trickster cleric whose essence Garl Glittergold mistook for a gnome’s and accidentally gave powers. Ever since the incident Bang has become a fervent disciple in hopes to prove himself worthy of his deity.
+Fizgit – A female goblin who travels the world writing about her journeys. Her stories are romantic fantasies, where she is the most beautiful desirable goblin in the land and has whirlwind affairs with almost every male character she meets. Anyone who critiques her, draws her ire and are major villains in her story. Those who support her are written as madly in love with her.
+Three Crusts- As a young scout, the goblin became lost and wound up high in the mountains. Freezing and starving, he was found by a woodsman and carried to the woodsman’s small home. The man and his wife served him and another traveler up food pulled from a wooden box in the kitchen and gave them a place to sleep. In the night, the goblin arose and grabbed the box, delighted to have found such a prize. To cover his escape, he lit the home on fire and ran into the night. Once he had passed out of reach of any pursuit, he opened up the box. Inside he found three crusts of bread. The woodsman and his wife had shared all but their very last food with him, and in return he had robbed them and burned their home. The goblin flung the box down, and then was sent reeling to the ground by a powerful blow. He looked up into the eyes of the other traveler, dressed in silver armor and holding a mace. The traveler, a cleric of a goddess of justice, had managed to put out the fire before it had done any real damage, and then had come after the goblin. Rather than kill him, he declared that the goblin would serve him for three years, one for every crust of bread in the box. Over the next three years, Three Crusts served as the cleric’s servant, then his squire and friend. Three Crusts took holy orders himself shortly after the three years ended, and is now a paladin.
+Gulzyat the Undying – This little cursed fellow is a horrible nuisance. He wears nothing but a ratty pelt from a Dire Badger with the upper half of the badger head worn like a helm and the ratty pelt acting as a cloak and an old rusty piece of full plate elbow joint as a codpiece. The badger is appropriate because once you kill Gulzyat he seems to tenaciously come back to life at the worst of times appearing out of no where to exact a bit of revenge for his death. He is just a normal goblin for the most part so Gulzyat is not so much a physical threat himself but more about the ill timing of his reappearance. Trying to sneak around the sleeping hill giant? Not so fast here comes that odd little goblin you thought you killed to make a racket and wake him up. Trying to lie your way past the city guard? Guess what, the little bastard speaks enough common to pop up and let them know what you are really about. Trying to impress a noble, hard to do when a goblin appears chanting your name and peeing on his plate of roast duck. Remove curse only works for one encounter where Gulzyat would have appeared and then he turns up again like a bad penny. A wish can rid you of Gulzyat sending him to pester someone else but the only other way is to trick some other poor sap into killing the little nob and getting someone else to take on Gulzyats ire that is currently directed at you.
+Lokey Mogul- Serial killer, chef, and television personality! Hosts a cooking show (viewed on scrying mirrors that some rich people own) called ‘Gobblin’ With A Goblin’ in which he details the process of kidnapping, cooking, and properly serving people. Sometimes has ‘guest stars’ (either kidnapped people or bandits) that rate his dishes. Is a powerful Illusionist that uses Hallucinatory Terrain to make his victims think they have ran into a dead end and to avoid other people seeing his kidnappings. His kitchens are usually back alleys, abandoned buildings, and other people’s attics.
+Ukmot, Archfiend Warlock – Considered the weakest of his tribe, he was beaten and exiled. In his rage he vowed his service to Glasya in exchange for power and to advance his goals for submitting goblinkind under his rule and sending his enemies to his patron for eternal suffering.
+Boom Boom, the Pyroman(iac)cer – A slender goblin with a nasty lisp, the right half of the face is covered in burnmarks, remnant of one of his most successful experiments, as he would claim. He has a bag with him and you can be sure, one item in there is a firestarter and the rest, some sort of explosive devices. His catchphrase: ‘I can make ith boom boom?’
+Zamot – an elderly goblin who believes his walking stick has been possessed by a wild(a wolf) god by the name of Ral’tak. He constantly talks to his walking stick as a result and every night he wanders out of his encampment to find a pack of wolves to howl at the moon with.
+Zig’Won the Quick – Twin goblins known for their pranks by seeming to appear in two places at once. Not to be confused with his brother Zig’Tu.
+Orgg’mal the Mountain Prince – An unusually large goblin king that became famous for discovering, posthumously, that rocks are heavy.
+Shib’hal the Sand Rat – Famous adventurer that was one of the first goblins to make friends with another humanoid species and retired wealthy. Many mainland humans mistakenly use the word ‘shib’hal’ as friend in Goblinspeak, no goblin has yet to be in a rush to correct them.
+The Goblin raider, Mod – He is known in these parts. He finds clothes uncomfortable, instead wearing only a loin cloth and coating himself in dirt, twigs, leaves and anything else he can find. Unlike other goblins, mod doesn’t really care for shiny things. Instead, he covets dark things. To this end, he carries a pouch of charcoal to darken the shiny gold coins he acquires.
+Gorgeous Garrow the Galiant – This little Goblin bard wears a pirate costume complete with a captain’s hat and a fake beard. He plays a violin and sings tall tales of his courageous swashbuckling adventures (he’s actually terrified of deep water and has never been on a boat).
 Beetlebug Cragmaw: Goblin bard who acts as a spy for secret orginizations around the world acts tough but is a total sweetheart and just wants to make the world safer.
-Backbite the Harmless- Goblin Sorcerer and former mob member. Backbite talks like a wagon salesman mixed with a freeform poet. His magic comes from his Divine Soul, much to the surprise of his family. Backbite is now seeking to live up to whatever his вЂheritageвЂ™ is, meaning that he sometimes stops midsentence and says, вЂoh, but weвЂ™re GOOD guys now, riiiightвЂ¦вЂ™
-Gorscrik Bleeder- A gloom hunter who seeks vengeance against a powerful Hobgoblin warlord. Gorscrik became a goblin veteran the hard way, in the massed ranks of a barely-armed and untrained horde invading Human lands. Driven on by Hobgoblin masters and clambering over the mounds of their own dead, the wave of green swept over the north of the continent, sacking cities and overwhelming armies. The southland, fertile and lush, beckoned to the goblins. But the Hobgoblin leadership, led by High Chief Captain DruzzвЂ™defor, chose to turn the horde against the Dwarven fortress of Merget Mon-Moor. Gorscrik, who was sent as a scout, returned and reported that an attack would be madness. In response, DruzzвЂ™defor demoted him and assigned him to the first rank of footmen sent against the Fortress, referred to now by goblins as The Grinder. Facing veteran Dwarves in prepared defensive positions, the mighty green horde was butchered brutally and mercilessly. Gorscrik, by an odd turn of fate, survived the battle, lying senseless in the sea of his slaughtered comrades. After being washed into a side tunnel by a Dwarven Waste Disposal crew, he revived and learned to survive in the hazards of the Underdark. He returned to the topworld hungry for revenge and glory.
-Nibbler the Nilbog вЂ“ This zainy crazy Jester shaman Goblin Nilbog lives alone in swamps. He is like Yoda and will just show up some nights. He just wants food to be honest, but is always down for a good joke or riddle. Will oвЂ™ Wisps also HATE this guy and will back off when he is around, but he will always comment on the pretty colours. Maybe he will give some magical items or enlighten the party with hints if he is treated very nicely?
-Hobbin of the Dirt вЂ“ A loony, mud-soaked, and scratched up goblin that wanders the forests, believing herself to be a powerful druid capable of communing with the trees. Her only companion is a ferocious and blood-thirsty badger that Hobbin can happily calm with a long hug. HobbinвЂ™s (literally) insane dedication to nature has led her to powerful places unknown to outsiders, where the veil between the Feywild and the Material Plane are thin. She does not know what knowledge she sits upon or that the forest has been silently taking care of her.
-MortвЂ™Gix the Fell: As evil as a goblin can get, his necromancy and dark arts took down an ancient Dwarven empire.
-MiltвЂ™fiq the Counter: A notable goblin warrior for discovering thrusting two spears into an enemy is better than one.
-WerdвЂ™YacГ±an of Crimson Peak: The first shaman to instill the dead spirits of goblins into their kin. The rage she unleashed that day blew up half a mountain. Stories of her inquisitiveness inspires many generations of curious young goblins.
+Backbite the Harmless- Goblin Sorcerer and former mob member. Backbite talks like a wagon salesman mixed with a freeform poet. His magic comes from his Divine Soul, much to the surprise of his family. Backbite is now seeking to live up to whatever his ‘heritage’ is, meaning that he sometimes stops midsentence and says, ‘oh, but we’re GOOD guys now, riiiight…’
+Gorscrik Bleeder- A gloom hunter who seeks vengeance against a powerful Hobgoblin warlord. Gorscrik became a goblin veteran the hard way, in the massed ranks of a barely-armed and untrained horde invading Human lands. Driven on by Hobgoblin masters and clambering over the mounds of their own dead, the wave of green swept over the north of the continent, sacking cities and overwhelming armies. The southland, fertile and lush, beckoned to the goblins. But the Hobgoblin leadership, led by High Chief Captain Druzz’defor, chose to turn the horde against the Dwarven fortress of Merget Mon-Moor. Gorscrik, who was sent as a scout, returned and reported that an attack would be madness. In response, Druzz’defor demoted him and assigned him to the first rank of footmen sent against the Fortress, referred to now by goblins as The Grinder. Facing veteran Dwarves in prepared defensive positions, the mighty green horde was butchered brutally and mercilessly. Gorscrik, by an odd turn of fate, survived the battle, lying senseless in the sea of his slaughtered comrades. After being washed into a side tunnel by a Dwarven Waste Disposal crew, he revived and learned to survive in the hazards of the Underdark. He returned to the topworld hungry for revenge and glory.
+Nibbler the Nilbog – This zainy crazy Jester shaman Goblin Nilbog lives alone in swamps. He is like Yoda and will just show up some nights. He just wants food to be honest, but is always down for a good joke or riddle. Will o’ Wisps also HATE this guy and will back off when he is around, but he will always comment on the pretty colours. Maybe he will give some magical items or enlighten the party with hints if he is treated very nicely?
+Hobbin of the Dirt – A loony, mud-soaked, and scratched up goblin that wanders the forests, believing herself to be a powerful druid capable of communing with the trees. Her only companion is a ferocious and blood-thirsty badger that Hobbin can happily calm with a long hug. Hobbin’s (literally) insane dedication to nature has led her to powerful places unknown to outsiders, where the veil between the Feywild and the Material Plane are thin. She does not know what knowledge she sits upon or that the forest has been silently taking care of her.
+Mort’Gix the Fell: As evil as a goblin can get, his necromancy and dark arts took down an ancient Dwarven empire.
+Milt’fiq the Counter: A notable goblin warrior for discovering thrusting two spears into an enemy is better than one.
+Werd’Yacnan of Crimson Peak: The first shaman to instill the dead spirits of goblins into their kin. The rage she unleashed that day blew up half a mountain. Stories of her inquisitiveness inspires many generations of curious young goblins.
 Little Zorm: a teenage orc who was raised in a goblin tribe and believes themselves to be an unusually large goblin. Will do their best to reject the truth.
 Big Zorm: an obese goblin chief who is carried around in a chair by four other goblins. Demands the finest things in life (like shiny buttons, interesting feathers, and obsecenely-shaped rocks). Big Zorm has a big sack full of these treasures he never lets out of his sight, and adds to the weight of his chair.
 Schlan Mlorg: will demand anybody who talks to him pronounce his name perfectly. Nobody except him can EVER say it right, to his immense frustration.
-Ghaulli: Working two full-time jobs as the innвЂ™s housekeeper and the tavernвЂ™s busgirl, Ghaulli soon becomes a familiar face. SheвЂ™s an honest worker, but is often met with suspicion from patrons due to her race. Though the work is tiring and often thankless, Ghaulli is a widow who tries her best to ensure her young son is provided for.
-Fared the Gilded вЂ“ As an old test subject for the secretive magus Jordroy, Fared was constantly exposed to strange magics, often for long periods of time. It was during one of JordroyвЂ™s alchemical mishaps that Fared had he chance to escape his cage and run to freedom, although not before being doused in a variety of mysterious reagents. By the time Fared had a chance to rest and look himself over, the entire right side of his body from knee to ear had transformed into solid gold. This gold functioned the same as his normal body, but gave him the ability to transform a tiny object into gold once per day by touching it with his golden arm. He now constantly travels from place to place, using his ability to get by. He wears a thick black cloak he never takes off so as to avoid getting kidnapped for his ability or worse, taken back to Jordroy.
-Glizbik, The Dawn Priest вЂ“ Glizbik was once a feral goblin that preyed on local travelers with his tribe, simplistic in his fondness for violence and shiny things. One day, he and his tribe raided a lone priest traveling the road. The priest pleasantly divided what he was carrying among the confused hunting party, and gave his holy symbol to Glizbik. He winked at the goblin and told him that when the time came that he wanted something more than this life he led, all he had to do was grasp the necklace and believe. Before the old dwarf could say anything else, the rest of GlizbikвЂ™s tribe attacked and killed him in the hopes they could find anything he was holding out on. Glizbik spent the next few days in contemplation, watching his fellow goblins squabble over their petty loot and trinkets. He found himself believing that they could be better, and that he should be better too. With that belief, he clasped his amulet and heard the voice of Auphaela, The Breaking Dawn for the first time. The Goddess of the Rising Sun told him of a better way of life, and showed him visions of what that could look like, promising that she would show him the path if he would be willing to walk it. Filled with a flurry of emotions for which he had no names, he made a promise to Auphaela that the priestвЂ™s words were not spoken in vain, and that he would guide his people out of the dust and into a life of higher ideals and racial unity. He now travels the land with a small group of goblins who share his beliefs, seeking to fill more goblins with the guiding light of the Goddess of New Beginnings. He strives to embody her tenants of charity and respect in the hopes that he may one day be able to atone for the sins of his tribe, his people, and himself. Though he sometimes falls victim to the pettier urges of his race, he always manages to quickly recover and use his power as a cleric of Aupheala to make amends.
-Steven вЂ“ not even a goblin, just a weirdly colored human, and at this point, heвЂ™s a bit scared to tell them all.
-Rik and Gnalde вЂ“ An elderly couple whoвЂ™ve been mated for years. They are currently lost on their way to visit their grandchildren and arguing over who, if anyone, to ask for directions.
-Klikx вЂ“ master trap maker, best in the land. Can create or disarm traps quite easily.
-Ratter вЂ“ the tribes rat trainer. Spends more time with the rats than with anyone else and has begun taking on rat-like mannerisms like nose twitching.
-Wacs the Weasel вЂ“ Best slaver globin around. Has an eye for spotting good targets for stealing and is ruthless in the execution.
-Sir Raynaldus the Heroic вЂ“ claims heвЂ™s a decorated knight from a nearby kingdom who definitely doesnвЂ™t associate with other goblins. HeвЂ™s very boastful and will go on for hours about hks heroic deeds. May or may not be an act.
-Ariawyn Ocoalyrn вЂ“ swears sheвЂ™s actually a very short, slightly malformed elf and definitely not a goblin. Is clearly a goblin.
-Frip and Drox вЂ“ Frip had a dream where a god came down and possessed Drox, claiming his body as itвЂ™s planar form. He now follows Drox everywhere proclaiming his holy status and making a show of his open worship. Drox is sick of his shit.
-Daryl Gobbo вЂ“ The bravest, little goblin youвЂ™ll ever meet. He dreams of being a mighty paladin one day.
-Bogskin the Foul вЂ“ First goblin to drive off a fort of nasty elves using bad odors.
-Dead Trout of Nitzcave вЂ“ First goblin to figure out how a crossbow works.
-Yizkak the Bold вЂ“ First goat thief to also figure out she could ride them. Her name is a curse in Dwarvish.
-Skora the Flame Priestess вЂ“ Touched by the God of Fire she burned so many things and is worshipped as a goddess in some warrens.
-Grimnott the Silent вЂ“ A famous goblin assassin. Whose weapons of choice were a garotte wire and a vial of poison.
-Brizzlefrak the Smokepile вЂ“ The first goblin to be hit by lightning.
-MudвЂ™tew вЂ“ a scaredy hunter goblin that stalks through the woods, his shrieks for help when stepping on something too round or angular are often assumed by travelers to be that of ghost or banshees.
+Ghaulli: Working two full-time jobs as the inn’s housekeeper and the tavern’s busgirl, Ghaulli soon becomes a familiar face. She’s an honest worker, but is often met with suspicion from patrons due to her race. Though the work is tiring and often thankless, Ghaulli is a widow who tries her best to ensure her young son is provided for.
+Fared the Gilded – As an old test subject for the secretive magus Jordroy, Fared was constantly exposed to strange magics, often for long periods of time. It was during one of Jordroy’s alchemical mishaps that Fared had he chance to escape his cage and run to freedom, although not before being doused in a variety of mysterious reagents. By the time Fared had a chance to rest and look himself over, the entire right side of his body from knee to ear had transformed into solid gold. This gold functioned the same as his normal body, but gave him the ability to transform a tiny object into gold once per day by touching it with his golden arm. He now constantly travels from place to place, using his ability to get by. He wears a thick black cloak he never takes off so as to avoid getting kidnapped for his ability or worse, taken back to Jordroy.
+Glizbik, The Dawn Priest – Glizbik was once a feral goblin that preyed on local travelers with his tribe, simplistic in his fondness for violence and shiny things. One day, he and his tribe raided a lone priest traveling the road. The priest pleasantly divided what he was carrying among the confused hunting party, and gave his holy symbol to Glizbik. He winked at the goblin and told him that when the time came that he wanted something more than this life he led, all he had to do was grasp the necklace and believe. Before the old dwarf could say anything else, the rest of Glizbik’s tribe attacked and killed him in the hopes they could find anything he was holding out on. Glizbik spent the next few days in contemplation, watching his fellow goblins squabble over their petty loot and trinkets. He found himself believing that they could be better, and that he should be better too. With that belief, he clasped his amulet and heard the voice of Auphaela, The Breaking Dawn for the first time. The Goddess of the Rising Sun told him of a better way of life, and showed him visions of what that could look like, promising that she would show him the path if he would be willing to walk it. Filled with a flurry of emotions for which he had no names, he made a promise to Auphaela that the priest’s words were not spoken in vain, and that he would guide his people out of the dust and into a life of higher ideals and racial unity. He now travels the land with a small group of goblins who share his beliefs, seeking to fill more goblins with the guiding light of the Goddess of New Beginnings. He strives to embody her tenants of charity and respect in the hopes that he may one day be able to atone for the sins of his tribe, his people, and himself. Though he sometimes falls victim to the pettier urges of his race, he always manages to quickly recover and use his power as a cleric of Aupheala to make amends.
+Steven – not even a goblin, just a weirdly colored human, and at this point, he’s a bit scared to tell them all.
+Rik and Gnalde – An elderly couple who’ve been mated for years. They are currently lost on their way to visit their grandchildren and arguing over who, if anyone, to ask for directions.
+Klikx – master trap maker, best in the land. Can create or disarm traps quite easily.
+Ratter – the tribes rat trainer. Spends more time with the rats than with anyone else and has begun taking on rat-like mannerisms like nose twitching.
+Wacs the Weasel – Best slaver globin around. Has an eye for spotting good targets for stealing and is ruthless in the execution.
+Sir Raynaldus the Heroic – claims he’s a decorated knight from a nearby kingdom who definitely doesn’t associate with other goblins. He’s very boastful and will go on for hours about hks heroic deeds. May or may not be an act.
+Ariawyn Ocoalyrn – swears she’s actually a very short, slightly malformed elf and definitely not a goblin. Is clearly a goblin.
+Frip and Drox – Frip had a dream where a god came down and possessed Drox, claiming his body as it’s planar form. He now follows Drox everywhere proclaiming his holy status and making a show of his open worship. Drox is sick of his shit.
+Daryl Gobbo – The bravest, little goblin you’ll ever meet. He dreams of being a mighty paladin one day.
+Bogskin the Foul – First goblin to drive off a fort of nasty elves using bad odors.
+Dead Trout of Nitzcave – First goblin to figure out how a crossbow works.
+Yizkak the Bold – First goat thief to also figure out she could ride them. Her name is a curse in Dwarvish.
+Skora the Flame Priestess – Touched by the God of Fire she burned so many things and is worshipped as a goddess in some warrens.
+Grimnott the Silent – A famous goblin assassin. Whose weapons of choice were a garotte wire and a vial of poison.
+Brizzlefrak the Smokepile – The first goblin to be hit by lightning.
+Mud’tew – a scaredy hunter goblin that stalks through the woods, his shrieks for help when stepping on something too round or angular are often assumed by travelers to be that of ghost or banshees.
 Grood the PC-goblin. Constantly annoys the other goblins with his liberal ideas. Inspired by the more civilized values of men, he aspire to one day brake free from his tribe and join the next party sent to exterminate his clan.
-Pastew the Owl вЂ“ has large eyes, barn owl feathers glued to her face and arms, and tries to speak riddles and aphorisms from the books that they have inexpertly hidden on their person. Tries to practice stretching their neck / turning their head around when they think people arenвЂ™t looking.
-Gobli вЂ“ A suspicious, weirdly hairy goblin who runs a cart selling Goblin-made tea to anyone with coin. DoesвЂ™t pro-ounce NвЂ™s wheвЂ™ they talk.
-Morphi the Trickster. Loves setting traps, snares, and tripwires, can never remember where heвЂ™s set them. Frequently discovered bested by one of his own creations. Dresses like a Harlequin.
-Idjus Longnose вЂ“ Proud leader of a band of hang-gliding goblin mercenaries. Famous for her bright orange cloak and hair.
-Fervious Feverfew the Fird вЂ“ Grandchild of the renowned poisoner of the last King / Queen of the Kingdom. Adept at disguises, willing to share their knowledge for the right price.
-Gargar The Ox вЂ“ A very small, blue goblin with sharp teeth and a too-wide grin. Once ate an entire live ox without stopping.
-Kattik of Mouse Haven вЂ“ An elderly goblin with sensibly styled hair spectacles, and a shawl. Shrewd buisnessgoblin Runs an animal daycare. Employer ofвЂ¦
-Tiny вЂ“ the fattest goblin youвЂ™ve ever seen, wearing not enough clothes, covered in purple woad markings. Loves animals, farts constantly, will cast cure minor wounds on any animal that they donвЂ™t think looks perfectly healthy.
-Darvu the Tunneller вЂ“ Lieutenant of a brigade of war-goblins seeking to literally undermine the defenses of a nearby castle. Wears a red tricorn hat and large black leather boots.
-Bookkeeper Gorn вЂ“ Wizard librarian goblin who gets drunk and starts fights in bars, has a large gold hoop pierced in their nose. Does not, and will not wear pants, to the great amusement of his nearby goblin friends.
-Quovill вЂ“ Crippled at a young age, Quovill is capable of moving, fighting, climbing, etc thanks to a mobility exo-harness that their mother built for them. Speaks in a french accent, loves peanut butter sandwiches.
-Butterfly вЂ“ A wiry thin goblin holding a warhammer engraved to leave a butterfly imprint in whatever it smashes. Wearing blue jean overalls and a straw hat, heвЂ™s also one of this summerвЂ™s hottest fashionistas.
-Rocblett Yingl-mit вЂ“ Mohawk-ed, yellow splotchy skin and buck teeth. Six months old, armed with a bottle of superglue, and the stealthiest toddler youвЂ™ve never seen.
-Nogilee вЂ“ A young goblin activist. Clever, diplomatic, charismatic sheвЂ™s leading the greenskins rebellion. She has a devoted following that grows by the day.
+Pastew the Owl – has large eyes, barn owl feathers glued to her face and arms, and tries to speak riddles and aphorisms from the books that they have inexpertly hidden on their person. Tries to practice stretching their neck / turning their head around when they think people aren’t looking.
+Gobli – A suspicious, weirdly hairy goblin who runs a cart selling Goblin-made tea to anyone with coin. Does’t pro-ounce N’s whe’ they talk.
+Morphi the Trickster. Loves setting traps, snares, and tripwires, can never remember where he’s set them. Frequently discovered bested by one of his own creations. Dresses like a Harlequin.
+Idjus Longnose – Proud leader of a band of hang-gliding goblin mercenaries. Famous for her bright orange cloak and hair.
+Fervious Feverfew the Fird – Grandchild of the renowned poisoner of the last King / Queen of the Kingdom. Adept at disguises, willing to share their knowledge for the right price.
+Gargar The Ox – A very small, blue goblin with sharp teeth and a too-wide grin. Once ate an entire live ox without stopping.
+Kattik of Mouse Haven – An elderly goblin with sensibly styled hair spectacles, and a shawl. Shrewd buisnessgoblin Runs an animal daycare. Employer of…
+Tiny – the fattest goblin you’ve ever seen, wearing not enough clothes, covered in purple woad markings. Loves animals, farts constantly, will cast cure minor wounds on any animal that they don’t think looks perfectly healthy.
+Darvu the Tunneller – Lieutenant of a brigade of war-goblins seeking to literally undermine the defenses of a nearby castle. Wears a red tricorn hat and large black leather boots.
+Bookkeeper Gorn – Wizard librarian goblin who gets drunk and starts fights in bars, has a large gold hoop pierced in their nose. Does not, and will not wear pants, to the great amusement of his nearby goblin friends.
+Quovill – Crippled at a young age, Quovill is capable of moving, fighting, climbing, etc thanks to a mobility exo-harness that their mother built for them. Speaks in a french accent, loves peanut butter sandwiches.
+Butterfly – A wiry thin goblin holding a warhammer engraved to leave a butterfly imprint in whatever it smashes. Wearing blue jean overalls and a straw hat, he’s also one of this summer’s hottest fashionistas.
+Rocblett Yingl-mit – Mohawk-ed, yellow splotchy skin and buck teeth. Six months old, armed with a bottle of superglue, and the stealthiest toddler you’ve never seen.
+Nogilee – A young goblin activist. Clever, diplomatic, charismatic she’s leading the greenskins rebellion. She has a devoted following that grows by the day.
